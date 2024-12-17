@@ -1,5 +1,5 @@
-import {createRouter, createWebHistory} from 'vue-router'
-import HomeView from "@/345RestoCafe/HomeView/HomeView.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from "../../345RestoCafe/HomeView/HomeView.vue";
 
 const routes = [
     {
@@ -7,4 +7,11 @@ const routes = [
         name: 'Home',
         component: HomeView,
     }
-]
+];
+
+const router = createRouter({
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes
+});
+
+export default router;
