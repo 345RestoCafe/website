@@ -1,6 +1,6 @@
 <template>
   <header-component class="app-header"/>
-  <navbar-component/>
+  <navbar-component class="navbar"/>
   <router-view/>
   <footer-component/>
 </template>
@@ -30,7 +30,7 @@ template{
 .app-header {
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 </style>
