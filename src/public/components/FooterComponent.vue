@@ -77,19 +77,6 @@ export default  {
 </script>
 
 <style scoped>
-.footer {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-size: 0.9em;
-  padding: 0;
-  position: absolute;
-  clear: both;
-  background-color: #000;
-  color: #fff;
-  display: block;
-  box-sizing: border-box;
-}
 .logo-container{
   display: flex;
   flex-direction: column;

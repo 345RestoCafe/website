@@ -86,7 +86,7 @@ export default {
 }
 .navbar{
   top: 0;
-  position: fixed;
+  position: absolute;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
