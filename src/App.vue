@@ -27,10 +27,4 @@ template{
   background-color: white;
   margin: 0;
 }
-.app-header {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
 </style>

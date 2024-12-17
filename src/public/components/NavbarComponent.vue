@@ -85,14 +85,16 @@ export default {
   padding-right: 50px;
 }
 .navbar{
+  top: 0;
+  position: fixed;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  font-family: Lora, sans-serif;
-  background-color: white;
   font-weight: 300;
   height: 130px;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 60px;
+  width: 100%;
 }
 
 .nav-button{
@@ -177,7 +179,7 @@ export default {
     display: none;
     flex-direction: column;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 130px;
     left: 0;
     background-color: #000;
@@ -198,7 +200,7 @@ export default {
     width: 15%;
     height: 1px;
     background-color: #cb9755;
-    left: 182px;
+    left: 160px;
     transition: width 0.1s ease-in;
   }
 }

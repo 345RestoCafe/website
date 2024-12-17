@@ -35,9 +35,12 @@ export default {
 
 <style scoped>
 .header-container{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
   background-color: #000;
   color: #fff;
-  top:0;
   font-family: "Poppins", sans-serif;
   font-size: 0.8em;
   font-weight: 400;
