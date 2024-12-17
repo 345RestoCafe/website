@@ -6,7 +6,6 @@
 </template>
 
 <script>
-
 import HeaderComponent from "@/public/components/HeaderComponent.vue";
 import NavbarComponent from "@/public/components/NavbarComponent.vue";
 import FooterComponent from "@/public/components/FooterComponent.vue";
