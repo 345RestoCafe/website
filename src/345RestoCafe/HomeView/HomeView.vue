@@ -1,9 +1,15 @@
 <template>
-
+  <UnderDevelopment/>
 </template>
 
-<script setup>
+<script>
 
+import {defineComponent} from "vue";
+import UnderDevelopment from "@/public/components/UnderDevelopmentView.vue";
+
+export default defineComponent({
+  components: {UnderDevelopment}
+})
 </script>
 
 <style scoped>

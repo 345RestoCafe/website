@@ -1,12 +1,15 @@
+<template>
+  <UnderDevelopment/>
+</template>
+
 <script>
+import UnderDevelopment from "@/public/components/UnderDevelopmentView.vue";
+
 export default {
-  name: "MenuView"
+  name: "MenuView",
+  components: {UnderDevelopment}
 }
 </script>
-
-<template>
-
-</template>
 
 <style scoped>
 
