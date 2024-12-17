@@ -25,7 +25,7 @@
           <a
               class="nav-button"
               aria-label="Home button"
-              @click="directTo('inicio')"
+              @click="directTo('')"
           >
             Inicio
           </a>

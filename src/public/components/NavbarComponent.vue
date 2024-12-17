@@ -12,8 +12,8 @@
       <button
           class="nav-button"
           aria-label="Home button"
-          :class="{ active: actualView === 'inicio' }"
-          @click="directTo('inicio')"
+          :class="{ active: actualView === '' }"
+          @click="directTo('')"
       >
         Inicio
       </button>
@@ -62,7 +62,7 @@ export default {
   name: "NavigationButtons",
   data() {
     return {
-      actualView: "inicio",
+      actualView: "/",
       showMenu: false,
     };
   },
