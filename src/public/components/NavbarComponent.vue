@@ -98,7 +98,7 @@ export default {
 }
 
 .nav-button{
-  font-family: Lora, sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 18px;
