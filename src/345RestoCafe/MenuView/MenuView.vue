@@ -1,55 +1,55 @@
 <template>
   <div class="view-container">
     <div class="container-impar">
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
       <CategoryCardComponent class="impar" title="Ensaladas a la Carta" :products="ensaladas" />
     </div>
     <div class="container-par">
       <CategoryCardComponent class="par" title="Sandwiches" :products="sandwiches" />
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
     </div>
     <div class="container-impar">
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
       <CategoryCardComponent class="impar" title="Platos a la Carta" :products="platos" />
     </div>
     <div class="container-par">
       <CategoryCardComponent class="par" title="Desayunos" :products="desayunos" />
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
     </div>
     <div class="container-impar">
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
       <CategoryCardComponent class="impar" title="Piqueos" :products="piqueos" />
     </div>
     <div class="container-par">
       <CategoryCardComponent class="par" title="Postres" :products="postres" />
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
     </div>
     <div class="container-impar">
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
       <CategoryCardComponent class="impar" title="Infusiones" :products="infusiones" />
     </div>
     <div class="container-par">
       <CategoryCardComponent class="par" title="Café" :products="cafe" />
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
     </div>
     <div class="container-impar">
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
       <CategoryCardComponent class="impar" title="Frappés" :products="frappes" />
     </div>
     <div class="container-par">
       <CategoryCardComponent class="par" title="Bebidas Frías" :products="bebidas" />
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
     </div>
     <div class="container-impar">
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
       <CategoryCardComponent class="impar" title="Licores" :products="licores" />
     </div>
     <div class="container-par">
       <CategoryCardComponent class="par" title="Cervezas" :products="cervezas" />
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
     </div>
     <div class="container-impar">
-      <img class="product-image" src="../../../public/logo.png">
+      <img class="product-image" src="../../../public/a.png">
       <CategoryCardComponent class="impar" title="Jugos" :products="jugos" />
     </div>
   </div>
@@ -241,8 +241,7 @@ export default {
   justify-items: center;
 }
 .container-impar{
-  display: inline-block;
-  position: relative;
+  display: flex;
   justify-content: left;
   min-width: 1000px;
   max-width: 1000px;
