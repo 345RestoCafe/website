@@ -38,10 +38,12 @@ html, body {
   min-height: 100vh;
 }
 .footer {
+  position: relative;
   margin: 0;
+  flex:3;
   background-color: #000;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 0 30px 0;
   text-align: center;
 }
 </style>
