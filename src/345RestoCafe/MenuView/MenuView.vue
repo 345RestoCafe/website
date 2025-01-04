@@ -1,56 +1,21 @@
 <template>
   <div class="view-container">
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Ensaladas a la Carta" :products="ensaladas" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Sandwiches" :products="sandwiches" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Platos a la Carta" :products="platos" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Desayunos" :products="desayunos" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Piqueos" :products="piqueos" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Postres" :products="postres" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Infusiones" :products="infusiones" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Café" :products="cafe" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Frappés" :products="frappes" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Bebidas Frías" :products="bebidas" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Licores" :products="licores" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Cervezas" :products="cervezas" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Jugos" :products="jugos" />
+    <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
+      <div class="category-image">
+        <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
+      </div>
+      <CategoryCardComponent
+          :title="category.title"
+          :products="category.products"
+          :index="index"
+          v-if="category.title === 'MENU DE LA SEMANA'"
+          :menu_date="menu_date" />
+      <CategoryCardComponent
+          v-else
+          :title="category.title"
+          :products="category.products"
+          :index="index"
+          :menu_date="[]" />
     </div>
   </div>
 </template>
@@ -65,6 +30,13 @@ export default {
   },
   data() {
     return {
+      menu: [
+        { name: "Lenteja con pollo saltado", description: "Ensalada fresca", price: 20},
+        { name: "Pulpa de brazuelo al horno", description: "Ensalada Waldorf", price: 20},
+        { name: "Fetuccini al pesto con bistec apanado", description: "Pan al ajo", price: 20},
+        { name: "Pollo al horno", description: "Ensalada rusa", price: 20},
+        { name: "Ají de Gallina", description: "Consomé de verduras", price: 20},
+      ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 20},
         { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 20},
@@ -226,8 +198,33 @@ export default {
         { name: "Jugo surtido", description: "", price: 10 },
         { name: "Adicional de leche", description: "", price: 2 },
       ],
+      menu_date: [
+        { day: "Lunes", date: "6/1"},
+        { day: "Martes", date: "7/1"},
+        { day: "Miércoles", date: "8/1"},
+        { day: "Jueves", date: "9/1"},
+        { day: "Viernes", date: "10/1"},
+      ]
     };
   },
+  created() {
+    this.categories = [
+      { title: 'MENU DE LA SEMANA', products: this.menu, image: '../../../public/menu/Menu.jpg'},
+      { title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: '../../../public/menu/Ensaladas.jpeg' },
+      { title: 'SANDWICHES', products: this.sandwiches, image: '../../../public/menu/Sandwiches.jpg' },
+      { title: 'PLATOS A LA CARTA', products: this.platos, image: '../../../public/menu/Platos.jpg' },
+      { title: 'DESAYUNOS', products: this.desayunos, image: '../../../public/menu/Desayunos.jpg' },
+      { title: 'PIQUEOS', products: this.piqueos, image: '../../../public/menu/Piqueos.jpg' },
+      { title: 'POSTRES', products: this.postres, image: '../../../public/menu/Postres.jpg' },
+      { title: 'INFUSIONES', products: this.infusiones, image: '../../../public/menu/Infusiones.jpg' },
+      { title: 'CAFÉS', products: this.cafe, image: '../../../public/menu/Cafes.jpg' },
+      { title: 'FRAPPÉS', products: this.frappes, image: '../../../public/menu/Frappes.jpg' },
+      { title: 'BEBIDAS FRÍAS', products: this.bebidas, image: '../../../public/menu/Bebidas.jpg' },
+      { title: 'LICORES', products: this.licores, image: '../../../public/menu/Licores.jpg' },
+      { title: 'CERVEZAS', products: this.cervezas, image: '../../../public/menu/Cervezas.jpg' },
+      { title: 'JUGOS', products: this.jugos, image: '../../../public/menu/Jugos.jpg' }
+    ]
+  }
 };
 </script>
 
@@ -235,28 +232,36 @@ export default {
 .view-container {
   padding-top: 200px;
   padding-bottom: 100px;
-  min-width: 1000px;
+  min-width: 1050px;
   font-family: Popins, sans-serif;
   justify-self: center;
   justify-items: center;
 }
-.container-impar{
+
+.container{
   display: flex;
-  justify-content: left;
-  min-width: 1000px;
-  max-width: 1000px;
-  padding: 50px 0;
+  position: relative;
+  width: 100%;
+  justify-items: left;
+  margin-bottom: 100px;
 }
-.container-par {
-  display: flex;
-  justify-content: right;
-  min-width: 1000px;
-  max-width: 1000px;
+.category-image{
+  position: absolute;
+  z-index: 1;
+}
+.container.even .category-image{
+  right: 0;
 }
 .product-image {
-  width: 500px;
+  width: 100%;
+  min-width: 500px;
+  max-width: 500px;
   height: auto;
+  overflow: clip;
+  box-sizing: border-box;
+  box-shadow: 0 0 21px -5px rgba(0, 0, 0, 0.2);
 }
+
 
 @media (max-width: 950px) {
   .view-container {
