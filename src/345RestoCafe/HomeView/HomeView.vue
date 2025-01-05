@@ -8,7 +8,9 @@
     </div>
     <div class="about-us_page">
       <div class="about-us_container">
-        <div class="about-us_container"
+        <div class="about-us_container">
+
+        </div>
       </div>
     </div>
   </div>

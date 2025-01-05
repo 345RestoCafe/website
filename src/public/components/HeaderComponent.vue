@@ -28,8 +28,13 @@
 
 <script>
 export default {
-  name: 'HeaderComponent'
-
+  name: 'HeaderComponent',
+  props: {
+    isVisible: {
+      type: Boolean,
+      required: true,
+    },
+  },
 }
 </script>
 
@@ -47,6 +52,10 @@ export default {
   display: flex;
   justify-content: center;
   padding: 4px 0;
+  transition: top 0.3s;
+}
+.header-container.hidden {
+  top: -100px;
 }
 .content {
   display: flex;

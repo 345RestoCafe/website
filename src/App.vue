@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <div class="main-container">
-    <header-component class="app-header"/>
-    <navbar-component class="navbar"/>
+    <header-component :is-visible="!isScrolled"/>
+    <navbar-component :is-header-hidden="isScrolled"/>
     <div class="content">
       <router-view/>
     </div>
@@ -29,6 +29,22 @@ export default {
     FooterComponent,
     NavbarComponent,
     HeaderComponent
+  },
+  data() {
+    return {
+      isScrolled: false,
+    };
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.isScrolled = window.scrollY > 55;
+    }
   }
 }
 </script>

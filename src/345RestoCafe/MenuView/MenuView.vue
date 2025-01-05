@@ -1,5 +1,6 @@
 <template>
   <div class="view-container">
+
     <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
       <div class="category-image">
         <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
