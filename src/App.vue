@@ -10,7 +10,7 @@
   <div class="main-container">
     <header-component :is-visible="!isScrolled"/>
     <navbar-component :is-header-hidden="isScrolled"/>
-    <div class="content">
+    <div :class="['content', { 'scrolled': isScrolled }]">
       <router-view/>
     </div>
     <footer-component class="footer"/>
@@ -60,6 +60,12 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+.content {
+
+}
+.content.scrolled {
+  padding-top: 160px;
 }
 .footer {
   position: relative;

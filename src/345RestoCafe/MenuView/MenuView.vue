@@ -1,6 +1,21 @@
 <template>
+  <div class="separator">
+    <div class="overlay">
+      <div class="breadcrumb">
+        <a href="https://345restocafe.com/">HOME</a> &gt; <a href="#">LA CARTA</a>
+      </div>
+      <h1 class="separator-title">La Carta</h1>
+      <div class="divider">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 116" preserveAspectRatio="none">
+          <path fill="#FFF" d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
+            c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
+            c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z"/>
+          <rect y="90" fill="#FFF" width="1920" height="26"></rect>
+        </svg>
+      </div>
+    </div>
+  </div>
   <div class="view-container">
-
     <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
       <div class="category-image">
         <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
@@ -231,12 +246,59 @@ export default {
 
 <style scoped>
 .view-container {
-  padding-top: 200px;
-  padding-bottom: 100px;
+  margin-top: 100px;
   min-width: 1050px;
   font-family: Popins, sans-serif;
   justify-self: center;
   justify-items: center;
+}
+
+.separator {
+  position: relative;
+  background-image: url("../../../public/menu/Menu-Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-height: 100px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.breadcrumb {
+  padding: 80px 0 0 0;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-family: Lora, sans-serif;
+  color: #c19655;
+}
+.breadcrumb a {
+  text-shadow: none;
+  line-height: inherit;
+  color: #c19655;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.separator-title {
+  color: #ffffff;
+  font-size: 49px;
+  font-family: Lora, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 .container{
@@ -261,6 +323,22 @@ export default {
   overflow: clip;
   box-sizing: border-box;
   box-shadow: 0 0 21px -5px rgba(0, 0, 0, 0.2);
+}
+
+.divider {
+  padding: 30px 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.divider svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.divider .path {
+  fill: #FFFFFF;
 }
 
 

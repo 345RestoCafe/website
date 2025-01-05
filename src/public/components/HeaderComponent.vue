@@ -87,7 +87,7 @@ a {
   padding: 0 5px;
 }
 
-@media (max-width: 1066px) {
+@media (max-width: 1125px) {
   .header-container{
     font-size: 0.6em;
   }

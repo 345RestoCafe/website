@@ -104,8 +104,7 @@ export default {
   max-height: 180px;
   justify-content: center;
   width: 100%;
-  z-index: 1;
-  transition: top 0.3s;
+  z-index: 1001;
   padding-top: 50px;
   padding-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -120,7 +119,7 @@ export default {
   right: 0;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 999;
 }
 
 .nav-button{
@@ -182,22 +181,25 @@ export default {
   margin-left: 200px;
 }
 
-@media (max-width: 1066px) {
+@media (max-width: 1125px) {
   .navbar {
     padding-top: 110px;
+    max-height: 240px;
   }
-  .logo-img{
-    padding-right: 10px;
+  .navbar-fixed {
+    top:0;
+    padding-top: 30px;
+    max-height: 150px;
   }
 }
 
-@media (max-width: 707px) {
+@media (max-width: 800px) {
   .nav-button{
     font-size: 0.8em;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 670px) {
   .logo-img {
     height: 50px;
   }
