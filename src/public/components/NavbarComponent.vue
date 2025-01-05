@@ -201,10 +201,16 @@ export default {
 
 @media (max-width: 670px) {
   .logo-img {
-    height: 50px;
+    height: 60px;
   }
   .menu-button {
     display: block;
+  }
+  .navbar {
+    max-height: 190px;
+  }
+  .navbar-fixed {
+    max-height: 120px;
   }
 
   .nav-links {
@@ -213,12 +219,16 @@ export default {
     flex-direction: column;
     width: 100%;
     position: fixed;
-    top: 130px;
+    top: 150px;
     left: 0;
     background-color: #000;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+  .navbar-fixed .nav-links {
+    top: 60px
+  }
+
   .nav-links.nav-active {
     display: flex;
   }
