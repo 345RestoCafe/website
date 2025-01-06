@@ -96,9 +96,16 @@ export default {
   box-sizing: border-box;
   unicode-bidi: isolate;
 }
+.dotted-line {
+  flex-grow: 1;
+  border-bottom: 1px dashed #bbb;
+  margin-left: 10px;
+  padding-top: 8px;
+  margin-bottom: 0;
+}
 .product-name {
-  margin-top: 2px;
-  margin-bottom: 5px;
+  margin-top: 18px;
+  margin-bottom: 2px;
   position: relative;
   font-weight: 600;
   font-size: 17px;
@@ -107,19 +114,12 @@ export default {
   text-transform: none;
   font-family: Poppins, sans-serif;
 }
-.dotted-line {
-  margin-top: 2px;
-  flex-grow: 1;
-  border-bottom: 1px dashed #bbb;
-  margin-left: 10px;
-  padding-top: 25px;
-}
 .product-price{
-  margin-top: 2px;
+  margin-top: 12px;
   color: #212529;
   position: relative;
   padding-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   z-index: 3;
   font-family: Lora, sans-serif;
   font-weight: 700;
