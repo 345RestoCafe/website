@@ -1,8 +1,10 @@
 <template>
-  <div class="navbar">
-    <a class="logo-img" href="#">
-      <img class="logo-img" src="https://i.imgur.com/LRb0Ub2.png" title="source: imgur.com" />
-    </a>
+  <div :class="['navbar', { 'navbar-fixed': isHeaderHidden }]">
+    <div class="navbar-brand">
+      <a class="logo-img" href="#">
+        <img class="logo-img" src="https://i.imgur.com/LRb0Ub2.png" title="source: imgur.com" />
+      </a>
+    </div>
 
     <button class="menu-button" @click="toggleMenu" aria-label="Menu button">
       &#9776;
@@ -17,7 +19,6 @@
       >
         Inicio
       </button>
-
       <button
           class="nav-button"
           aria-label="About us button"
@@ -26,7 +27,6 @@
       >
         Nosotros
       </button>
-
       <button
           class="nav-button"
           aria-label="Our menu button"
@@ -35,7 +35,6 @@
       >
         La Carta
       </button>
-
       <button
           class="nav-button"
           aria-label="Events button"
@@ -44,7 +43,6 @@
       >
         Eventos
       </button>
-
       <button
           class="nav-button"
           aria-label="Contact button"
@@ -60,6 +58,12 @@
 <script>
 export default {
   name: "NavigationButtons",
+  props: {
+    isHeaderHidden: {
+      type: Boolean,
+      required: true,
+    },
+  },
   data() {
     return {
       actualView: "/",
@@ -80,48 +84,73 @@ export default {
 </script>
 
 <style scoped>
+.navbar-brand {
+  padding: 0;
+  width: auto;
+  flex: none;
+  position: relative;
+  display: block;
+  margin-right: 40px;
+}
 .logo-img{
   height: 100px;
-  padding-right: 50px;
 }
 .navbar{
-  top: 0;
-  position: absolute;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   font-weight: 300;
-  height: 130px;
+  height: 100%;
+  max-height: 180px;
   justify-content: center;
-  padding-top: 60px;
   width: 100%;
+  z-index: 1001;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-fixed {
+  position: fixed;
+  max-height: 140px;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
 
 .nav-button{
-  font-family: Lora, sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  font-family: "Lora", sans-serif;
   font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #444444;
   background-color: transparent;
   position: relative;
-  margin: 2.1em .4em;
+  margin: 1.8em .4em;
+  padding: 10px 12px;
   border: none;
   width: auto;
   max-height: 40px;
-  padding-top: 10px;
+  cursor: pointer;
 }
 .nav-button::after{
   content:"";
   position: absolute;
   width: 0;
   height: 3px;
-  background-color: #cb9755;
+  color: #cb9755;
   bottom: 0;
   left: 0;
   transition: width 0.1s ease-in;
 }
 .nav-button:hover::after{
   width: 100%;
+  color: #cb9755;
 }
 .nav-button:hover{
   transition-duration: 150ms;
@@ -132,6 +161,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 3px;
+  color: #cb9755;
   background-color: #cb9755;
   bottom: 0;
   left: 0;
@@ -151,27 +181,36 @@ export default {
   margin-left: 200px;
 }
 
-@media (max-width: 1066px) {
+@media (max-width: 1125px) {
   .navbar {
     padding-top: 110px;
+    max-height: 240px;
   }
-  .logo-img{
-    padding-right: 10px;
+  .navbar-fixed {
+    top:0;
+    padding-top: 30px;
+    max-height: 150px;
   }
 }
 
-@media (max-width: 707px) {
+@media (max-width: 800px) {
   .nav-button{
     font-size: 0.8em;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 670px) {
   .logo-img {
-    height: 50px;
+    height: 60px;
   }
   .menu-button {
     display: block;
+  }
+  .navbar {
+    max-height: 190px;
+  }
+  .navbar-fixed {
+    max-height: 120px;
   }
 
   .nav-links {
@@ -180,12 +219,16 @@ export default {
     flex-direction: column;
     width: 100%;
     position: fixed;
-    top: 130px;
+    top: 150px;
     left: 0;
     background-color: #000;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+  .navbar-fixed .nav-links {
+    top: 60px
+  }
+
   .nav-links.nav-active {
     display: flex;
   }

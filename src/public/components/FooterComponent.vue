@@ -143,7 +143,7 @@ i{
 .right-row {
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 250px;
   font-size: 1em;
   line-height: 24px;
   text-transform: none;
@@ -166,7 +166,7 @@ i{
   color: #999999;
   border: none;
   font-family: Popins, sans-serif;
-  width: 60px;
+  width: 80px;
   text-align: right;
 }
 .nav-button:hover {

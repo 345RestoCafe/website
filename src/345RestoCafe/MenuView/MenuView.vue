@@ -1,56 +1,46 @@
 <template>
+  <div class="separator">
+    <div class="overlay">
+      <div class="breadcrumb">
+        <a href="https://345restocafe.com/">HOME</a> &gt; <a href="#">LA CARTA</a>
+      </div>
+      <h1 class="separator-title">La Carta</h1>
+    </div>
+  </div>
   <div class="view-container">
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Ensaladas a la Carta" :products="ensaladas" />
+    <div class="divider">
+      <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1920 116"
+          preserveAspectRatio="none"
+      >
+        <path
+            fill="#FFF"
+            d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
+              c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
+              c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z"
+        />
+        <rect y="90" fill="#FFF" width="1920" height="26"></rect>
+      </svg>
     </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Sandwiches" :products="sandwiches" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Platos a la Carta" :products="platos" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Desayunos" :products="desayunos" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Piqueos" :products="piqueos" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Postres" :products="postres" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Infusiones" :products="infusiones" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Café" :products="cafe" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Frappés" :products="frappes" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Bebidas Frías" :products="bebidas" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Licores" :products="licores" />
-    </div>
-    <div class="container-par">
-      <CategoryCardComponent class="par" title="Cervezas" :products="cervezas" />
-      <img class="product-image" src="../../../public/a.png">
-    </div>
-    <div class="container-impar">
-      <img class="product-image" src="../../../public/a.png">
-      <CategoryCardComponent class="impar" title="Jugos" :products="jugos" />
+    <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
+      <div class="category-image">
+        <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
+      </div>
+      <CategoryCardComponent
+          :title="category.title"
+          :products="category.products"
+          :index="index"
+          v-if="category.title === 'MENU DE LA SEMANA'"
+          :menu_date="menu_date" />
+      <CategoryCardComponent
+          v-else
+          :title="category.title"
+          :products="category.products"
+          :index="index"
+          :menu_date="[]" />
     </div>
   </div>
 </template>
@@ -65,46 +55,55 @@ export default {
   },
   data() {
     return {
+      menu: [
+        { name: "Lenteja con pollo saltado", description: "Ensalada fresca", price: 20},
+        { name: "Pulpa de brazuelo al horno", description: "Ensalada Waldorf", price: 20},
+        { name: "Fetuccini al pesto con bistec apanado", description: "Pan al ajo", price: 20},
+        { name: "Pollo al horno", description: "Ensalada rusa", price: 20},
+        { name: "Ají de Gallina", description: "Consomé de verduras", price: 20},
+      ],
       ensaladas: [
-        { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 20},
-        { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 20},
-        { name: "Ensalada 345", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 20},
-        { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 20},
-        { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 20},
-        { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 20},
+        { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
+        { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
+        { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
+        { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
+        { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
+        { name: "Ensalada 345", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
         { name: "Ensalada de frutas", description: "", price: 20}
       ],
       sandwiches: [
-        { name: "Pollo", description: "Pan ciabatta, pollo deshilachado y lechuga, acompañado de nuestra mayonesa de la casa.", price: 9 },
-        { name: "Mixto", description: "Pan de molde, jamón inglés y queso Edam.", price: 10 },
+        { name: "Pollo", description: "Pan ciabatta, pollo deshilachado y lechuga, acompañado de nuestra mayonesa de la casa.", price: 10 },
+        { name: "Mixto", description: "Pan de molde, jamón inglés y queso Edam.", price: 12 },
         { name: "Jamón Ahumado", description: "Pan ciabatta, jamón ahumado y lechuga, acompañado de nuestra mayonesa de la casa.", price: 12 },
-        { name: "Triple Caliente de Pollo", description: "Pan de molde, pollo deshilachado, queso y jamón.", price: 12 },
+        { name: "Triple Caliente de Pollo", description: "Pan de molde, pollo deshilachado, queso y jamón.", price: 15 },
         { name: "Triple Caliente con Huevo", description: "Pan de molde, jamón, queso y huevo frito.", price: 12 },
         { name: "Bondiola", description: "Pan ciabatta, bondiola al horno y lechuga, acompañado de nuestra mayonesa de la casa y salsa criolla.", price: 14 },
-        { name: "Pollo con palta", description: "Pan ciabatta,pollo deshilachado, con mayonesa y palta en láminas.", price: 12 },
-        { name: "Triple de Palta, Tomate y Huevo", description: "Tres capas de pan de molde , acompañadas de palta tomate y huevo.", price: 12 },
+        { name: "Pollo con palta", description: "Pan ciabatta,pollo deshilachado, con mayonesa y palta en láminas.", price: 13 },
+        { name: "Triple de Palta, Tomate y Huevo", description: "Tres capas de pan de molde , acompañadas de palta tomate y huevo.", price: 13 },
         { name: "Roast Beef", description: "Pan ciabatta, roast beef, lechuga, queso edam y mayonesa.", price: 16 },
-        { name: "Suprema", description: "Pan ciabatta, suprema de pollo con mayonesa, lechuga, tomate y palta.", price: 12 }
+        { name: "Suprema", description: "Pan ciabatta, suprema de pollo con mayonesa, lechuga, tomate y palta.", price: 14 }
       ],
       platos: [
-        { name: "Dieta de pollo - Sopa*", description: "", price: 15 },
-        { name: "Milanesa de res con papas doradas", description: "", price: 25 },
-        { name: "Bistec a lo pobre", description: "", price: 25 },
-        { name: "Bistec con papas doradas", description: "", price: 25 },
-        { name: "Bondiola con papas y ensalada*", description: "", price: 25 },
-        { name: "Lomo saltado", description: "", price: 25 },
+        { name: "Dieta de pollo - Sopa", description: "Sujeto a disponibilidad", price: 15 },
+        { name: "Bondiola con papas y ensalada", description: "Sujeto a disponibilidad", price: 25 },
         { name: "Filete de pollo a la plancha", description: "", price: 25 },
-        { name: "Fettuccini al pesto con apanado", description: "", price: 25 },
+        { name: "Fettuccini al alfredo", description: "", price: 25 },
+        { name: "Bistec con papas doradas", description: "", price: 25 },
+        { name: "Milanesa de res con papas doradas", description: "", price: 27 },
         { name: "Fettuccini al pesto bistec flambeado", description: "", price: 25 },
-        { name: "Tacu Tacu con bistec encebollado o apanado", description: "", price: 25 },
-        { name: "Tacu Tacu con lomito al jugo", description: "", price: 25 },
+        { name: "Fettuccini al pesto con apanado", description: "", price: 27 },
+        { name: "Bistec a lo pobre", description: "", price: 27 },
+        { name: "Lomo saltado", description: "", price: 27 },
+        { name: "Lomo saltado a lo pobre", description: "", price: 29 },
+        { name: "Tacu Tacu con lomito al jugo", description: "", price: 27 },
+        { name: "Tacu Tacu con apanado", description: "", price: 29 },
         { name: "Porción de papas doradas o fritas", description: "", price: 5 },
         { name: "Porción de arroz", description: "", price: 5 },
         { name: "Porción de huevo frito", description: "", price: 3 },
       ],
       desayunos: [
-        { name: "Desayuno 345", description: "Sandwich mixto o de pollo + café americano", price: 12 },
-        { name: "Desayuno 345 con jugo", description: "Sandwich mixto o de pollo + jugo a elección", price: 14 },
+        { name: "Desayuno 345", description: "Sandwich mixto o de pollo + café americano", price: 14 },
+        { name: "Desayuno 345 con jugo", description: "Sandwich mixto o de pollo + jugo a elección", price: 16 },
         { name: "Omelette simple", description: "", price: 10 },
         { name: "Omelette con adicionales", description: "", price: 14 },
         { name: "Huevos revueltos con jamón + palta", description: "", price: 12 },
@@ -132,26 +131,23 @@ export default {
         { name: "Ronda de piqueos - canapés de guacamole con langostinos 16u", description: "", price: 50 },
       ],
       postres: [
-        { name: "Pye de Limón", description: "", price: 10 },
-        { name: "Pye de Maracuya*", description: "", price: 10 },
-        { name: "Torta de Chocolate", description: "", price: 10 },
-        { name: "Cheesecake de fresa*", description: "", price: 10 },
-        { name: "Cheesecake de arandanos*", description: "", price: 10 },
-        { name: "Cheesecake de maracuya*", description: "", price: 10 },
-        { name: "Suspiro a la Limeña*", description: "", price: 10 },
-        { name: "Mousse de maracuyá*", description: "", price: 8 },
-        { name: "Crocante de manzana", description: "", price: 8 },
-        { name: "Crema volteada", description: "", price: 8 },
-        { name: "Keke de plátano con ganage de chocolate", description: "", price: 7 },
-        { name: "Keke de plátano", description: "", price: 6 },
-        { name: "Carrot cake", description: "", price: 7 },
-        { name: "Keke de zanahoria", description: "", price: 6 },
+        { name: "Trufa de chocolate", description: "", price: 3 },
+        { name: "Macarrón con buttercream", description: "", price: 3 },
         { name: "Galleta chocochips", description: "", price: 4 },
         { name: "Brownie", description: "", price: 4 },
         { name: "Alfajor", description: "", price: 4 },
-        { name: "Macarrón con buttercream", description: "", price: 3 },
-        { name: "Trufa de chocolate", description: "", price: 3.50 },
-        { name: "Cuchareable", description: "", price: 10 }
+        { name: "Crema volteada", description: "", price: 8 },
+        { name: "Keke de plátano", description: "", price: 7 },
+        { name: "Keke de plátano con ganage de chocolate", description: "", price: 8 },
+        { name: "Keke de zanahoria", description: "", price: 7 },
+        { name: "Carrot cake", description: "", price: 8 },
+        { name: "Suspiro a la Limeña", description: "", price: 10 },
+        { name: "Crocante de manzana", description: "", price: 10 },
+        { name: "Pye de Limón", description: "", price: 10 },
+        { name: "Cuchareable", description: "Consultar por disponibilidad de variaciones", price: 10 },
+        { name: "Torta de Chocolate", description: "", price: 12 },
+        { name: "Cheesecake", description: "Consultar por disponibilidad de sabores", price: 12 },
+        { name: "New York Cheesecake", description: "", price: 15 }
       ],
       infusiones: [
         { name: "Té de canela y clavo", description: "", price: 6 },
@@ -161,16 +157,14 @@ export default {
         { name: "Anís", description: "", price: 6 },
       ],
       cafe: [
-        { name: "Cortado", description: "", price: 7 },
-        { name: "Café americano", description: "", price: 6 },
-        { name: "Café con leche", description: "", price: 8 },
-        { name: "Espresso", description: "", price: 5 },
-        { name: "Espresso Doble", description: "", price: 8 },
-        { name: "Latte", description: "", price: 8 },
-        { name: "Cappuccino", description: "", price: 8 },
-        { name: "Mocaccino", description: "", price: 10 },
-        { name: "Chocolate Caliente", description: "", price: 10 },
-        { name: "Espresso cortado", description: "", price: 6 },
+        { name: "Café americano", description: "", price: 7 },
+        { name: "Espresso", description: "", price: 7 },
+        { name: "Espresso Doble", description: "", price: 9 },
+        { name: "Café con leche", description: "", price: 9 },
+        { name: "Latte", description: "", price: 9 },
+        { name: "Cappuccino", description: "", price: 9 },
+        { name: "Mocaccino", description: "", price: 12 },
+        { name: "Chocolate Caliente", description: "", price: 12 },
         { name: "Adicional de leche", description: "", price: 2},
       ],
       frappes: [
@@ -182,99 +176,201 @@ export default {
         { name: "Adicional de crema chantilli", description: "", price: 2 },
       ],
       bebidas: [
+        { name: "Agua San Mateo sin gas", description: "", price: 3 },
+        { name: "Agua San Mateo con gas", description: "", price: 3 },
         { name: "Coca Cola 600 ml", description: "", price: 4 },
         { name: "Inca Kola 600 ml", description: "", price: 4 },
         { name: "Fanta 600 ml", description: "", price: 4 },
         { name: "Sprite 600 ml", description: "", price: 4 },
-        { name: "Frugos del valle 286 ml", description: "", price: 3 },
-        { name: "Agua San Luis limón 625 ml", description: "", price: 4 },
-        { name: "Agua San Luis piña + kion 625 ml", description: "", price: 4 },
-        { name: "Agua San Mateo sin gas", description: "", price: 3 },
-        { name: "Agua San Mateo con gas", description: "", price: 3 },
-        { name: "Emoliente 1 litro", description: "", price: 10 },
-        { name: "Maracuyá 1 litro", description: "", price: 10 },
-        { name: "Chicha Morada 1 litro", description: "", price: 10 },
-        { name: "Limonada frozen 1 litro", description: "", price: 12 },
+        { name: "Vaso de refresco del día", description: "", price: 5 },
         { name: "Vaso de Limonada", description: "", price: 7 },
-        { name: "Indian tonic water britvic", description: "", price: 8 },
-        { name: "Limonada 1 litro", description: "", price: 10 },
+        { name: "Limonada 1 litro", description: "", price: 15 },
+        { name: "Emoliente 1 litro", description: "", price: 15 },
+        { name: "Maracuyá 1 litro", description: "", price: 15 },
+        { name: "Chicha Morada 1 litro", description: "", price: 15 },
+        { name: "Limonada frozen 1 litro", description: "", price: 18 },
       ],
       licores: [
+        { name: "Copa de vino", description: "", price: 15 },
         { name: "Cuba Libre", description: "", price: 18 },
         { name: "Chilcano de maracuya", description: "", price: 18 },
         { name: "Chilcano clásico", description: "", price: 18 },
-        { name: "Whisky etiqueta roja", description: "", price: 20 },
-        { name: "Whisky etiqueta negra", description: "", price: 24 },
-        { name: "Pisco Sour", description: "", price: 20 },
-        { name: "345", description: "", price: 18 },
         { name: "Algarrobina", description: "", price: 18 },
         { name: "Baileys", description: "", price: 18 },
-        { name: "Copa de vino", description: "", price: 15 },
         { name: "Tequila José Cuervo", description: "", price: 18 },
+        { name: "Pisco Sour", description: "", price: 20 },
+        { name: "345", description: "", price: 20 },
+        { name: "Whisky etiqueta roja", description: "", price: 20 },
+        { name: "Whisky etiqueta negra", description: "", price: 24 },
         { name: "Descorche de vino", description: "", price: 25 },
       ],
       cervezas: [
-        { name: "Henineken 300ml", description: "", price: 12 },
-        { name: "Corona 355ml", description: "", price: 12 },
-        { name: "Cusqueña Dorada 310ml", description: "", price: 10 },
+        { name: "Henineken", description: "", price: 12 },
+        { name: "Corona", description: "", price: 12 },
+        { name: "Cusqueña Dorada", description: "", price: 10 },
+        { name: "Pilsen", description: "", price: 10 },
       ],
       jugos: [
-        { name: "Jugo de papaya", description: "", price: 10 },
-        { name: "Jugo de piña", description: "", price: 10 },
-        { name: "Jugo de fresa", description: "", price: 10 },
-        { name: "Jugo de melón", description: "", price: 10 },
-        { name: "Jugo surtido", description: "", price: 10 },
+        { name: "Jugo de papaya", description: "", price: 12 },
+        { name: "Jugo de piña", description: "", price: 12 },
+        { name: "Jugo de fresa", description: "", price: 12 },
+        { name: "Jugo de melón", description: "", price: 12 },
+        { name: "Jugo surtido", description: "", price: 12 },
         { name: "Adicional de leche", description: "", price: 2 },
       ],
+      menu_date: [
+        { day: "Lunes", date: "6/1"},
+        { day: "Martes", date: "7/1"},
+        { day: "Miércoles", date: "8/1"},
+        { day: "Jueves", date: "9/1"},
+        { day: "Viernes", date: "10/1"},
+      ]
     };
   },
+  created() {
+    this.categories = [
+      { title: 'MENU DE LA SEMANA', products: this.menu, image: '../../../public/menu/Menu.jpg'},
+      { title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: '../../../public/menu/Ensaladas.jpeg' },
+      { title: 'SANDWICHES', products: this.sandwiches, image: '../../../public/menu/Sandwiches.jpg' },
+      { title: 'PLATOS A LA CARTA', products: this.platos, image: '../../../public/menu/Platos.jpg' },
+      { title: 'DESAYUNOS', products: this.desayunos, image: '../../../public/menu/Desayunos.jpg' },
+      { title: 'PIQUEOS', products: this.piqueos, image: '../../../public/menu/Piqueos.jpg' },
+      { title: 'POSTRES', products: this.postres, image: '../../../public/menu/Postres.jpg' },
+      { title: 'INFUSIONES', products: this.infusiones, image: '../../../public/menu/Infusiones.jpg' },
+      { title: 'CAFÉS', products: this.cafe, image: '../../../public/menu/Cafes.jpg' },
+      { title: 'FRAPPÉS', products: this.frappes, image: '../../../public/menu/Frappes.jpg' },
+      { title: 'BEBIDAS FRÍAS', products: this.bebidas, image: '../../../public/menu/Bebidas.jpg' },
+      { title: 'LICORES', products: this.licores, image: '../../../public/menu/Licores.jpg' },
+      { title: 'CERVEZAS', products: this.cervezas, image: '../../../public/menu/Cervezas.jpg' },
+      { title: 'JUGOS', products: this.jugos, image: '../../../public/menu/Jugos.jpg' }
+    ]
+  }
 };
 </script>
 
 <style scoped>
 .view-container {
-  padding-top: 200px;
-  padding-bottom: 100px;
-  min-width: 1000px;
+  margin-top: 100px;
+  min-width: 1050px;
   font-family: Popins, sans-serif;
   justify-self: center;
   justify-items: center;
+  justify-content: center;
 }
-.container-impar{
-  display: flex;
-  justify-content: left;
-  min-width: 1000px;
-  max-width: 1000px;
-  padding: 50px 0;
+
+.separator {
+  position: relative;
+  background-image: url("../../../public/menu/Menu-Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-height: 10px;
 }
-.container-par {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.breadcrumb {
+  padding: 80px 0 0 0;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-family: Lora, sans-serif;
+  color: #c19655;
+}
+.breadcrumb a {
+  text-shadow: none;
+  line-height: inherit;
+  color: #c19655;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.separator-title {
+  color: #ffffff;
+  font-size: 49px;
+  font-family: Lora, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.container{
   display: flex;
-  justify-content: right;
-  min-width: 1000px;
-  max-width: 1000px;
+  position: relative;
+  width: 100%;
+  justify-items: left;
+  margin-bottom: 100px;
+}
+.category-image{
+  position: absolute;
+  z-index: 1;
+}
+.container.even .category-image{
+  right: 0;
 }
 .product-image {
-  width: 500px;
+  width: 100%;
+  min-width: 500px;
+  max-width: 500px;
+  height: auto;
+  overflow: clip;
+  box-sizing: border-box;
+  box-shadow: 0 0 21px -5px rgba(0, 0, 0, 0.2);
+}
+
+.divider {
+  top: -145px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+.divider svg {
+  display: block;
+  width: 100%;
   height: auto;
 }
+.divider svg .path {
+  fill: #FFFFFF;
+}
 
-@media (max-width: 950px) {
+@media(max-width: 1100px) {
   .view-container {
-    width: 600px;
+    min-width: 275px;
+  }
+  .divider {
+    top: -125px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .product-image {
+    margin: 0;
+  }
+  .category-image {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
   }
 }
 
-@media (max-width: 578px) {
-  .view-container {
-    padding-top: 300px;
-    width: 350px;
-  }
-}
-
-@media (max-width: 578px) {
-  .view-container {
-    padding-top: 300px;
-    width: 350px;
-  }
-}
 </style>
