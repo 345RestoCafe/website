@@ -28,7 +28,6 @@ export default defineComponent({
 
 <style scoped>
 .view-container {
-  padding-top: 200px;
   padding-bottom: 100px;
   width: 100%;
   font-family: Popins, sans-serif;

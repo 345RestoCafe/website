@@ -5,17 +5,26 @@
         <a href="https://345restocafe.com/">HOME</a> &gt; <a href="#">LA CARTA</a>
       </div>
       <h1 class="separator-title">La Carta</h1>
-      <div class="divider">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 116" preserveAspectRatio="none">
-          <path fill="#FFF" d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
-            c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
-            c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z"/>
-          <rect y="90" fill="#FFF" width="1920" height="26"></rect>
-        </svg>
-      </div>
     </div>
   </div>
   <div class="view-container">
+    <div class="divider">
+      <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1920 116"
+          preserveAspectRatio="none"
+      >
+        <path
+            fill="#FFF"
+            d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
+              c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
+              c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z"
+        />
+        <rect y="90" fill="#FFF" width="1920" height="26"></rect>
+      </svg>
+    </div>
     <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
       <div class="category-image">
         <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
@@ -251,6 +260,7 @@ export default {
   font-family: Popins, sans-serif;
   justify-self: center;
   justify-items: center;
+  justify-content: center;
 }
 
 .separator {
@@ -262,7 +272,7 @@ export default {
   text-align: center;
   color: #ffffff;
   width: 100%;
-  max-height: 100px;
+  max-height: 10px;
 }
 .overlay {
   position: absolute;
@@ -271,6 +281,7 @@ export default {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 .breadcrumb {
   padding: 80px 0 0 0;
@@ -326,39 +337,21 @@ export default {
 }
 
 .divider {
-  padding: 30px 0;
+  top: -145px;
+  position: relative;
   width: 100%;
+  height: auto;
   overflow: hidden;
   line-height: 0;
+  z-index: 2;
 }
 .divider svg {
-  position: relative;
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
-.divider .path {
+.divider svg .path {
   fill: #FFFFFF;
 }
 
-
-@media (max-width: 950px) {
-  .view-container {
-    width: 600px;
-  }
-}
-
-@media (max-width: 578px) {
-  .view-container {
-    padding-top: 300px;
-    width: 350px;
-  }
-}
-
-@media (max-width: 578px) {
-  .view-container {
-    padding-top: 300px;
-    width: 350px;
-  }
-}
 </style>
