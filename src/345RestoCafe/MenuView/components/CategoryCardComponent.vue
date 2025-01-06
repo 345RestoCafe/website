@@ -153,4 +153,13 @@ li {
   justify-content: space-between;
   overflow-x: auto;
 }
+
+@media(max-width: 1100px) {
+  .product-card {
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 380px;
+  }
+}
 </style>

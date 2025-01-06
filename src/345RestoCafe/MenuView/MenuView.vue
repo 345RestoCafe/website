@@ -354,4 +354,28 @@ export default {
   fill: #FFFFFF;
 }
 
+@media(max-width: 1100px) {
+  .view-container {
+    min-width: 275px;
+  }
+  .divider {
+    top: -125px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .product-image {
+    margin: 0;
+  }
+  .category-image {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 </style>
