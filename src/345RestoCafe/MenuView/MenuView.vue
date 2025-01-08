@@ -140,7 +140,7 @@ export default {
         { name: "Keke de plátano", description: "", price: 7 },
         { name: "Keke de plátano con ganage de chocolate", description: "", price: 8 },
         { name: "Keke de zanahoria", description: "", price: 7 },
-        { name: "Carrot cake", description: "", price: 8 },
+        { name: "Carrot cake", description: "", price: 12 },
         { name: "Suspiro a la Limeña", description: "", price: 10 },
         { name: "Crocante de manzana", description: "", price: 10 },
         { name: "Pye de Limón", description: "", price: 10 },
