@@ -323,7 +323,7 @@ export default {
 }
 .product-image {
   width: 100%;
-  min-width: 500px;
+  min-width: 200px;
   max-width: 500px;
   height: auto;
   overflow: clip;
