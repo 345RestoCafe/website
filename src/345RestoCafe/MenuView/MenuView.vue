@@ -373,4 +373,10 @@ export default {
   }
 }
 
+@media(max-width: 430px) {
+  .divider {
+    top: -115px;
+  }
+}
+
 </style>
