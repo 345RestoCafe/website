@@ -159,7 +159,8 @@ li {
     top: 0;
     left: 0;
     margin: 0;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
   }
 }
 </style>

@@ -247,4 +247,15 @@ export default {
     transition: width 0.1s ease-in;
   }
 }
+
+@media (max-width: 430px) {
+  .logo-img {
+    height: 40px;
+  }
+
+  .menu-button {
+    margin: 5px 0 0 100px;
+  }
+}
+
 </style>
