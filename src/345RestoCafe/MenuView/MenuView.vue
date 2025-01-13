@@ -56,15 +56,15 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Lenteja con pollo saltado", description: "Ensalada fresca", price: 20},
-        { name: "Pulpa de brazuelo al horno", description: "Ensalada Waldorf", price: 20},
-        { name: "Fetuccini al pesto con bistec apanado", description: "Pan al ajo", price: 20},
-        { name: "Pollo al horno", description: "Ensalada rusa", price: 20},
-        { name: "Ají de Gallina", description: "Consomé de verduras", price: 20},
+        { name: "Olluquito y Cau Cau", description: "Salpicon de pollo", price: 20},
+        { name: "Pollo a la plancha con puré de papa", description: "Enrrolado de jamón con verduras", price: 20},
+        { name: "Frejol con seco de pollo", description: "Ensalada fresca", price: 20},
+        { name: "Fetuccini a la huancaina con lomo al jugo", description: "Tequeños de queso", price: 20},
+        { name: "Chuleta de bondiola con papa dorada", description: "Ensalada de verduras", price: 20},
       ],
       ensaladas: [
-        { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
-        { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
+        { name: "Ensalada tropical (De la semana)", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
+        { name: "Ensalada asiática (De la semana)", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
         { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
         { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
         { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
