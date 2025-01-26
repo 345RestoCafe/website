@@ -56,19 +56,19 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Olluquito y Cau Cau", description: "Salpicon de pollo", price: 20},
-        { name: "Pollo a la plancha con puré de papa", description: "Enrrolado de jamón con verduras", price: 20},
-        { name: "Frejol con seco de pollo", description: "Ensalada fresca", price: 20},
-        { name: "Fetuccini a la huancaina con lomo al jugo", description: "Tequeños de queso", price: 20},
-        { name: "Chuleta de bondiola con papa dorada", description: "Ensalada de verduras", price: 20},
+        { name: "Locro con bistec", description: "Salpicon de pollo", price: 20},
+        { name: "Arroz con Pollo", description: "Papa a la Huancaina", price: 20},
+        { name: "Brazuelo al horno", description: "Ensalada Primavera", price: 20},
+        { name: "Fetuccini al pesto con Milanesa de pollo", description: "Pan al ajo", price: 20},
+        { name: "Chuleta con papa dorada", description: "Ensalada fresca", price: 20},
       ],
       ensaladas: [
         { name: "Ensalada tropical (De la semana)", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
-        { name: "Ensalada asiática (De la semana)", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
+        { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
         { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
         { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
         { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
-        { name: "Ensalada 345", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
+        { name: "Ensalada 345 (De la semana)", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
         { name: "Ensalada de frutas", description: "", price: 20}
       ],
       sandwiches: [
@@ -123,12 +123,13 @@ export default {
         { name: "Ronda de piqueos - mix de mini chorizos", description: "", price: 40 },
         { name: "Ronda de piqueos - tequeños de jamón y queso 16u", description: "", price: 40 },
         { name: "Ronda de piqueos - mini hamburguesas 16u", description: "", price: 40 },
+        { name: "Ronda de piqueos - bolitas de queso 16u", description: "", price: 40 },
         { name: "Ronda de piqueos - mini croisants de jamón y queso 16u", description: "", price: 40 },
-        { name: "Ronda de piqueos - tabla de quesos", description: "Queso gouda, queso emmental, queso brie, salame, lomito ahumado, prosciuto, roast beef, mini tostadas, aceitunas y frutos", price: 70 },
-        { name: "Ronda de piqueos - bolitas de yuca con queso 16u", description: "", price: 40 },
         { name: "Ronda de piqueos - tapas de prosciuto con queso crema 16u", description: "", price: 50 },
         { name: "Langostinos al panko 16u", description: "", price: 50 },
         { name: "Ronda de piqueos - canapés de guacamole con langostinos 16u", description: "", price: 50 },
+        { name: "Charcuteria mediana - 4 PAX", description: "Queso gouda, queso emmental, salame, lomito ahumado, prosciuto, roast beef, mini tostadas, aceitunas, frutos secos y fescos", price: 100},
+        { name: "Charcuteria grande - 6 PAX", description: "Queso gouda, queso emmental, salame, lomito ahumado, prosciuto, roast beef, mini tostadas, aceitunas, frutos secos y fescos", price: 150}
       ],
       postres: [
         { name: "Trufa de chocolate", description: "", price: 3 },
@@ -234,7 +235,7 @@ export default {
       { title: 'SANDWICHES', products: this.sandwiches, image: '../../../public/menu/Sandwiches.jpg' },
       { title: 'PLATOS A LA CARTA', products: this.platos, image: '../../../public/menu/Platos.jpg' },
       { title: 'DESAYUNOS', products: this.desayunos, image: '../../../public/menu/Desayunos.jpg' },
-      { title: 'PIQUEOS', products: this.piqueos, image: '../../../public/menu/Piqueos.jpg' },
+      { title: 'PIQUEOS', products: this.piqueos, image: '../../../public/menu/Tablas.jpg' },
       { title: 'POSTRES', products: this.postres, image: '../../../public/menu/Postres.jpg' },
       { title: 'INFUSIONES', products: this.infusiones, image: '../../../public/menu/Infusiones.jpg' },
       { title: 'CAFÉS', products: this.cafe, image: '../../../public/menu/Cafes.jpg' },
