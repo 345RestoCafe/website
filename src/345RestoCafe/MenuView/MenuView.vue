@@ -220,11 +220,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "6/1"},
-        { day: "Martes", date: "7/1"},
-        { day: "Miércoles", date: "8/1"},
-        { day: "Jueves", date: "9/1"},
-        { day: "Viernes", date: "10/1"},
+        { day: "Lunes", date: "27/1"},
+        { day: "Martes", date: "28/1"},
+        { day: "Miércoles", date: "29/1"},
+        { day: "Jueves", date: "30/1"},
+        { day: "Viernes", date: "31/1"},
       ]
     };
   },
