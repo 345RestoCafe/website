@@ -56,16 +56,16 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Lentejas con bistec", description: "Ensalada con palta", price: 20},
-        { name: "Pollo al horno", description: "Ensalada rusa", price: 20},
-        { name: "Picante de carne", description: "Ensalada fresca", price: 20},
-        { name: "Arroz a la jardinera con chancho", description: "Ocopa", price: 20},
-        { name: "Milanesa de pollo", description: "Ensalada cocida", price: 20},
+        { name: "Arroz tapado", description: "Crema de verduras", price: 20},
+        { name: "Puré con pollo a la olla", description: "Ensalada fresca", price: 20},
+        { name: "Parrilla Bistec o filete de pollo con papas doradas arroz y ensalada", description: "", price: 20},
+        { name: "Seco de pollo con frejoles", description: "Enrollado de jamón", price: 20},
+        { name: "Lomo saltado", description: "ensalada de lechuga tomate y palta", price: 20},
       ],
       ensaladas: [
-        { name: "Ensalada tropical (De la semana)", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
+        { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
         { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
-        { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
+        { name: "Ensalada César (De la semana)", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
         { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
         { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
         { name: "Ensalada 345 (De la semana)", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
@@ -102,8 +102,8 @@ export default {
         { name: "Porción de huevo frito", description: "", price: 3 },
       ],
       desayunos: [
-        { name: "Desayuno 345", description: "Sandwich mixto o de pollo + café americano", price: 14 },
-        { name: "Desayuno 345 con jugo", description: "Sandwich mixto o de pollo + jugo a elección", price: 16 },
+        { name: "Desayuno 345 (Hasta las 10:30am)", description: "Sandwich mixto o de pollo + café americano", price: 14 },
+        { name: "Desayuno 345 con jugo (Hasta las 10:30am)", description: "Sandwich mixto o de pollo + jugo a elección", price: 16 },
         { name: "Omelette simple", description: "", price: 10 },
         { name: "Omelette con adicionales", description: "", price: 14 },
         { name: "Huevos revueltos con jamón + palta", description: "", price: 12 },
@@ -216,15 +216,17 @@ export default {
         { name: "Jugo de piña", description: "", price: 12 },
         { name: "Jugo de fresa", description: "", price: 12 },
         { name: "Jugo de melón", description: "", price: 12 },
+        { name: "Jugo de naranja", description: "", price: 12 },
         { name: "Jugo surtido", description: "", price: 12 },
+        { name: "Cremolada", description: "", price: 14 },
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "3/2"},
-        { day: "Martes", date: "4/2"},
-        { day: "Miércoles", date: "5/2"},
-        { day: "Jueves", date: "6/2"},
-        { day: "Viernes", date: "7/2"},
+        { day: "Lunes", date: "10/2"},
+        { day: "Martes", date: "11/2"},
+        { day: "Miércoles", date: "12/2"},
+        { day: "Jueves", date: "13/2"},
+        { day: "Viernes", date: "14/2"},
       ]
     };
   },
