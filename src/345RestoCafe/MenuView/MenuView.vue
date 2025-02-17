@@ -56,11 +56,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Arroz tapado", description: "Crema de verduras", price: 20},
-        { name: "Puré con pollo a la olla", description: "Ensalada fresca", price: 20},
-        { name: "Parrilla Bistec o filete de pollo con papas doradas arroz y ensalada", description: "", price: 20},
-        { name: "Seco de pollo con frejoles", description: "Enrollado de jamón", price: 20},
-        { name: "Lomo saltado", description: "ensalada de lechuga tomate y palta", price: 20},
+        { name: "Ají de pollo / Olluquito con carne", description: "Choclo con queso", price: 20},
+        { name: "Cancho al horno con ensalada cocida", description: "Bolitas de causa", price: 20},
+        { name: "Parrilla: Entraña, chuleta de bondiola o pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
+        { name: "Fetuccini al pesto con milanesa de pollo", description: "Pan al ajo", price: 20},
+        { name: "Bistec o filete de pollo con papas doradas", description: "Ensalada Fresca", price: 20},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -69,7 +69,7 @@ export default {
         { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
         { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
         { name: "Ensalada 345 (De la semana)", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
-        { name: "Ensalada de frutas", description: "", price: 20}
+        { name: "Ensalada de frutas", description: "", price: 16}
       ],
       sandwiches: [
         { name: "Pollo", description: "Pan ciabatta, pollo deshilachado y lechuga, acompañado de nuestra mayonesa de la casa.", price: 10 },
@@ -222,11 +222,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "10/2"},
-        { day: "Martes", date: "11/2"},
-        { day: "Miércoles", date: "12/2"},
-        { day: "Jueves", date: "13/2"},
-        { day: "Viernes", date: "14/2"},
+        { day: "Lunes", date: "17/2"},
+        { day: "Martes", date: "18/2"},
+        { day: "Miércoles", date: "19/2"},
+        { day: "Jueves", date: "20/2"},
+        { day: "Viernes", date: "21/2"},
       ]
     };
   },
