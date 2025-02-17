@@ -9,11 +9,11 @@
     <section class="about-section">
       <div class="about-us-image-gallery">
         <div class="about-us-large-image">
-          <img src="../../../public/home_view/About1.jpg" alt="Imagen Grande" />
+          <img src="../../../public/images/home_view/About1.jpg" alt="Imagen Grande" />
         </div>
         <div class="about-us-small-images">
-          <img src="../../../public/home_view/About2.jpg" alt="Imagen Pequeña 1" />
-          <img src="../../../public/home_view/About3.jpg" alt="Imagen Pequeña 2" />
+          <img src="../../../public/images/home_view/About2.jpg" alt="Imagen Pequeña 1" />
+          <img src="../../../public/images/home_view/About3.jpg" alt="Imagen Pequeña 2" />
         </div>
       </div>
       <div class="about-info">
@@ -51,7 +51,7 @@ export default defineComponent({
   min-height: 1000px;
   min-width: 0;
   width: 100%;
-  background-image: url("../../../public/home_view/banner-inicio01.jpg");
+  background-image: url("../../../public/images/home_view/banner-inicio01.jpg");
   align-content: center;
   justify-items: center;
 }

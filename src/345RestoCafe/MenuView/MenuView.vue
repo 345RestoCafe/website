@@ -260,7 +260,7 @@ export default {
 
 .separator {
   position: relative;
-  background-image: url("../../../public/menu/Menu-Banner.jpg");
+  background-image: url("../../../public/images/menu/Menu-Banner.jpg");
   background-size: cover;
   background-position: center;
   padding: 150px 0;

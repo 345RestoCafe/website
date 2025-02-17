@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="logo-container">
-      <img class="logo" src="../../../public/logo.png">
+      <img class="logo" src="../../../public/images/logo.png">
       <p class="title">Resto Café, Bar y Delivery</p>
     </div>
     <div class="info-container">
