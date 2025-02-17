@@ -45,7 +45,9 @@ export default {
 </script>
 
 <style scoped>
-
+.navbar{
+  transition: all 0.3s ease;
+}
 p {
   font-family: "Popins", sans-serif;
   font-size: 0.8em;
