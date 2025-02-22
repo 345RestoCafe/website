@@ -1,11 +1,25 @@
 <template>
-  <div class="view-container">
-    <section class="home_page">
-      <h1 class="title">345 Resto Café</h1>
-      <div class="view-menu">
-        <a class="view-menu-button" href="https://345restocafe.com/la-carta/" target="_self" data-type="button">VER CARTA</a>
+  <!-- Main title -->
+  <header class="bg-dark text-left d-flex align-items-center justify-content-center">
+    <div class="opacity-container">
+      <div class="container">
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-12">
+            <h1 class="text-primary m-5">345 Resto Café</h1>
+            <div class="mt-5">
+              <a type="button" class="btn btn-primary text-white p-4 pt-3 pb-3 mt-3" href="https://345restocafe.com/la-carta/" target="_self">VER CARTA</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </header>
+
+  <!-- About Us -->
+  <div class="container">
+    
+  </div>
+  <div class="view-container">
     <section class="about-section">
       <div class="about-us-image-gallery">
         <div class="about-us-large-image">
@@ -40,69 +54,32 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.view-container {
-  padding-bottom: 100px;
-  width: 100%;
-  font-family: Popins, sans-serif;
-  justify-self: center;
-  justify-items: center;
-}
-.home_page {
-  min-height: 1000px;
-  min-width: 0;
-  width: 100%;
+/* Main title */
+header {
   background-image: url("../../assets/images/home_view/banner-inicio01.jpg");
-  align-content: center;
-  justify-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
-.title {
+header h1 {
   font-family: "Times New Roman", sans-serif;
-  height: auto;
-  width: auto;
-  color: rgb(193, 150, 85);
-  white-space: nowrap;
-  text-align: left;
   line-height: 53px;
   letter-spacing: 0;
   font-weight: 400;
   font-size: 6rem;
-  backdrop-filter: none;
-  filter: none;
-  transform-origin: 50% 50%;
-  opacity: 1;
-  transform: translate(0px, 0px);
-  visibility: visible;
 }
-.view-menu {
- display: flex;
-}
-.view-menu-button {
-  z-index: 10;
+header a {
   font-family: "Lora", sans-serif;
-  background-color: rgba(193, 150, 85, 0.75);
   text-transform: uppercase;
-  height: auto;
-  width: auto;
   color: white;
   text-decoration: none;
-  white-space: nowrap;
-  min-height: 0;
-  min-width: 0;
-  max-height: none;
-  max-width: none;
-  text-align: left;
   line-height: 28px;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 25px;
-  padding: 20px 35px;
-  border-radius: 15px;
-  backdrop-filter: none;
-  filter: none;
-  transform-origin: 50% 50%;
-  opacity: 1;
-  transform: translate(0px, 0px);
-  visibility: visible;
+  font-size: 22px;
+  border-radius: 10px;
+  opacity: 0.85;
   border-width: 0;
 }
 
