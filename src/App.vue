@@ -61,9 +61,6 @@ html, body {
   flex-direction: column;
   min-height: 100vh;
 }
-.content {
-
-}
 .content.scrolled {
   padding-top: 160px;
 }
