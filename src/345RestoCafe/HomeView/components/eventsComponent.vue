@@ -59,37 +59,37 @@ const responsiveOptions = [
       </div>
       <div class="row mt-5 justify-content-center">
         <div class="col-md-4 justify-content-center align-self-center">
-          <div class="d-flex align-items-center mb-4">
+          <div class="d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
             <img src="../../../assets/images/home_view/icon1.png" alt="eventos" class="icon img-fluid align-self-center"/>
             <h6 class="m-2">Desayunos</h6>
           </div>
-          <div class="d-flex align-items-center mb-4">
+          <div class="d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
             <img src="../../../assets/images/home_view/icon2.png" alt="eventos" class="icon img-fluid"/>
             <h6 class="m-2">Catering para reuniones de trabajo</h6>
           </div>
-          <div class="d-flex align-items-center mb-4">
+          <div class="d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
             <img src="../../../assets/images/home_view/icon3.png" alt="eventos" class="icon img-fluid"/>
             <h6 class="m-2">Cocteles para eventos especiales</h6>
           </div>
-          <div class="d-flex align-items-center mb-md-0 mb-4">
+          <div class="d-flex align-items-center mb-md-0 mb-4 justify-content-md-start justify-content-center">
             <img src="../../../assets/images/home_view/icon4.png" alt="eventos" class="icon img-fluid"/>
             <h6 class="m-2">Eventos Especiales</h6>
           </div>
         </div>
         <div class="col-md-4 justify-content-center align-self-center">
-          <div class="d-flex align-items-center mb-4">
+          <div class="d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
             <img src="../../../assets/images/home_view/icon5.png" alt="eventos" class="icon img-fluid align-self-center"/>
             <h6 class="m-2">Almuerzos</h6>
           </div>
-          <div class="d-flex align-items-center mb-4">
+          <div class="d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
             <img src="../../../assets/images/home_view/icon6.png" alt="eventos" class="icon img-fluid"/>
             <h6 class="m-2">Coffee Break para eventos</h6>
           </div>
-          <div class="d-flex align-items-center mb-4">
+          <div class="d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
             <img src="../../../assets/images/home_view/icon7.png" alt="eventos" class="icon img-fluid"/>
             <h6 class="m-2">After Office (Jueves y viernes)</h6>
           </div>
-          <div class="d-flex align-items-center mb-md-0 mb-4">
+          <div class="d-flex align-items-center mb-md-0 mb-4 justify-content-md-start justify-content-center">
             <img src="../../../assets/images/home_view/icon8.png" alt="eventos" class="icon img-fluid"/>
             <h6 class="m-2">Cenas a pedido con programación</h6>
           </div>
@@ -108,7 +108,7 @@ const responsiveOptions = [
 <style scoped>
 .eventos {
   background-color: #ededed;
-  padding: 20px 0;
+  padding: 20px 0 60px 0;
 }
 h3{
   font-size: 22px;
