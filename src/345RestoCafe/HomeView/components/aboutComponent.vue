@@ -35,7 +35,7 @@ export default {
         <p class="text-light">
           Es un restaurante innovador y creativo que está orientado en ofrecer servicios gastronómicos de alta calidad con atención personalizada.
         </p>
-        <button type="button" class="btn-relief btn btn-dark">Ver más</button>
+        <a type="button" class="btn-relief btn btn-dark" href="https://345restocafe.com/nosotros" target="_self">Ver más</a>
       </div>
     </div>
   </section>

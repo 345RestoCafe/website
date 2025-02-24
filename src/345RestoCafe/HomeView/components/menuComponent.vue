@@ -29,7 +29,7 @@ export default {
         </div>
       </div>
       <div class="mt-5 mb-5 text-center">
-        <button type="button" class="btn-relief btn btn-dark">Ver Carta</button>
+        <a type="button" class="btn-relief btn btn-dark" href="https://345restocafe.com/la-carta" target="_self">Ver Carta</a>
       </div>
     </div>
   </section>

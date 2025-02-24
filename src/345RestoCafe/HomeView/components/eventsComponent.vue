@@ -99,7 +99,7 @@ const responsiveOptions = [
         </div>
       </div>
       <div class="mt-5 text-center">
-        <button type="button" class="btn-relief btn btn-dark">Ver Carta</button>
+        <a type="button" class="btn-relief btn btn-dark" href="https://345restocafe.com/eventos" target="_self">Ver más</a>
       </div>
     </div>
   </section>
