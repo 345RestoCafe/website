@@ -17,12 +17,12 @@ export default {
       ],
       ensaladas: [
         { name: "Ensalada tropical (De la semana)", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
-        { name: "Ensalada asiática (De la semana)", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
+        { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
         { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
         { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
         { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
-        { name: "Ensalada 345", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
-        { name: "Ensalada de frutas", description: "", price: 20}
+        { name: "Ensalada 345 (De la semana)", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
+        { name: "Ensalada de frutas", description: "", price: 16}
       ],
       sandwiches: [
         { name: "Pollo", description: "Pan ciabatta, pollo deshilachado y lechuga, acompañado de nuestra mayonesa de la casa.", price: 10 },
@@ -167,7 +167,9 @@ export default {
         { name: "Jugo de piña", description: "", price: 12 },
         { name: "Jugo de fresa", description: "", price: 12 },
         { name: "Jugo de melón", description: "", price: 12 },
+        { name: "Jugo de naranja", description: "", price: 12 },
         { name: "Jugo surtido", description: "", price: 12 },
+        { name: "Cremolada", description: "", price: 14 },
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
