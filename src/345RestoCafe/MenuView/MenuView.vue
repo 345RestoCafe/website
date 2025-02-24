@@ -1,50 +1,3 @@
-<template>
-  <div class="separator">
-    <div class="overlay">
-      <div class="breadcrumb">
-        <a href="https://345restocafe.com/">HOME</a> &gt; <a href="#">LA CARTA</a>
-      </div>
-      <h1 class="separator-title">La Carta</h1>
-    </div>
-  </div>
-  <div class="view-container">
-    <div class="divider">
-      <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 1920 116"
-          preserveAspectRatio="none"
-      >
-        <path
-            fill="#FFF"
-            d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
-              c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
-              c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z"
-        />
-        <rect y="90" fill="#FFF" width="1920" height="26"></rect>
-      </svg>
-    </div>
-    <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
-      <div class="category-image">
-        <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
-      </div>
-      <CategoryCardComponent
-          :title="category.title"
-          :products="category.products"
-          :index="index"
-          v-if="category.title === 'MENU DE LA SEMANA'"
-          :menu_date="menu_date" />
-      <CategoryCardComponent
-          v-else
-          :title="category.title"
-          :products="category.products"
-          :index="index"
-          :menu_date="[]" />
-    </div>
-  </div>
-</template>
-
 <script>
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 
@@ -229,24 +182,72 @@ export default {
   },
   created() {
     this.categories = [
-      { title: 'MENU DE LA SEMANA', products: this.menu, image: '../../../public/menu/Menu.jpg'},
-      { title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: '../../../public/menu/Ensaladas.jpeg' },
-      { title: 'SANDWICHES', products: this.sandwiches, image: '../../../public/menu/Sandwiches.jpg' },
-      { title: 'PLATOS A LA CARTA', products: this.platos, image: '../../../public/menu/Platos.jpg' },
-      { title: 'DESAYUNOS', products: this.desayunos, image: '../../../public/menu/Desayunos.jpg' },
-      { title: 'PIQUEOS', products: this.piqueos, image: '../../../public/menu/Piqueos.jpg' },
-      { title: 'POSTRES', products: this.postres, image: '../../../public/menu/Postres.jpg' },
-      { title: 'INFUSIONES', products: this.infusiones, image: '../../../public/menu/Infusiones.jpg' },
-      { title: 'CAFÉS', products: this.cafe, image: '../../../public/menu/Cafes.jpg' },
-      { title: 'FRAPPÉS', products: this.frappes, image: '../../../public/menu/Frappes.jpg' },
-      { title: 'BEBIDAS FRÍAS', products: this.bebidas, image: '../../../public/menu/Bebidas.jpg' },
-      { title: 'LICORES', products: this.licores, image: '../../../public/menu/Licores.jpg' },
-      { title: 'CERVEZAS', products: this.cervezas, image: '../../../public/menu/Cervezas.jpg' },
-      { title: 'JUGOS', products: this.jugos, image: '../../../public/menu/Jugos.jpg' }
+      { title: 'MENU DE LA SEMANA', products: this.menu, image: '../../assets/images/menu/Menu.jpg'},
+      { title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: '../../assets/images/menu/Ensaladas.jpeg' },
+      { title: 'SANDWICHES', products: this.sandwiches, image: '../../assets/images/menu/Sandwiches.jpg' },
+      { title: 'PLATOS A LA CARTA', products: this.platos, image: '../../assets/images/menu/Platos.jpg' },
+      { title: 'DESAYUNOS', products: this.desayunos, image: '../../assets/images/menu/Desayunos.jpg' },
+      { title: 'PIQUEOS', products: this.piqueos, image: '../../assets/images//menu/Piqueos.jpg' },
+      { title: 'POSTRES', products: this.postres, image: '../../assets/images/menu/Postres.jpg' },
+      { title: 'INFUSIONES', products: this.infusiones, image: '../../assets/images/Infusiones.jpg' },
+      { title: 'CAFÉS', products: this.cafe, image: '../../assets/images/Cafes.jpg' },
+      { title: 'FRAPPÉS', products: this.frappes, image: '../../assets/images/Frappes.jpg' },
+      { title: 'BEBIDAS FRÍAS', products: this.bebidas, image: '../../assets/images/Bebidas.jpg' },
+      { title: 'LICORES', products: this.licores, image: '../../assets/images/menu/Licores.jpg' },
+      { title: 'CERVEZAS', products: this.cervezas, image: '../../assets/images/menu/Cervezas.jpg' },
+      { title: 'JUGOS', products: this.jugos, image: '../../assets/images/menu/Jugos.jpg' }
     ]
   }
 };
 </script>
+<template>
+  <div class="separator">
+    <div class="overlay">
+      <div class="breadcrumb">
+        <a href="https://345restocafe.com/">HOME</a> &gt; <a href="#">LA CARTA</a>
+      </div>
+      <h1 class="separator-title">La Carta</h1>
+    </div>
+  </div>
+  <div class="view-container">
+    <div class="divider">
+      <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1920 116"
+          preserveAspectRatio="none"
+      >
+        <path
+            fill="#FFF"
+            d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
+              c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
+              c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z"
+        />
+        <rect y="90" fill="#FFF" width="1920" height="26"></rect>
+      </svg>
+    </div>
+    <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
+      <div class="category-image">
+        <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
+      </div>
+      <CategoryCardComponent
+          :title="category.title"
+          :products="category.products"
+          :index="index"
+          v-if="category.title === 'MENU DE LA SEMANA'"
+          :menu_date="menu_date" />
+      <CategoryCardComponent
+          v-else
+          :title="category.title"
+          :products="category.products"
+          :index="index"
+          :menu_date="[]" />
+    </div>
+  </div>
+</template>
+
+
 
 <style scoped>
 .view-container {

@@ -28,7 +28,7 @@ export default {
           </div>
         </div>
       </div>
-      <div class="mt-5 text-center">
+      <div class="mt-5 mb-5 text-center">
         <button type="button" class="btn-relief btn btn-dark">Ver Carta</button>
       </div>
     </div>
