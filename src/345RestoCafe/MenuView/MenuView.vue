@@ -1,50 +1,3 @@
-<template>
-  <div class="separator">
-    <div class="overlay">
-      <div class="breadcrumb">
-        <a href="https://345restocafe.com/">HOME</a> &gt; <a href="#">LA CARTA</a>
-      </div>
-      <h1 class="separator-title">La Carta</h1>
-    </div>
-  </div>
-  <div class="view-container">
-    <div class="divider">
-      <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 1920 116"
-          preserveAspectRatio="none"
-      >
-        <path
-            fill="#FFF"
-            d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
-              c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
-              c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z"
-        />
-        <rect y="90" fill="#FFF" width="1920" height="26"></rect>
-      </svg>
-    </div>
-    <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
-      <div class="category-image">
-        <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
-      </div>
-      <CategoryCardComponent
-          :title="category.title"
-          :products="category.products"
-          :index="index"
-          v-if="category.title === 'MENU DE LA SEMANA'"
-          :menu_date="menu_date" />
-      <CategoryCardComponent
-          v-else
-          :title="category.title"
-          :products="category.products"
-          :index="index"
-          :menu_date="[]" />
-    </div>
-  </div>
-</template>
-
 <script>
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 
@@ -56,16 +9,16 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Ají de pollo / Olluquito con carne", description: "Choclo con queso", price: 20},
-        { name: "Cancho al horno con ensalada cocida", description: "Bolitas de causa", price: 20},
-        { name: "Parrilla: Entraña, chuleta de bondiola o pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
-        { name: "Fetuccini al pesto con milanesa de pollo", description: "Pan al ajo", price: 20},
-        { name: "Bistec o filete de pollo con papas doradas", description: "Ensalada Fresca", price: 20},
+        { name: "Fetuccini con salsa de carne", description: "Consomé", price: 20},
+        { name: "Asado con puré", description: "Ensalada con palta", price: 20},
+        { name: "Pollo al cilindro", description: "", price: 20},
+        { name: "Lomo saltado", description: "Ensalada delicia", price: 20},
+        { name: "Milanesa de pollo con papas fritas", description: "Ensalada César", price: 20},
       ],
       ensaladas: [
-        { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
+        { name: "Ensalada tropical (De la semana)", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
         { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
-        { name: "Ensalada César (De la semana)", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
+        { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
         { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
         { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
         { name: "Ensalada 345 (De la semana)", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
@@ -102,34 +55,32 @@ export default {
         { name: "Porción de huevo frito", description: "", price: 3 },
       ],
       desayunos: [
-        { name: "Desayuno 345 (Hasta las 10:30am)", description: "Sandwich mixto o de pollo + café americano", price: 14 },
-        { name: "Desayuno 345 con jugo (Hasta las 10:30am)", description: "Sandwich mixto o de pollo + jugo a elección", price: 16 },
+        { name: "Desayuno 345 (Hasta las 10:30)", description: "Sandwich mixto o de pollo + café americano", price: 14 },
+        { name: "Desayuno 345 con jugo (Hasta las 10:30)", description: "Sandwich mixto o de pollo + jugo a elección", price: 16 },
         { name: "Omelette simple", description: "", price: 10 },
         { name: "Omelette con adicionales", description: "", price: 14 },
-        { name: "Huevos revueltos con jamón + palta", description: "", price: 12 },
-        { name: "2 huevos revueltos o fritos con 1 croissant*", description: "", price: 10 },
-        { name: "3 huevos fritos o revueltos con pan o tostadas", description: "", price: 11 },
-        { name: "Huevos revueltos con jamón + 2 unidades de tostadas o 1 pan", description: "", price: 10 },
-        { name: "Huevos fritos 2 unidades con tostadas o pan", description: "", price: 9 },
-        { name: "Huevos revueltos 2 unidades con tostadas o pan", description: "", price: 9 },
+        { name: "Dos Huevos fritos unidades", description: "Acompañado de 2 unidades de tostadas o 1 pan", price: 9 },
+        { name: "Tres huevos fritos o revueltos", description: "Acompañado de 2 unidades de tostadas o 1 pan", price: 11 },
+        { name: "Huevos revueltos", description: "Acompañado de 2 unidades de tostadas o 1 pan", price: 9 },
+        { name: "Huevos revueltos con jamón", description: "Acompañado de 2 unidades de tostadas o 1 pan", price: 10 },
+        { name: "Huevos revueltos con jamón y palta", description: "Acompañado de 2 unidades de tostadas o 1 pan", price: 12 },
         { name: "Palta con 2 unidades de tostadas o pan", description: "", price: 9 },
         { name: "Vaso de leche", description: "", price: 5 },
         { name: "Huevos revueltos", description: "", price: 5 },
         { name: "Adicional de palta", description: "", price: 5 },
       ],
       piqueos: [
-        { name: "Ronda de piqueos - mini mixtos 16 u", description: "", price: 35 },
-        { name: "Ronda de piqueos - mini sandwich de pollo 16u", description: "", price: 35 },
-        { name: "Ronda de piqueos - mix de mini chorizos", description: "", price: 40 },
-        { name: "Ronda de piqueos - tequeños de jamón y queso 16u", description: "", price: 40 },
-        { name: "Ronda de piqueos - mini hamburguesas 16u", description: "", price: 40 },
-        { name: "Ronda de piqueos - bolitas de queso 16u", description: "", price: 40 },
-        { name: "Ronda de piqueos - mini croisants de jamón y queso 16u", description: "", price: 40 },
-        { name: "Ronda de piqueos - tapas de prosciuto con queso crema 16u", description: "", price: 50 },
+        { name: "Mini mixtos 16 u", description: "", price: 35 },
+        { name: "Mini sandwich de pollo 16u", description: "", price: 35 },
+        { name: "Mix de mini chorizos", description: "", price: 40 },
+        { name: "Tequeños de jamón y queso 16u", description: "", price: 40 },
+        { name: "Mini hamburguesas 16u", description: "", price: 40 },
+        { name: "Mini croisants de jamón y queso 16u", description: "", price: 40 },
+        { name: "Tabla de quesos", description: "Queso gouda, queso emmental, queso brie, salame, lomito ahumado, prosciuto, roast beef, mini tostadas, aceitunas y frutos", price: 70 },
+        { name: "Bolitas de yuca con queso 16u", description: "", price: 40 },
+        { name: "Tapas de prosciuto con queso crema 16u", description: "", price: 50 },
         { name: "Langostinos al panko 16u", description: "", price: 50 },
-        { name: "Ronda de piqueos - canapés de guacamole con langostinos 16u", description: "", price: 50 },
-        { name: "Charcuteria mediana - 4 PAX", description: "Queso gouda, queso emmental, salame, lomito ahumado, prosciuto, roast beef, mini tostadas, aceitunas, frutos secos y fescos", price: 100},
-        { name: "Charcuteria grande - 6 PAX", description: "Queso gouda, queso emmental, salame, lomito ahumado, prosciuto, roast beef, mini tostadas, aceitunas, frutos secos y fescos", price: 150}
+        { name: "Canapés de guacamole con langostinos 16u", description: "", price: 50 },
       ],
       postres: [
         { name: "Trufa de chocolate", description: "", price: 3 },
@@ -141,7 +92,7 @@ export default {
         { name: "Keke de plátano", description: "", price: 7 },
         { name: "Keke de plátano con ganage de chocolate", description: "", price: 8 },
         { name: "Keke de zanahoria", description: "", price: 7 },
-        { name: "Carrot cake", description: "", price: 8 },
+        { name: "Carrot cake", description: "", price: 12 },
         { name: "Suspiro a la Limeña", description: "", price: 10 },
         { name: "Crocante de manzana", description: "", price: 10 },
         { name: "Pye de Limón", description: "", price: 10 },
@@ -222,77 +173,107 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "17/2"},
-        { day: "Martes", date: "18/2"},
-        { day: "Miércoles", date: "19/2"},
-        { day: "Jueves", date: "20/2"},
-        { day: "Viernes", date: "21/2"},
+        { day: "Lunes", date: "24/2"},
+        { day: "Martes", date: "25/2"},
+        { day: "Miércoles", date: "26/2"},
+        { day: "Jueves", date: "27/2"},
+        { day: "Viernes", date: "28/2"},
       ]
     };
   },
   created() {
+    const images = import.meta.glob('@/assets/images/menu/*', { eager: true, import: 'default' });
+
     this.categories = [
-      { title: 'MENU DE LA SEMANA', products: this.menu, image: '../../../public/menu/Menu.jpg'},
-      { title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: '../../../public/menu/Ensaladas.jpeg' },
-      { title: 'SANDWICHES', products: this.sandwiches, image: '../../../public/menu/Sandwiches.jpg' },
-      { title: 'PLATOS A LA CARTA', products: this.platos, image: '../../../public/menu/Platos.jpg' },
-      { title: 'DESAYUNOS', products: this.desayunos, image: '../../../public/menu/Desayunos.jpg' },
-      { title: 'PIQUEOS', products: this.piqueos, image: '../../../public/menu/Tablas.jpg' },
-      { title: 'POSTRES', products: this.postres, image: '../../../public/menu/Postres.jpg' },
-      { title: 'INFUSIONES', products: this.infusiones, image: '../../../public/menu/Infusiones.jpg' },
-      { title: 'CAFÉS', products: this.cafe, image: '../../../public/menu/Cafes.jpg' },
-      { title: 'FRAPPÉS', products: this.frappes, image: '../../../public/menu/Frappes.jpg' },
-      { title: 'BEBIDAS FRÍAS', products: this.bebidas, image: '../../../public/menu/Bebidas.jpg' },
-      { title: 'LICORES', products: this.licores, image: '../../../public/menu/Licores.jpg' },
-      { title: 'CERVEZAS', products: this.cervezas, image: '../../../public/menu/Cervezas.jpg' },
-      { title: 'JUGOS', products: this.jugos, image: '../../../public/menu/Jugos.jpg' }
-    ]
+      { title: 'MENU DE LA SEMANA', products: this.menu, image: images['/src/assets/images/menu/Menu.jpg'] },
+      { title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: images['/src/assets/images/menu/Ensaladas.jpg'] },
+      { title: 'SANDWICHES', products: this.sandwiches, image: images['/src/assets/images/menu/Sandwiches.jpg'] },
+      { title: 'PLATOS A LA CARTA', products: this.platos, image: images['/src/assets/images/menu/Platos.jpg'] },
+      { title: 'DESAYUNOS', products: this.desayunos, image: images['/src/assets/images/menu/Desayunos.jpg'] },
+      { title: 'PIQUEOS (segun disponibilidad)', products: this.piqueos, image: images['/src/assets/images/menu/Piqueos.jpg'] },
+      { title: 'POSTRES', products: this.postres, image: images['/src/assets/images/menu/Postres.jpg'] },
+      { title: 'INFUSIONES', products: this.infusiones, image: images['/src/assets/images/menu/Infusiones.jpg'] },
+      { title: 'CAFÉS', products: this.cafe, image: images['/src/assets/images/menu/Cafes.jpg'] },
+      { title: 'FRAPPÉS', products: this.frappes, image: images['/src/assets/images/menu/Frappes.jpg'] },
+      { title: 'BEBIDAS FRÍAS', products: this.bebidas, image: images['/src/assets/images/menu/Bebidas.jpg'] },
+      { title: 'LICORES', products: this.licores, image: images['/src/assets/images/menu/Licores.jpg'] },
+      { title: 'CERVEZAS', products: this.cervezas, image: images['/src/assets/images/menu/Cervezas.jpg'] },
+      { title: 'JUGOS', products: this.jugos, image: images['/src/assets/images/menu/Jugos.jpg'] }
+    ];
   }
+
 };
 </script>
 
-<style scoped>
-.view-container {
-  margin-top: 100px;
-  min-width: 1050px;
-  font-family: Popins, sans-serif;
-  justify-self: center;
-  justify-items: center;
-  justify-content: center;
-}
+<template>
+  <div>
+    <!-- Banner -->
+    <div class="separator position-relative text-white text-center">
+      <div class="overlay"></div>
+      <div class="position-relative z-1">
+        <nav class="breadcrumb justify-content-center">
+          <a class="" href="https://345restocafe.com/">HOME</a>
+          <i class="pi pi-angle-right mx-2 mt-1"/>
+          <a class="" href="#">LA CARTA</a>
+        </nav>
+        <h1 class="separator-title">La Carta</h1>
+      </div>
+    </div>
 
+    <!-- Wave Divider -->
+    <div class="divider">
+      <svg viewBox="0 0 1920 116" preserveAspectRatio="none">
+        <path fill="#FFF" d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
+          c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
+          c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z" />
+      </svg>
+    </div>
+
+    <!-- Categorías -->
+    <div class="container">
+      <div class="row mb-5 justify-content-center" v-for="(category, index) in categories" :key="index">
+        <!-- Imagen -->
+        <div class="col-md-6 text-center my-5 image"
+             :class="{ 'even': index % 2 === 1, 'order-md-2': index % 2 === 0 }">
+          <img :src="category.image" :alt="category.title" class="img-fluid shadow rounded">
+        </div>
+
+        <!-- Tarjeta de categoría (se sobrepone a la imagen) -->
+        <div class="col-md-6 my-5"
+             :class="{ 'order-md-1': index % 2 === 0, 'order-md-2': index % 2 === 1 }">
+          <div class="overlay-card">
+            <CategoryCardComponent
+                :title="category.title"
+                :products="category.products"
+                :index="index"
+                :menu_date="category.title === 'MENU DE LA SEMANA' ? menu_date : []"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
 .separator {
-  position: relative;
-  background-image: url("../../../public/menu/Menu-Banner.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../../assets/images/menu/Menu-Banner.jpg") center/cover no-repeat;
   padding: 150px 0;
-  text-align: center;
-  color: #ffffff;
-  width: 100%;
-  max-height: 10px;
 }
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  inset: 0;
+  background-color: rgba(34, 34, 34, 0.8);
 }
 .breadcrumb {
-  padding: 80px 0 0 0;
   font-size: 20px;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   font-weight: 400;
   margin-bottom: 10px;
-  font-family: Lora, sans-serif;
   color: #c19655;
+  font-family: Lora, sans-serif;
 }
 .breadcrumb a {
-  text-shadow: none;
-  line-height: inherit;
   color: #c19655;
   text-decoration: none;
 }
@@ -300,86 +281,31 @@ export default {
   text-decoration: underline;
 }
 .separator-title {
-  color: #ffffff;
   font-size: 49px;
-  font-family: Lora, sans-serif;
-  letter-spacing: 1px;
   font-weight: 700;
-  margin: 0;
-  padding: 10px 20px;
-  display: inline-block;
 }
-
-.container{
-  display: flex;
-  position: relative;
-  width: 100%;
-  justify-items: left;
-  margin-bottom: 100px;
-}
-.category-image{
-  position: absolute;
-  z-index: 1;
-}
-.container.even .category-image{
-  right: 0;
-}
-.product-image {
-  width: 100%;
-  min-width: 200px;
-  max-width: 500px;
-  height: auto;
-  overflow: clip;
-  box-sizing: border-box;
-  box-shadow: 0 0 21px -5px rgba(0, 0, 0, 0.2);
-}
-
 .divider {
-  top: -145px;
   position: relative;
+  top: -100px;
   width: 100%;
-  height: auto;
   overflow: hidden;
-  line-height: 0;
-  z-index: 2;
 }
 .divider svg {
   display: block;
   width: 100%;
-  height: auto;
 }
-.divider svg .path {
-  fill: #FFFFFF;
+.image {
+  position: relative;
+  left: -100px;
 }
-
-@media(max-width: 1100px) {
-  .view-container {
-    min-width: 275px;
-  }
-  .divider {
-    top: -125px;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .product-image {
-    margin: 0;
-  }
-  .category-image {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-  }
+.image.even{
+  left: 100px;
 }
 
-@media(max-width: 430px) {
-  .divider {
-    top: -115px;
+@media (max-width: 768px) {
+  .separator {
+    padding: 100px 0;
   }
 }
-
 </style>
+
