@@ -201,96 +201,67 @@ export default {
 };
 </script>
 <template>
-  <div class="separator">
-    <div class="overlay">
-      <div class="breadcrumb">
-        <a href="https://345restocafe.com/">HOME</a> &gt; <a href="#">LA CARTA</a>
+  <div>
+    <!-- Banner -->
+    <div class="separator position-relative text-white text-center">
+      <div class="overlay"></div>
+      <div class="position-relative z-1">
+        <nav class="breadcrumb">
+          <a href="https://345restocafe.com/">HOME</a> &gt; <a href="#">LA CARTA</a>
+        </nav>
+        <h1 class="separator-title">La Carta</h1>
       </div>
-      <h1 class="separator-title">La Carta</h1>
     </div>
-  </div>
-  <div class="view-container">
+
+    <!-- Wave Divider -->
     <div class="divider">
-      <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 1920 116"
-          preserveAspectRatio="none"
-      >
-        <path
-            fill="#FFF"
-            d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
-              c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
-              c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z"
-        />
-        <rect y="90" fill="#FFF" width="1920" height="26"></rect>
+      <svg viewBox="0 0 1920 116" preserveAspectRatio="none">
+        <path fill="#FFF" d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
+          c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
+          c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z" />
       </svg>
     </div>
-    <div v-for="(category, index) in categories" :key="index" :class="['container', { even: index % 2 === 1 }]">
-      <div class="category-image">
-        <img :src="category.image" :alt="category.title" :title="category.title" class="product-image"/>
+
+    <!-- Categorías -->
+    <div class="container my-5">
+      <div class="row align-items-center mb-5" v-for="(category, index) in categories" :key="index">
+        <!-- Imagen -->
+        <div class="col-md-6" :class="{ 'order-md-last': index % 2 === 1 }">
+          <img :src="category.image" :alt="category.title" class="img-fluid shadow rounded">
+        </div>
+
+        <!-- Tarjeta de categoría -->
+        <div class="col-md-6">
+          <CategoryCardComponent
+              :title="category.title"
+              :products="category.products"
+              :index="index"
+              :menu_date="category.title === 'MENU DE LA SEMANA' ? menu_date : []"
+          />
+        </div>
       </div>
-      <CategoryCardComponent
-          :title="category.title"
-          :products="category.products"
-          :index="index"
-          v-if="category.title === 'MENU DE LA SEMANA'"
-          :menu_date="menu_date" />
-      <CategoryCardComponent
-          v-else
-          :title="category.title"
-          :products="category.products"
-          :index="index"
-          :menu_date="[]" />
     </div>
   </div>
 </template>
 
-
-
 <style scoped>
-.view-container {
-  margin-top: 100px;
-  min-width: 1050px;
-  font-family: Popins, sans-serif;
-  justify-self: center;
-  justify-items: center;
-  justify-content: center;
-}
-
 .separator {
-  position: relative;
-  background-image: url("../../assets/images/menu/Menu-Banner.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../../assets/images/menu/Menu-Banner.jpg") center/cover no-repeat;
   padding: 150px 0;
-  text-align: center;
-  color: #ffffff;
-  width: 100%;
-  max-height: 10px;
 }
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
 }
 .breadcrumb {
-  padding: 80px 0 0 0;
   font-size: 20px;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   font-weight: 400;
   margin-bottom: 10px;
-  font-family: Lora, sans-serif;
   color: #c19655;
 }
 .breadcrumb a {
-  text-shadow: none;
-  line-height: inherit;
   color: #c19655;
   text-decoration: none;
 }
@@ -298,86 +269,22 @@ export default {
   text-decoration: underline;
 }
 .separator-title {
-  color: #ffffff;
   font-size: 49px;
-  font-family: Lora, sans-serif;
-  letter-spacing: 1px;
   font-weight: 700;
-  margin: 0;
-  padding: 10px 20px;
-  display: inline-block;
 }
-
-.container{
-  display: flex;
-  position: relative;
-  width: 100%;
-  justify-items: left;
-  margin-bottom: 100px;
-}
-.category-image{
-  position: absolute;
-  z-index: 1;
-}
-.container.even .category-image{
-  right: 0;
-}
-.product-image {
-  width: 100%;
-  min-width: 200px;
-  max-width: 500px;
-  height: auto;
-  overflow: clip;
-  box-sizing: border-box;
-  box-shadow: 0 0 21px -5px rgba(0, 0, 0, 0.2);
-}
-
 .divider {
-  top: -145px;
   position: relative;
+  top: -100px;
   width: 100%;
-  height: auto;
   overflow: hidden;
-  line-height: 0;
-  z-index: 2;
 }
 .divider svg {
   display: block;
   width: 100%;
-  height: auto;
 }
-.divider svg .path {
-  fill: #FFFFFF;
-}
-
-@media(max-width: 1100px) {
-  .view-container {
-    min-width: 275px;
-  }
-  .divider {
-    top: -125px;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .product-image {
-    margin: 0;
-  }
-  .category-image {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
+@media (max-width: 768px) {
+  .separator {
+    padding: 100px 0;
   }
 }
-
-@media(max-width: 430px) {
-  .divider {
-    top: -115px;
-  }
-}
-
 </style>
