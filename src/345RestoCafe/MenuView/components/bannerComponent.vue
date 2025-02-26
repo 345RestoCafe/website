@@ -20,7 +20,7 @@ export default {
 
 <style scoped>
 .separator {
-  background: url("../../../assets/images/menu/Menu-Banner.jpg") center/cover no-repeat;
+  background: url("../../../assets/images/banner/menu.jpg") center/cover no-repeat;
   padding: 150px 0;
 }
 .overlay {
