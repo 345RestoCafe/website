@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 section {
-  background-image: url("../../../assets/images/home_view/banner-inicio01.jpg");
+  background-image: url("../../../assets/images/banner/home.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;

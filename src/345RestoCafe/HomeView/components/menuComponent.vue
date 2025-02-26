@@ -15,16 +15,16 @@ export default {
       <div class="col-md-10">
         <div class="row">
           <div class="col-6 col-sm-3 d-flex justify-content-center">
-            <img src="../../../assets/images/home_view/plato1.jpg" alt="Plato1" class="img-fluid">
+            <img src="../../../assets/images/plato/plato1.jpg" alt="Plato1" class="img-fluid">
           </div>
           <div class="col-6 col-sm-3 d-flex justify-content-center">
-            <img src="../../../assets/images/home_view/plato2.jpg" alt="Plato2" class="img-fluid">
+            <img src="../../../assets/images/plato/plato2.jpg" alt="Plato2" class="img-fluid">
           </div>
           <div class="col-6 col-sm-3 d-flex justify-content-center">
-            <img src="../../../assets/images/home_view/plato3.jpg" alt="Plato3" class="img-fluid">
+            <img src="../../../assets/images/plato/plato3.jpg" alt="Plato3" class="img-fluid">
           </div>
           <div class="col-6 col-sm-3 d-flex justify-content-center">
-            <img src="../../../assets/images/home_view/plato4.jpg" alt="Plato4" class="img-fluid">
+            <img src="../../../assets/images/plato/plato4.jpg" alt="Plato4" class="img-fluid">
           </div>
         </div>
       </div>

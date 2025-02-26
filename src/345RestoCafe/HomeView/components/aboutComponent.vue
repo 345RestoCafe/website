@@ -12,16 +12,16 @@ export default {
         <div class="d-md-flex flex-md-row h-100 gap-3 d-grid">
           <!-- Imagen grande -->
           <div class="col-12 col-md-6 h-100 d-md-flex d-none">
-            <img src="../../../assets/images/home_view/About1.jpg"
+            <img src="../../../assets/images/about/About1.jpg"
                  alt="Imagen Grande"
                  class="img-fluid w-100 h-100 object-fit-cover" />
           </div>
           <!-- Imágenes pequeñas -->
           <div class="col-12 col-md-6 d-flex flex-column gap-3">
-            <img src="../../../assets/images/home_view/About2.jpg"
+            <img src="../../../assets/images/about/About2.jpg"
                  alt="Imagen Pequeña 1"
                  class="img-fluid w-100 h-50 object-fit-cover flex-grow-1" />
-            <img src="../../../assets/images/home_view/About3.jpg"
+            <img src="../../../assets/images/about/About3.jpg"
                  alt="Imagen Pequeña 2"
                  class="img-fluid w-100 h-50 object-fit-cover flex-grow-1" />
           </div>
