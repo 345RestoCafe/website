@@ -7,7 +7,7 @@ const images = [
   { src: new URL("../../../assets/images/events/eventos3.jpg", import.meta.url).href, alt: "Eventos 345RestoCafe" },
   { src: new URL("../../../assets/images/events/eventos4.jpg", import.meta.url).href, alt: "Eventos 345RestoCafe" },
   { src: new URL("../../../assets/images/events/eventos5.jpg", import.meta.url).href, alt: "Eventos 345RestoCafe" },
-  { src: new URL("../../../assets/images/events/eventos5.jpg", import.meta.url).href, alt: "Eventos 345RestoCafe" },
+  { src: new URL("../../../assets/images/events/eventos6.jpg", import.meta.url).href, alt: "Eventos 345RestoCafe" },
 ];
 
 const responsiveOptions = [
