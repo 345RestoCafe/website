@@ -1,9 +1,13 @@
 <script>
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
+import BannerComponent from "@/345RestoCafe/MenuView/components/bannerComponent.vue";
+import TopWaveDividerComponent from "@/public/components/topWaveDividerComponent.vue";
 
 export default {
   name: "MenuView",
   components: {
+    TopWaveDividerComponent,
+    BannerComponent,
     CategoryCardComponent
   },
   data() {
@@ -207,28 +211,8 @@ export default {
 
 <template>
   <div>
-    <!-- Banner -->
-    <div class="separator position-relative text-white text-center">
-      <div class="overlay"></div>
-      <div class="position-relative z-1">
-        <nav class="breadcrumb justify-content-center">
-          <a class="" href="https://345restocafe.com/">HOME</a>
-          <i class="pi pi-angle-right mx-2 mt-1"/>
-          <a class="" href="#">LA CARTA</a>
-        </nav>
-        <h1 class="separator-title">La Carta</h1>
-      </div>
-    </div>
-
-    <!-- Wave Divider -->
-    <div class="divider">
-      <svg viewBox="0 0 1920 116" preserveAspectRatio="none">
-        <path fill="#FFF" d="M453,92c11.7-4.87,28.46-11.43,49-18c42.29-13.52,76.36-19.33,115-25c51.58-7.57,100.28-14.72,171-20
-          c24.87-1.86,82.88-5.76,158-6c69.99-0.23,122.54,2.82,159,5c51.18,3.06,95.17,5.69,155,14c71.5,9.94,115.42,21.02,127,24
-          c33.7,8.68,61.62,17.79,82,25C1130.33,91.33,791.67,91.67,453,92z" />
-      </svg>
-    </div>
-
+    <BannerComponent/>
+    <TopWaveDividerComponent/>
     <!-- Categorías -->
     <div class="container">
       <div class="row mb-5 justify-content-center" v-for="(category, index) in categories" :key="index">
@@ -256,56 +240,12 @@ export default {
 </template>
 
 <style scoped>
-.separator {
-  background: url("../../assets/images/menu/Menu-Banner.jpg") center/cover no-repeat;
-  padding: 150px 0;
-}
-.overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(34, 34, 34, 0.8);
-}
-.breadcrumb {
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  color: #c19655;
-  font-family: Lora, sans-serif;
-}
-.breadcrumb a {
-  color: #c19655;
-  text-decoration: none;
-}
-.breadcrumb a:hover {
-  text-decoration: underline;
-}
-.separator-title {
-  font-size: 49px;
-  font-weight: 700;
-}
-.divider {
-  position: relative;
-  top: -100px;
-  width: 100%;
-  overflow: hidden;
-}
-.divider svg {
-  display: block;
-  width: 100%;
-}
 .image {
   position: relative;
   left: -100px;
 }
 .image.even{
   left: 100px;
-}
-
-@media (max-width: 768px) {
-  .separator {
-    padding: 100px 0;
-  }
 }
 </style>
 

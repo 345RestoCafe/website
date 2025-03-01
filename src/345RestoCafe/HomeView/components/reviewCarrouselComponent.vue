@@ -77,7 +77,7 @@ export default {
 
 <style scoped>
 .reviews {
-  background-image: url("../../../assets/images/home_view/background-2.jpg");
+  background-image: url("../../../assets/images/background/background1.jpg");
   min-height: 50vh; /* Usa min-height en lugar de height fija */
   background-size: cover;
   background-position: center;
