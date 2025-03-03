@@ -1,0 +1,7 @@
+deployment:
+  tasks:
+    - export NODE_VERSION=20.17.0
+    - /opt/cpanel/nvm/bin/nvm use $NODE_VERSION
+    - npm install
+    - npm run build
+    - rsync -av --delete dist/ public_html/345restocafe.com
