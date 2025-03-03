@@ -43,6 +43,12 @@ export default {
 .breadcrumb a:hover {
   text-decoration: underline;
 }
+h1{
+  font-family: Lora, sans-serif;
+  font-size: 49px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
 @media (max-width: 768px) {
   .separator {
     padding: 100px 0;

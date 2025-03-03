@@ -11,16 +11,16 @@ export default {
       <nav class="breadcrumb justify-content-center">
         <a class="" href="https://345restocafe.com/">HOME</a>
         <i class="pi pi-angle-right mx-2 mt-1"/>
-        <a class="" href="#">LA CARTA</a>
+        <a class="" href="#">CONTACTO</a>
       </nav>
-      <h1 class="separator-title">La Carta</h1>
+      <h1 class="separator-title">Contacto</h1>
     </div>
   </div>
 </template>
 
 <style scoped>
 .separator {
-  background: url("../../../assets/images/banner/menu.jpg") center/cover no-repeat;
+  background: url("../../../assets/images/banner/contacto.jpg") center/cover no-repeat;
   padding: 150px 0;
 }
 .overlay {
