@@ -1,14 +1,16 @@
 <script>
-import UnderDevelopment from "@/public/components/UnderDevelopmentView.vue";
+import BannerComponent from "@/345RestoCafe/ContactUsView/components/bannerComponent.vue";
 
 export default {
   name: "ContactUsView",
-  components: {UnderDevelopment}
+  components: {
+    BannerComponent,
+  }
 }
 </script>
 
 <template>
-  <UnderDevelopment/>
+  <BannerComponent/>
 </template>
 
 <style scoped>
