@@ -22,3 +22,9 @@ jobs:
           port: 52525
           local-dir: dist/
           server-dir: /public_html/345restocafe.com/
+          passive: true
+          timeout: 60000
+          exclude: |
+            **/.git*
+            **/node_modules/**
+            **/src/**
