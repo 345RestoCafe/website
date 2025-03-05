@@ -1,8 +1,26 @@
 ---
 deployment:
   tasks:
+    - echo "🔹 Iniciando despliegue..."
     - export DEPLOYPATH=/home/mandocp/public_html/345restocafe.com
+    - echo "📂 Ruta de despliegue: $DEPLOYPATH"
+
+    - echo "🔹 Instalando dependencias..."
     - npm install
+
+    - echo "🔹 Generando build..."
     - npm run build
+
+    - echo "🔹 Listando contenido de dist antes de copiar..."
+    - ls -la dist/
+
+    - echo "🔹 Moviendo archivos a $DEPLOYPATH..."
     - /bin/cp -R dist/* $DEPLOYPATH
+
+    - echo "🔹 Listando archivos en la ruta de despliegue..."
+    - ls -la $DEPLOYPATH
+
+    - echo "🔹 Eliminando carpeta dist..."
     - rm -rf dist
+
+    - echo "✅ Despliegue completado con éxito."
