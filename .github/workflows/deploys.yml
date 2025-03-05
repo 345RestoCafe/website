@@ -23,6 +23,7 @@ jobs:
           local-dir: dist/
           server-dir: /public_html/345restocafe.com/
           timeout: 120000
+          concurrency: 1
           exclude: |
             **/.git*
             **/node_modules/**
