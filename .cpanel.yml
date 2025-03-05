@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mandocp/345restocafe.com
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/mandocp/public_html/345restocafe.com
     - npm install
     - npm run build
-    - mv dist/* ../public_html/
+    - /bin/cp -R dist/* $DEPLOYPATH
+    - rm -rf dist
