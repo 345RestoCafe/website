@@ -56,11 +56,19 @@ export default {
   data() {
     return {
       menu: [
+<<<<<<< Updated upstream
         { name: "Olluquito y Cau Cau", description: "Salpicon de pollo", price: 20},
         { name: "Pollo a la plancha con puré de papa", description: "Enrrolado de jamón con verduras", price: 20},
         { name: "Frejol con seco de pollo", description: "Ensalada fresca", price: 20},
         { name: "Fetuccini a la huancaina con lomo al jugo", description: "Tequeños de queso", price: 20},
         { name: "Chuleta de bondiola con papa dorada", description: "Ensalada de verduras", price: 20},
+=======
+        { name: "Lentejas con milanesa de pollo", description: "Choclo con queso, papa y crema huacatay", price: 20},
+        { name: "Olluquito con carne o cau cau", description: "Salpicón de pollo", price: 20},
+        { name: "Parrilla con papa dorada, arroz y ensalada", description: "Bife de vacio, pollo al cilindro o chancho a la caja china", price: 20},
+        { name: "Pollo al horno con puré con espinacas", description: "Ensalada fresca", price: 20},
+        { name: "Fideos canuto en salsa bolognesa", description: "Pan al ajo", price: 20},
+>>>>>>> Stashed changes
       ],
       ensaladas: [
         { name: "Ensalada tropical (De la semana)", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
