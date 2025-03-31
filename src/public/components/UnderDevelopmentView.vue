@@ -1,13 +1,15 @@
 <template>
-<div class="view-container">
-  <div class="content">
-    <div class="icons">
-      <i class="pi pi-wrench" ></i>
-      <i class="pi pi-desktop" ></i>
+  <div class="container align-content-center" style="height: 60vh">
+    <div class="row justify-content-center text-center my-5">
+      <div class="col-md-12 text-secondary mt-5">
+        <i class="pi pi-wrench" ></i>
+        <i class="pi pi-desktop" ></i>
+      </div>
     </div>
-    <h1 class="title">Este sitio se encuentra en mantenimiento</h1>
+    <div class="row text-center mb-5">
+      <h1 class="text-secondary mb-5">Este sitio se encuentra en mantenimiento</h1>
+    </div>
   </div>
-</div>
 </template>
 
 <script>

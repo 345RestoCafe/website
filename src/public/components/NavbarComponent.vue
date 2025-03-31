@@ -1,58 +1,66 @@
 <template>
-  <div :class="['navbar', { 'navbar-fixed': isHeaderHidden }]">
-    <div class="navbar-brand">
-      <a class="logo-img" href="#">
-        <img class="logo-img" src="https://i.imgur.com/LRb0Ub2.png" title="source: imgur.com" />
+  <nav :class="['navbar navbar-expand-lg navbar-light bg-white', { 'navbar-fixed': isHeaderHidden }]">
+    <div class="container-fluid m-5 mt-0 mb-0">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img class="logo-img" src="https://i.imgur.com/LRb0Ub2.png" alt="Logo" />
       </a>
+      <!-- Botón de menú para móviles -->
+      <button class="navbar-toggler" type="button" @click="toggleMenu" aria-label="Menu button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Enlaces de navegación -->
+      <div class="collapse navbar-collapse" :class="{ 'show': showMenu }" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <button
+                  class="nav-link btn btn-link"
+                  :class="{ 'active': actualView === '' }"
+                  @click="directTo('')"
+              >
+                Inicio
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                  class="nav-link btn btn-link"
+                  :class="{ 'active': actualView === 'nosotros' }"
+                  @click="directTo('nosotros')"
+              >
+                Nosotros
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                  class="nav-link btn btn-link"
+                  :class="{ 'active': actualView === 'la-carta' }"
+                  @click="directTo('la-carta')"
+              >
+                La Carta
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                  class="nav-link btn btn-link"
+                  :class="{ 'active': actualView === 'eventos' }"
+                  @click="directTo('eventos')"
+              >
+                Eventos
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                  class="nav-link btn btn-link"
+                  :class="{ 'active': actualView === 'contacto' }"
+                  @click="directTo('contacto')"
+              >
+                Contacto
+              </button>
+            </li>
+          </ul>
+        </div>
     </div>
-
-    <button class="menu-button" @click="toggleMenu" aria-label="Menu button">
-      &#9776;
-    </button>
-
-    <div class="nav-links" :class="{ 'nav-active': showMenu }">
-      <button
-          class="nav-button"
-          aria-label="Home button"
-          :class="{ active: actualView === '' }"
-          @click="directTo('')"
-      >
-        Inicio
-      </button>
-      <button
-          class="nav-button"
-          aria-label="About us button"
-          :class="{ active: actualView === 'nosotros' }"
-          @click="directTo('nosotros')"
-      >
-        Nosotros
-      </button>
-      <button
-          class="nav-button"
-          aria-label="Our menu button"
-          :class="{ active: actualView === 'la-carta' }"
-          @click="directTo('la-carta')"
-      >
-        La Carta
-      </button>
-      <button
-          class="nav-button"
-          aria-label="Events button"
-          :class="{ active: actualView === 'eventos' }"
-          @click="directTo('eventos')"
-      >
-        Eventos
-      </button>
-      <button
-          class="nav-button"
-          aria-label="Contact button"
-          :class="{ active: actualView === 'contacto' }"
-          @click="directTo('contacto')"
-      >
-        Contacto
-      </button>
-    </div>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -84,177 +92,81 @@ export default {
 </script>
 
 <style scoped>
-.navbar-brand {
-  padding: 0;
-  width: auto;
-  flex: none;
-  position: relative;
-  display: block;
-  margin-right: 40px;
-}
-.logo-img{
-  height: 100px;
-}
-.navbar{
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: 300;
-  height: 100%;
-  max-height: 180px;
-  justify-content: center;
-  width: 100%;
-  z-index: 1001;
-  padding-top: 50px;
-  padding-bottom: 20px;
+.navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 10%;
+  transition: all 0.3s ease;
 }
 
 .navbar-fixed {
   position: fixed;
-  max-height: 140px;
-  padding: 20px;
   top: 0;
   left: 0;
   right: 0;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 999;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
-.nav-button{
+.logo-img {
+  height: 100px;
+  transition: height 0.3s ease;
+}
+
+.nav-link {
   font-family: "Lora", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0;
   color: #444444;
   background-color: transparent;
-  position: relative;
-  margin: 1.8em .4em;
-  padding: 10px 12px;
   border: none;
-  width: auto;
-  max-height: 40px;
   cursor: pointer;
+  position: relative;
+  margin: 0 10px;
+  padding: 10px 12px;
 }
-.nav-button::after{
-  content:"";
+
+.nav-link::after {
+  content: "";
   position: absolute;
   width: 0;
   height: 3px;
-  color: #cb9755;
-  bottom: 0;
-  left: 0;
-  transition: width 0.1s ease-in;
-}
-.nav-button:hover::after{
-  width: 100%;
-  color: #cb9755;
-}
-.nav-button:hover{
-  transition-duration: 150ms;
-  color: #cb9755;
-}
-.nav-button.active::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  color: #cb9755;
   background-color: #cb9755;
   bottom: 0;
   left: 0;
   transition: width 0.1s ease-in;
 }
 
-.menu-button {
-  display: none;
-  background-color: #000;
-  border: none;
-  font-size: 0.8em;
-  cursor: pointer;
-  color: #fff;
-  height: 25px;
-  border-radius: 5px;
-  margin-top: 15px;
-  margin-left: 200px;
+.nav-link:hover::after {
+  width: 100%;
 }
 
-@media (max-width: 1125px) {
-  .navbar {
-    padding-top: 110px;
-    max-height: 240px;
-  }
-  .navbar-fixed {
-    top:0;
-    padding-top: 30px;
-    max-height: 150px;
-  }
+.nav-link:hover {
+  color: #cb9755;
 }
 
-@media (max-width: 800px) {
-  .nav-button{
-    font-size: 0.8em;
-  }
+.nav-link.active::after {
+  width: 100%;
 }
 
-@media (max-width: 670px) {
+/* Estilos responsivos */
+@media (max-width: 1070px) {
   .logo-img {
-    height: 60px;
+    height: 80px;
   }
-  .menu-button {
-    display: block;
-  }
+
   .navbar {
-    max-height: 190px;
+    padding: 15px 5%;
   }
+
   .navbar-fixed {
-    max-height: 120px;
+    padding: 10px 5%;
   }
 
-  .nav-links {
-    margin-top: 55px;
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: fixed;
-    top: 150px;
-    left: 0;
-    background-color: #000;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .navbar-fixed .nav-links {
-    top: 60px
-  }
-
-  .nav-links.nav-active {
-    display: flex;
-  }
-  .nav-button {
-    margin: 10px 0;
-    text-align: center;
-    color: white;
-  }
-  .nav-button.active::after {
-    content: "";
-    position: absolute;
-    width: 15%;
-    height: 1px;
-    background-color: #cb9755;
-    left: 160px;
-    transition: width 0.1s ease-in;
-  }
-}
-
-@media (max-width: 430px) {
-  .logo-img {
-    height: 40px;
-  }
-
-  .menu-button {
-    margin: 5px 0 0 100px;
+  .nav-link {
+    font-size: 16px;
+    margin: 5px 0;
   }
 }
 
