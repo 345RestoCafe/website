@@ -18,6 +18,7 @@ export default {
         { name: "Parrilla con papa dorada, arroz y ensalada", description: "Bife de vacío, pollo al cilindro o chancho a la caja china", price: 20},
         { name: "Pollo en salsa agridulce", description: "Tequeños de jamón y queso", price: 20},
         { name: "Tallarín saltado criollo de carne", description: "Ensalada cocida", price: 20},
+
       ],
       ensaladas: [
         { name: "Ensalada tropical (De la semana)", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
