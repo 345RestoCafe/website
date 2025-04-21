@@ -15,7 +15,7 @@ export default {
       menu: [
         { name: "Ají de gallina", description: "Ensalada fresca", price: 20},
         { name: "Carapulcra de chancho", description: "Ensalada cocida", price: 20},
-        { name: "Arroz con pollo", description: "Papa a la huancaína", price: 20},
+        { name: "Arroz con pollo", description: "Papa a la Huancaína", price: 20},
         { name: "Fettuccine al pesto con milanesa de res", description: "Pan al ajo", price: 20},
         { name: "Pollo al horno", description: "Ensalada rusa", price: 20},
 
