@@ -13,11 +13,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Bistec a lo pobre", description: "Ensalada Delicia", price: 20},
-        { name: "Seco de pollo con frejoles", description: "Ensalada fresca", price: 20},
-        { name: "Parrilla con papa dorada, arroz y ensalada", description: "Bife de vacío, pollo al cilindro o chancho a la caja china", price: 20},
-        { name: "Pollo en salsa agridulce", description: "Tequeños de jamón y queso", price: 20},
-        { name: "Tallarín saltado criollo de carne", description: "Ensalada cocida", price: 20},
+        { name: "Ají de gallina", description: "Ensalada fresca", price: 20},
+        { name: "Carapulcra de chancho", description: "Ensalada cocida", price: 20},
+        { name: "Arroz con pollo", description: "Papa a la huancaína", price: 20},
+        { name: "Fettuccine al pesto con milanesa de res", description: "Pan al ajo", price: 20},
+        { name: "Pollo al horno", description: "Ensalada rusa", price: 20},
 
       ],
       ensaladas: [
@@ -178,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "7/4"},
-        { day: "Martes", date: "8/4"},
-        { day: "Miércoles", date: "9/4"},
-        { day: "Jueves", date: "10/4"},
-        { day: "Viernes", date: "11/4"},
+        { day: "Lunes", date: "21/4"},
+        { day: "Martes", date: "22/4"},
+        { day: "Miércoles", date: "23/4"},
+        { day: "Jueves", date: "24/4"},
+        { day: "Viernes", date: "25/4"},
       ]
     };
   },
