@@ -13,11 +13,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Ají de gallina", description: "Ensalada fresca", price: 20},
-        { name: "Carapulcra de chancho", description: "Ensalada cocida", price: 20},
-        { name: "Arroz con pollo", description: "Papa a la Huancaína", price: 20},
-        { name: "Fettuccine al pesto con milanesa de res", description: "Pan al ajo", price: 20},
-        { name: "Pollo al horno", description: "Ensalada rusa", price: 20},
+        { name: "Locro con bistec", description: "Choclo, queso y papa", price: 20},
+        { name: "Estofado de pollo", description: "Ensalada waldorf", price: 20},
+        { name: "Parrilla - Bife de vacio, pollo al cilindro o panceta a la caja china", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
+        { name: "Feriado", description: "", price: null},
+        { name: "Ravioles con asado", description: "Ensalada fresca", price: 20},
 
       ],
       ensaladas: [
@@ -178,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "21/4"},
-        { day: "Martes", date: "22/4"},
-        { day: "Miércoles", date: "23/4"},
-        { day: "Jueves", date: "24/4"},
-        { day: "Viernes", date: "25/4"},
+        { day: "Lunes", date: "28/4"},
+        { day: "Martes", date: "29/4"},
+        { day: "Miércoles", date: "30/4"},
+        { day: "Jueves", date: "1/5"},
+        { day: "Viernes", date: "2/5"},
       ]
     };
   },
