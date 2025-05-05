@@ -13,11 +13,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Locro con bistec", description: "Choclo, queso y papa", price: 20},
-        { name: "Estofado de pollo", description: "Ensalada waldorf", price: 20},
-        { name: "Parrilla - Bife de vacio, pollo al cilindro o panceta a la caja china", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
-        { name: "Feriado", description: "", price: null},
-        { name: "Ravioles con asado", description: "Ensalada fresca", price: 20},
+        { name: "Lentejas con bistec", description: "Ensalada césar", price: 20},
+        { name: "Seco de pollo con frejoles", description: "Ensalada cocida", price: 20},
+        { name: "Cerdo al horno con papa al perejil", description: "Ensalada delicia", price: 20},
+        { name: "Picante de carne", description: "Ensalada fresca con palta", price: 20},
+        { name: "Fettuccine al alfredo con milanesa", description: "Ensalada hawaiana", price: 20},
 
       ],
       ensaladas: [
