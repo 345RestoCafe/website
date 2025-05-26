@@ -13,11 +13,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Ají de gallina", description: "Ensalada cocida", price: 20},
-        { name: "Papa rellena", description: "Ensalada con palta", price: 20},
-        { name: "Panceta a la caja china o pollo al cilindro", description: "Ensalada fresca", price: 20},
-        { name: "Arroz con pollo", description: "Papa a la huancaina", price: 20},
-        { name: "Tallarines con carne en salsa roja", description: "Tequeños de queso", price: 20},
+        { name: "Arroz tapado", description: "Salpicón de pollo", price: 20},
+        { name: "Olluquito con carne o cau cau", description: "Ensalada fresca", price: 20},
+        { name: "Panceta a la caja china, pollo al cilindro o churrasco a la parrilla", description: "Ensalada del día", price: 20},
+        { name: "Ravioles con salsa de carne", description: "Pan al ajo", price: 20},
+        { name: "Milanesa de pollo con papas doradas", description: "Ensalada con palta", price: 20},
 
       ],
       ensaladas: [
@@ -178,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "19/5"},
-        { day: "Martes", date: "20/5"},
-        { day: "Miércoles", date: "21/5"},
-        { day: "Jueves", date: "22/5"},
-        { day: "Viernes", date: "23/5"},
+        { day: "Lunes", date: "26/5"},
+        { day: "Martes", date: "27/5"},
+        { day: "Miércoles", date: "28/5"},
+        { day: "Jueves", date: "29/5"},
+        { day: "Viernes", date: "30/5"},
       ]
     };
   },
