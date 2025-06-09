@@ -13,11 +13,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Picante de carne", description: "Palta a la jardinera", price: 20},
-        { name: "Ají de gallina o trigo con pollo", description: "Ensalada hawaiana", price: 20},
-        { name: "Brazuelo de cerdo al horno con papas al perejil", description: "Ensalada rusa", price: 20},
-        { name: "Pollo en salsa bechamel y champiñones", description: "Ensalada waldorf", price: 20},
-        { name: "Fettuccine al pesto con bistec flambeado", description: "Pan al ajo", price: 20},
+        { name: "Lentejas con filete de pollo", description: "Consomé", price: 20},
+        { name: "Bistec a lo pobre", description: "Ensalada fresca", price: 20},
+        { name: "Churrasco a la parrilla, pollo al cilindro o panceta a la caja china", description: "Ensalada de lechuga y tomate", price: 20},
+        { name: "Tallarines rojos con pollo", description: "Papa a la huancaina", price: 20},
+        { name: "Pollo saltado", description: "Crema de verduras", price: 20},
 
       ],
       ensaladas: [
@@ -178,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "2/6"},
-        { day: "Martes", date: "3/6"},
-        { day: "Miércoles", date: "4/6"},
-        { day: "Jueves", date: "5/6"},
-        { day: "Viernes", date: "6/6"},
+        { day: "Lunes", date: "9/6"},
+        { day: "Martes", date: "10/6"},
+        { day: "Miércoles", date: "11/6"},
+        { day: "Jueves", date: "12/6"},
+        { day: "Viernes", date: "13/6"},
       ]
     };
   },
