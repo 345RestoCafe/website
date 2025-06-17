@@ -13,11 +13,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Lentejas con filete de pollo", description: "Consomé", price: 20},
-        { name: "Bistec a lo pobre", description: "Ensalada fresca", price: 20},
+        { name: "Cau Cau o Ají de Gallina", description: "Ensalada fresca", price: 20},
+        { name: "Tallarines al pesto con bistec", description: "Pan al ajo", price: 20},
         { name: "Churrasco a la parrilla, pollo al cilindro o panceta a la caja china", description: "Ensalada de lechuga y tomate", price: 20},
-        { name: "Tallarines rojos con pollo", description: "Papa a la huancaina", price: 20},
-        { name: "Pollo saltado", description: "Crema de verduras", price: 20},
+        { name: "Aguadito de pollo o estofado de pollo", description: "Tequeños", price: 20},
+        { name: "Milanesa de pollo con papas doradas", description: "Ensalada con palta", price: 20},
 
       ],
       ensaladas: [
@@ -178,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "9/6"},
-        { day: "Martes", date: "10/6"},
-        { day: "Miércoles", date: "11/6"},
-        { day: "Jueves", date: "12/6"},
-        { day: "Viernes", date: "13/6"},
+        { day: "Lunes", date: "16/6"},
+        { day: "Martes", date: "17/6"},
+        { day: "Miércoles", date: "18/6"},
+        { day: "Jueves", date: "19/6"},
+        { day: "Viernes", date: "20/6"},
       ]
     };
   },
