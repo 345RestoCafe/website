@@ -1,5 +1,14 @@
 <script>
 export default {
+  data() {
+    return {
+      availability: [
+          'ENSALADAS A LA CARTA',
+          'SANDWICHES',
+          'PLATOS A LA CARTA'
+      ],
+    };
+  },
   name: "CategoryCardComponent",
   props: {
     title: {
@@ -40,6 +49,7 @@ export default {
           <p class="product-description mb-2 mt-0">{{ product.description }}</p>
         </li>
       </ul>
+      <p v-if="availability.some(item => title.includes(item))" class="text-center mt-4" style="font-size: 0.9rem">*Sujeto a disponibilidad</p>
     </div>
   </div>
 </template>
@@ -49,7 +59,7 @@ export default {
   min-width: 650px;
   position: relative;
   border: none;
-  padding: 3rem;
+  padding: 3rem 3rem 1.5rem 3rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   width: 560px;

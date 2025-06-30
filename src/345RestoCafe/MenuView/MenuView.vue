@@ -13,37 +13,37 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Cau Cau o Ají de Gallina", description: "Ensalada fresca", price: 20},
-        { name: "Tallarines al pesto con bistec", description: "Pan al ajo", price: 20},
-        { name: "Churrasco a la parrilla, pollo al cilindro o panceta a la caja china", description: "Ensalada de lechuga y tomate", price: 20},
-        { name: "Aguadito de pollo o estofado de pollo", description: "Tequeños", price: 20},
-        { name: "Milanesa de pollo con papas doradas", description: "Ensalada con palta", price: 20},
+        { name: "Adobo de chancho con camote", description: "Sopa de Sémola", price: 20},
+        { name: "Saltado de pollo", description: "Ensalada con palta", price: 20},
+        { name: "Pollo al cilindro o panceta a la caja china", description: "Ensalada de lechuga y tomate", price: 20},
+        { name: "Ravioles con salsa de carne", description: "Crema de verduras", price: 20},
+        { name: "Pollo al horno con papa dorada", description: "Ensalada rusa", price: 20},
 
       ],
       ensaladas: [
-        { name: "Ensalada tropical (De la semana)", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
+        { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
         { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
         { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
         { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
         { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
-        { name: "Ensalada 345 (De la semana)", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
-        { name: "Ensalada de frutas", description: "", price: 16}
+        { name: "Ensalada 345", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
+        { name: "Ensalada de frutas*", description: "", price: 16}
       ],
       sandwiches: [
         { name: "Pollo", description: "Pan ciabatta, pollo deshilachado y lechuga, acompañado de nuestra mayonesa de la casa.", price: 10 },
         { name: "Mixto", description: "Pan de molde, jamón inglés y queso Edam.", price: 12 },
-        { name: "Jamón Ahumado", description: "Pan ciabatta, jamón ahumado y lechuga, acompañado de nuestra mayonesa de la casa.", price: 12 },
+        { name: "Jamón Ahumado*", description: "Pan ciabatta, jamón ahumado y lechuga, acompañado de nuestra mayonesa de la casa.", price: 12 },
         { name: "Triple Caliente de Pollo", description: "Pan de molde, pollo deshilachado, queso y jamón.", price: 15 },
         { name: "Triple Caliente con Huevo", description: "Pan de molde, jamón, queso y huevo frito.", price: 12 },
-        { name: "Bondiola", description: "Pan ciabatta, bondiola al horno y lechuga, acompañado de nuestra mayonesa de la casa y salsa criolla.", price: 16 },
+        { name: "Bondiola*", description: "Pan ciabatta, bondiola al horno y lechuga, acompañado de nuestra mayonesa de la casa y salsa criolla.", price: 16 },
         { name: "Pollo con palta", description: "Pan ciabatta,pollo deshilachado, con mayonesa y palta en láminas.", price: 13 },
         { name: "Triple de Palta, Tomate y Huevo", description: "Tres capas de pan de molde , acompañadas de palta tomate y huevo.", price: 13 },
-        { name: "Roast Beef", description: "Pan ciabatta, roast beef, lechuga, queso edam y mayonesa.", price: 16 },
-        { name: "Suprema", description: "Pan ciabatta, suprema de pollo con mayonesa, lechuga, tomate y palta.", price: 14 }
+        { name: "Roast Beef*", description: "Pan ciabatta, roast beef, lechuga, queso edam y mayonesa.", price: 16 },
+        { name: "Suprema*", description: "Pan ciabatta, suprema de pollo con mayonesa, lechuga, tomate y palta.", price: 14 },
       ],
       platos: [
-        { name: "Dieta de pollo - Sopa", description: "Sujeto a disponibilidad", price: 15 },
-        { name: "Bondiola con papas y ensalada", description: "Sujeto a disponibilidad", price: 25 },
+        { name: "Dieta de pollo - Sopa*", description: "", price: 15 },
+        { name: "Bondiola con papas y ensalada*", description: "", price: 25 },
         { name: "Filete de pollo a la plancha", description: "", price: 25 },
         { name: "Fettuccini al alfredo", description: "", price: 25 },
         { name: "Bistec con papas doradas", description: "", price: 25 },
@@ -52,9 +52,9 @@ export default {
         { name: "Fettuccini al pesto con apanado", description: "", price: 27 },
         { name: "Bistec a lo pobre", description: "", price: 27 },
         { name: "Lomo saltado", description: "", price: 27 },
-        { name: "Lomo saltado a lo pobre", description: "", price: 29 },
-        { name: "Tacu Tacu con lomito al jugo", description: "", price: 27 },
-        { name: "Tacu Tacu con apanado", description: "", price: 29 },
+        { name: "Lomo saltado a lo pobre", description: "", price: 30 },
+        { name: "Tacu Tacu con lomito al jugo*", description: "", price: 27 },
+        { name: "Tacu Tacu con apanado*", description: "", price: 29 },
         { name: "Porción de papas doradas o fritas", description: "", price: 5 },
         { name: "Porción de arroz", description: "", price: 5 },
         { name: "Porción de huevo frito", description: "", price: 3 },
@@ -178,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "16/6"},
-        { day: "Martes", date: "17/6"},
-        { day: "Miércoles", date: "18/6"},
-        { day: "Jueves", date: "19/6"},
-        { day: "Viernes", date: "20/6"},
+        { day: "Lunes", date: "30/6"},
+        { day: "Martes", date: "1/7"},
+        { day: "Miércoles", date: "2/7"},
+        { day: "Jueves", date: "3/7"},
+        { day: "Viernes", date: "4/7"},
       ]
     };
   },
