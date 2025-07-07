@@ -13,11 +13,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Adobo de chancho con camote", description: "Sopa de Sémola", price: 20},
-        { name: "Saltado de pollo", description: "Ensalada con palta", price: 20},
+        { name: "Ají de pollo o Cau cau", description: "Consomé", price: 20},
+        { name: "Puré con milanesa de res", description: "Salpicón de pollo", price: 20},
         { name: "Pollo al cilindro o panceta a la caja china", description: "Ensalada de lechuga y tomate", price: 20},
-        { name: "Ravioles con salsa de carne", description: "Crema de verduras", price: 20},
-        { name: "Pollo al horno con papa dorada", description: "Ensalada rusa", price: 20},
+        { name: "Tallarín rojo con pollo", description: "Crema de espárragos", price: 20},
+        { name: "Churrasco o filete de pollo a la parrilla", description: "Ensalada, papas doradas y arroz", price: 20},
 
       ],
       ensaladas: [
@@ -178,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "30/6"},
-        { day: "Martes", date: "1/7"},
-        { day: "Miércoles", date: "2/7"},
-        { day: "Jueves", date: "3/7"},
-        { day: "Viernes", date: "4/7"},
+        { day: "Lunes", date: "7/7"},
+        { day: "Martes", date: "8/7"},
+        { day: "Miércoles", date: "9/7"},
+        { day: "Jueves", date: "10/7"},
+        { day: "Viernes", date: "11/7"},
       ]
     };
   },
