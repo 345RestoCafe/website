@@ -13,11 +13,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Ají de pollo o Cau cau", description: "Consomé", price: 20},
-        { name: "Puré con milanesa de res", description: "Salpicón de pollo", price: 20},
-        { name: "Pollo al cilindro o panceta a la caja china", description: "Ensalada de lechuga y tomate", price: 20},
-        { name: "Tallarín rojo con pollo", description: "Crema de espárragos", price: 20},
-        { name: "Churrasco o filete de pollo a la parrilla", description: "Ensalada, papas doradas y arroz", price: 20},
+        { name: "Bistec con puré", description: "Consomé", price: 20},
+        { name: "Pollo al cilindro o panceta a la caja china", description: "Papa dorada, arroz y ensalada", price: 20},
+        { name: "Feriado", description: "", price: 20},
+        { name: "Fettuccine al pesto con Milanesa de pollo", description: "Crema de espárragos", price: 20},
+        { name: "Por definir", description: "", price: 20},
 
       ],
       ensaladas: [
@@ -178,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "7/7"},
-        { day: "Martes", date: "8/7"},
-        { day: "Miércoles", date: "9/7"},
-        { day: "Jueves", date: "10/7"},
-        { day: "Viernes", date: "11/7"},
+        { day: "Lunes", date: "21/7"},
+        { day: "Martes", date: "22/7"},
+        { day: "Miércoles", date: "23/7"},
+        { day: "Jueves", date: "24/7"},
+        { day: "Viernes", date: "25/7"},
       ]
     };
   },
