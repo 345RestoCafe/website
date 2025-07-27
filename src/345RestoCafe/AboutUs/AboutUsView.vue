@@ -1,6 +1,5 @@
 <script>
 import BannerComponent from "@/345RestoCafe/AboutUs/components/bannerComponent.vue";
-import TopWaveDividerComponent from "@/public/components/topWaveDividerComponent.vue";
 import AboutComponent from "@/345RestoCafe/AboutUs/components/aboutComponent.vue"
 import AboutCarrouselComponent from "@/345RestoCafe/AboutUs/components/aboutCarrouselComponent.vue";
 import MisionVisionComponent from "@/345RestoCafe/AboutUs/components/misionVisionComponent.vue";
@@ -10,7 +9,6 @@ export default {
   components: {
     MisionVisionComponent,
     AboutCarrouselComponent,
-    TopWaveDividerComponent,
     BannerComponent,
     AboutComponent
   }
@@ -19,8 +17,7 @@ export default {
 
 <template>
   <BannerComponent/>
-  <TopWaveDividerComponent/>
-  <AboutComponent/>
+  <AboutComponent class="mt-5"/>
   <AboutCarrouselComponent/>
   <MisionVisionComponent/>
 </template>

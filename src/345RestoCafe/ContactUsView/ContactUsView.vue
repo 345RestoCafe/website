@@ -1,15 +1,15 @@
 <script>
 import BannerComponent from "@/345RestoCafe/ContactUsView/components/bannerComponent.vue";
-import TopWaveDividerComponent from "@/public/components/topWaveDividerComponent.vue";
 import MainContactPageComponent from "@/345RestoCafe/ContactUsView/components/mainContactPageComponent.vue";
 import ContactFormComponent from "@/345RestoCafe/ContactUsView/components/contactFormComponent.vue";
+import AboutComponent from "@/345RestoCafe/AboutUs/components/aboutComponent.vue";
 
 export default {
   name: "ContactUsView",
   components: {
+    AboutComponent,
     ContactFormComponent,
     MainContactPageComponent,
-    TopWaveDividerComponent,
     BannerComponent,
   }
 }
@@ -17,8 +17,7 @@ export default {
 
 <template>
   <BannerComponent/>
-  <TopWaveDividerComponent/>
-  <MainContactPageComponent/>
+  <MainContactPageComponent  class="mt-5"/>
   <ContactFormComponent/>
 </template>
 

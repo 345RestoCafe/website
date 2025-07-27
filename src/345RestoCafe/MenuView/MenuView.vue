@@ -1,12 +1,10 @@
 <script>
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 import BannerComponent from "@/345RestoCafe/MenuView/components/bannerComponent.vue";
-import TopWaveDividerComponent from "@/public/components/topWaveDividerComponent.vue";
 
 export default {
   name: "MenuView",
   components: {
-    TopWaveDividerComponent,
     BannerComponent,
     CategoryCardComponent
   },
@@ -213,7 +211,6 @@ export default {
 <template>
   <div>
     <BannerComponent/>
-    <TopWaveDividerComponent/>
     <!-- Categorías -->
     <div class="container">
       <div class="row mb-5 justify-content-center" v-for="(category, index) in categories" :key="index">
