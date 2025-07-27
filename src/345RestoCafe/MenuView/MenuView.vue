@@ -243,10 +243,30 @@ export default {
 <style scoped>
 .image {
   position: relative;
-  left: -100px;
+  left: 0;
+  transition: left 0.3s;
 }
-.image.even{
-  left: 100px;
+@media (min-width: 768px) {
+  .image {
+    left: -100px;
+  }
+  .image.even {
+    left: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .my-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .image,
+  .image.even {
+    left: 0;
+  }
 }
 </style>
 

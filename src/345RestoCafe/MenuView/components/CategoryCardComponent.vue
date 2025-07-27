@@ -33,42 +33,56 @@ export default {
 </script>
 
 <template>
-  <div class="container d-flex justify-content-center">
-    <div class="card product-card mb-4" :class="{ 'even': index % 2 === 1 }">
+  <div class="container-fluid d-flex justify-content-center">
+    <div
+        class="card product-card mb-4 w-100"
+        :class="{ 'even': index % 2 === 1 }"
+        style="max-width: 650px;"
+    >
       <div class="card-header bg-white text-uppercase fw-bold border-bottom mb-3">{{ title }}</div>
       <ul class="list-group list-group-flush">
-        <li v-for="(product, productIndex) in products" :key="productIndex" class="list-group-item border-0">
+        <li
+            v-for="(product, productIndex) in products"
+            :key="productIndex"
+            class="list-group-item border-0"
+        >
           <template v-if="productIndex < menu_date.length">
             <h5 class="menu-date">{{ menu_date[productIndex].day }} {{ menu_date[productIndex].date }}</h5>
           </template>
-          <div class="list-header d-flex justify-content-between align-items-center">
-            <h6 class="product-name">{{ product.name }}</h6>
-            <p class="dotted-line flex-grow-1 m-2"></p>
-            <p class="product-price text-end"><strong>S/.</strong> {{ product.price }}</p>
+          <div class="list-header d-flex justify-content-between align-items-center flex-wrap">
+            <h6 class="product-name mb-0">{{ product.name }}</h6>
+            <p class="dotted-line flex-grow-1 m-2 d-none d-sm-block"></p>
+            <p class="product-price text-end mb-0"><strong>S/.</strong> {{ product.price }}</p>
           </div>
           <p class="product-description mb-2 mt-0">{{ product.description }}</p>
         </li>
       </ul>
-      <p v-if="availability.some(item => title.includes(item))" class="text-center mt-4" style="font-size: 0.9rem">*Sujeto a disponibilidad</p>
+      <p
+          v-if="availability.some(item => title.includes(item))"
+          class="text-center mt-4"
+          style="font-size: 0.9rem"
+      >*Sujeto a disponibilidad</p>
     </div>
   </div>
 </template>
 
 <style scoped>
 .product-card {
-  min-width: 650px;
+  min-width: 0;
+  width: 100%;
+  max-width: 850px;
   position: relative;
   border: none;
-  padding: 3rem 3rem 1.5rem 3rem;
+  padding: 2rem 1rem 1.5rem 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  width: 560px;
   display: flex;
   flex-direction: column;
   z-index: 2;
-  top: 50px;
-  left: 100px;
+  top: 0;
+  left: 0;
 }
+
 .product-card.even {
   left: -100px;
 }
@@ -108,5 +122,19 @@ export default {
   font-size: 13px;
   font-family: Poppins, sans-serif;
   color: #212529;
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    padding: 3rem 3rem 1.5rem 3rem;
+    top: 50px;
+    left: 100px;
+  }
+  .product-card.even {
+    left: -100px;
+  }
+}
+.product-card.even {
+  left: 0;
 }
 </style>
