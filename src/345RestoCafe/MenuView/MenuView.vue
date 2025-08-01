@@ -11,12 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Bistec con puré", description: "Consomé", price: 20},
-        { name: "Pollo al cilindro o panceta a la caja china", description: "Papa dorada, arroz y ensalada", price: 20},
-        { name: "Feriado", description: "", price: 20},
-        { name: "Fettuccine al pesto con Milanesa de pollo", description: "Crema de espárragos", price: 20},
-        { name: "Por definir", description: "", price: 20},
-
+        { name: "FERIADO", description: "", price: 20},
+        { name: "FERIADO", description: "", price: 20},
+        { name: "Filete de pollo o bistec con papa dorada", description: "Ensalada fresca", price: 20},
+        { name: "Seco de pollo", description: "Consomé", price: 20},
+        { name: "Panceta a la caja china o pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
