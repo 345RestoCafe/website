@@ -33,10 +33,11 @@ export default {
         { name: "Triple Caliente de Pollo", description: "Pan de molde, pollo deshilachado, queso y jamón.", price: 15 },
         { name: "Triple Caliente con Huevo", description: "Pan de molde, jamón, queso y huevo frito.", price: 12 },
         { name: "Bondiola*", description: "Pan ciabatta, bondiola al horno y lechuga, acompañado de nuestra mayonesa de la casa y salsa criolla.", price: 16 },
-        { name: "Pollo con palta", description: "Pan ciabatta,pollo deshilachado, con mayonesa y palta en láminas.", price: 13 },
+        { name: "Pollo con palta", description: "Pan ciabatta, pollo deshilachado, con mayonesa y palta en láminas.", price: 13 },
         { name: "Triple de Palta, Tomate y Huevo", description: "Tres capas de pan de molde , acompañadas de palta tomate y huevo.", price: 13 },
         { name: "Roast Beef*", description: "Pan ciabatta, roast beef, lechuga, queso edam y mayonesa.", price: 16 },
         { name: "Suprema*", description: "Pan ciabatta, suprema de pollo con mayonesa, lechuga, tomate y palta.", price: 14 },
+        { name: "Chicharrón*", description: "Pan francés, salsa criolla y camote frito.", price: 15 },
       ],
       platos: [
         { name: "Dieta de pollo - Sopa*", description: "", price: 15 },
@@ -175,11 +176,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "21/7"},
-        { day: "Martes", date: "22/7"},
-        { day: "Miércoles", date: "23/7"},
-        { day: "Jueves", date: "24/7"},
-        { day: "Viernes", date: "25/7"},
+        { day: "Lunes", date: "28/7"},
+        { day: "Martes", date: "29/7"},
+        { day: "Miércoles", date: "30/7"},
+        { day: "Jueves", date: "31/7"},
+        { day: "Viernes", date: "1/8"},
       ]
     };
   },
