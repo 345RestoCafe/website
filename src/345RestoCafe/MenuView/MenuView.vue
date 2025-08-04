@@ -11,10 +11,10 @@ export default {
   data() {
     return {
       menu: [
+        { name: "Lentejas con Bistec", description: "Sopa de Sémola", price: 20},
+        { name: "Puré con Pollo al Horno", description: "Ensalada Rusa", price: 20},
         { name: "FERIADO", description: "", price: 20},
-        { name: "FERIADO", description: "", price: 20},
-        { name: "Filete de pollo o bistec con papa dorada", description: "Ensalada fresca", price: 20},
-        { name: "Seco de pollo", description: "Consomé", price: 20},
+        { name: "Fetuccine al Pesto con  milanesa de pollo", description: "Crema de Choclo", price: 20},
         { name: "Panceta a la caja china o pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
       ],
       ensaladas: [
@@ -46,7 +46,7 @@ export default {
         { name: "Fettuccini al alfredo", description: "", price: 25 },
         { name: "Bistec con papas doradas", description: "", price: 25 },
         { name: "Milanesa de res con papas doradas", description: "", price: 27 },
-        { name: "Fettuccini al pesto bistec flambeado", description: "", price: 25 },
+        { name: "Fettuccini al pesto bistec flambeado", description: "", price: 25 },GIT
         { name: "Fettuccini al pesto con apanado", description: "", price: 27 },
         { name: "Bistec a lo pobre", description: "", price: 27 },
         { name: "Lomo saltado", description: "", price: 27 },
@@ -176,11 +176,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "28/7"},
-        { day: "Martes", date: "29/7"},
-        { day: "Miércoles", date: "30/7"},
-        { day: "Jueves", date: "31/7"},
-        { day: "Viernes", date: "1/8"},
+        { day: "Lunes", date: "04/8"},
+        { day: "Martes", date: "05/8"},
+        { day: "Miércoles", date: "06/8"},
+        { day: "Jueves", date: "07/8"},
+        { day: "Viernes", date: "09/8"},
       ]
     };
   },
