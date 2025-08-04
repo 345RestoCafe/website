@@ -46,7 +46,7 @@ export default {
         { name: "Fettuccini al alfredo", description: "", price: 25 },
         { name: "Bistec con papas doradas", description: "", price: 25 },
         { name: "Milanesa de res con papas doradas", description: "", price: 27 },
-        { name: "Fettuccini al pesto bistec flambeado", description: "", price: 25 },GIT
+        { name: "Fettuccini al pesto bistec flambeado", description: "", price: 25 },
         { name: "Fettuccini al pesto con apanado", description: "", price: 27 },
         { name: "Bistec a lo pobre", description: "", price: 27 },
         { name: "Lomo saltado", description: "", price: 27 },
