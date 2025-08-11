@@ -264,11 +264,8 @@ export default {
   }
   .image,
   .image.even {
-    left: 0;
+     left: 0;
   }
-
-</style>Git fetch origin
-
-
-
+  }
+</style>
 
