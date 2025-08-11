@@ -1,6 +1,4 @@
 <script>
-
-
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 import BannerComponent from "@/345RestoCafe/MenuView/components/bannerComponent.vue";
 
@@ -266,6 +264,6 @@ export default {
   .image.even {
      left: 0;
   }
-  }
+}
 </style>
 
