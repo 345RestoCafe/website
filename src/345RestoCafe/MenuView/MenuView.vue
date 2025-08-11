@@ -1,4 +1,6 @@
 <script>
+
+
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 import BannerComponent from "@/345RestoCafe/MenuView/components/bannerComponent.vue";
 
@@ -11,10 +13,10 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Lentejas con Bistec", description: "Sopa de Sémola", price: 20},
-        { name: "Puré con Pollo al Horno", description: "Ensalada Rusa", price: 20},
-        { name: "FERIADO", description: "", price: 20},
-        { name: "Fetuccine al Pesto con  milanesa de pollo", description: "Crema de Choclo", price: 20},
+        { name: "Locro con Bistec", description: "Consomé", price: 20},
+        { name: "Seco de Pollo con Frejoles", description: "Ensalada Fresca", price: 20},
+        { name: "Enrollado de Chancho", description: "Ensalada Waldorf", price: 20},
+        { name: "Lomo Saltado", description: "Causa de Verduras", price: 20},
         { name: "Panceta a la caja china o pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
       ],
       ensaladas: [
@@ -176,11 +178,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "04/8"},
-        { day: "Martes", date: "05/8"},
-        { day: "Miércoles", date: "06/8"},
-        { day: "Jueves", date: "07/8"},
-        { day: "Viernes", date: "09/8"},
+        { day: "Lunes", date: "11/8"},
+        { day: "Martes", date: "12/8"},
+        { day: "Miércoles", date: "13/8"},
+        { day: "Jueves", date: "14/8"},
+        { day: "Viernes", date: "15/8"},
       ]
     };
   },
@@ -264,6 +266,9 @@ export default {
   .image.even {
     left: 0;
   }
-}
-</style>
+
+</style>Git fetch origin
+
+
+
 
