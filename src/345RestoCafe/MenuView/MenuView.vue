@@ -11,10 +11,10 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Locro con Bistec", description: "Consomé", price: 20},
-        { name: "Seco de Pollo con Frejoles", description: "Ensalada Fresca", price: 20},
-        { name: "Enrollado de Chancho", description: "Ensalada Waldorf", price: 20},
-        { name: "Lomo Saltado", description: "Causa de Verduras", price: 20},
+        { name: "Papa rellena o arroz tapado", description: "Crema de verduras", price: 20},
+        { name: "Tallarines rojo con Pollo", description: "Ensalada de Lechuga, tomate, palta, choclo y queso", price: 20},
+        { name: "Milanesa de Res con Puré", description: "Sopa de Kion", price: 20},
+        { name: "Arroz con Pollo", description: "Papa a la Huancaina", price: 20},
         { name: "Panceta a la caja china o pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
       ],
       ensaladas: [
@@ -88,7 +88,7 @@ export default {
       postres: [
         { name: "Trufa de chocolate", description: "", price: 3 },
         { name: "Macarrón con buttercream", description: "", price: 3 },
-        { name: "Galleta chocochips", description: "", price: 4 },
+        { name: "Galleta chocochips", description: "", price: 6 },
         { name: "Brownie", description: "", price: 4 },
         { name: "Alfajor", description: "", price: 4 },
         { name: "Crema volteada", description: "", price: 8 },
