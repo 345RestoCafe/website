@@ -157,7 +157,7 @@ export default {
         { name: "345", description: "", price: 20 },
         { name: "Whisky etiqueta roja", description: "", price: 20 },
         { name: "Whisky etiqueta negra", description: "", price: 24 },
-        { name: "Descorche de vino", description: "", price: 25 },
+        { name: "Descorche de vino", description: "", price: 30 },
       ],
       cervezas: [
         { name: "Henineken", description: "", price: 12 },
