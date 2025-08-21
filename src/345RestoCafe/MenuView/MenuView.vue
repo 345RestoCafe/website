@@ -37,7 +37,7 @@ export default {
         { name: "Triple de Palta, Tomate y Huevo", description: "Tres capas de pan de molde , acompañadas de palta tomate y huevo.", price: 13 },
         { name: "Roast Beef*", description: "Pan ciabatta, roast beef, lechuga, queso edam y mayonesa.", price: 16 },
         { name: "Suprema*", description: "Pan ciabatta, suprema de pollo con mayonesa, lechuga, tomate y palta.", price: 14 },
-        { name: "Chicharrón*", description: "Pan francés, salsa criolla y camote frito.", price: 15 },
+        { name: "Chicharrón* (Precio de lanzamiento)", description: "Pan francés, salsa criolla y camote frito.", price: 15 },
       ],
       platos: [
         { name: "Dieta de pollo - Sopa*", description: "", price: 15 },
