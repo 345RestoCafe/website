@@ -11,10 +11,10 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Papa rellena o arroz tapado", description: "Crema de verduras", price: 20},
-        { name: "Tallarines rojo con Pollo", description: "Ensalada de Lechuga, tomate, palta, choclo y queso", price: 20},
-        { name: "Milanesa de Res con Puré", description: "Sopa de Kion", price: 20},
-        { name: "Arroz con Pollo", description: "Papa a la Huancaina", price: 20},
+        { name: "Ají de Gallina u Olluquito con Carne", description: "Sopa de Sémola", price: 20},
+        { name: "Bistec Flambeado con arroz y papa dorada", description: "Ensalada Hawaiana", price: 20},
+        { name: "Pollo al Horno", description: "Ensalada Rusa", price: 20},
+        { name: "Ravioles con Salda de Carne", description: "Crema de Verduras", price: 20},
         { name: "Panceta a la caja china o pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 20},
       ],
       ensaladas: [
@@ -176,11 +176,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "18/8"},
-        { day: "Martes", date: "19/8"},
-        { day: "Miércoles", date: "20/8"},
-        { day: "Jueves", date: "21/8"},
-        { day: "Viernes", date: "22/8"},
+        { day: "Lunes", date: "25/8"},
+        { day: "Martes", date: "26/8"},
+        { day: "Miércoles", date: "27/8"},
+        { day: "Jueves", date: "28/8"},
+        { day: "Viernes", date: "29/8"},
       ]
     };
   },
