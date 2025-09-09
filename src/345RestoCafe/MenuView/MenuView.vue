@@ -11,11 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Lentejas con saltado de pollo", description: "Chupe de verduras", price: 20},
-        { name: "Fettuccine con bistec flambeado", description: "Consomé", price: 20},
-        { name: "Pollada", description: "Acompañado de papa dorada y ensalada de col", price: 20},
-        { name: "Seco de carne con frejol", description: "Ensalada fresca", price: 20},
+        { name: "Enrollado de Cerdo", description: "Ensalada Waldorf", price: 20},
+        { name: "Puré con Milanesa de Pollo", description: "Consomé", price: 20},
+        { name: "Arroz con Pollo", description: "Papa a la Huancaina", price: 20},
         { name: "Panceta a la caja china o pollo al cilindro", description: "Acompañado de arroz, ensalada y papa dorada", price: 20},
+        { name: "Bistec con papas doradas", description: "Ensalada con palta", price: 20},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -176,11 +176,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "1/9"},
-        { day: "Martes", date: "2/9"},
-        { day: "Miércoles", date: "3/9"},
-        { day: "Jueves", date: "4/9"},
-        { day: "Viernes", date: "5/9"},
+        { day: "Lunes", date: "8/9"},
+        { day: "Martes", date: "9/9"},
+        { day: "Miércoles", date: "10/9"},
+        { day: "Jueves", date: "11/9"},
+        { day: "Viernes", date: "12/9"},
       ]
     };
   },
