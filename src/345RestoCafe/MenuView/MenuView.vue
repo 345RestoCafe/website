@@ -11,11 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Enrollado de Cerdo", description: "Ensalada Waldorf", price: 20},
-        { name: "Puré con Milanesa de Pollo", description: "Consomé", price: 20},
-        { name: "Arroz con Pollo", description: "Papa a la Huancaina", price: 20},
+        { name: "Lentejas con saltado de pollo", description: "Sopa de Kion", price: 20},
+        { name: "Pollada", description: "Acompañado de papa y ensalada de col", price: 20},
+        { name: "Bistec flambeado con papa al perejil", description: "Crema de esparragos", price: 20},
         { name: "Panceta a la caja china o pollo al cilindro", description: "Acompañado de arroz, ensalada y papa dorada", price: 20},
-        { name: "Bistec con papas doradas", description: "Ensalada con palta", price: 20},
+        { name: "Ravioles en salsa bolognesa", description: "Ensalada hawaiana", price: 20},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -48,7 +48,7 @@ export default {
         { name: "Milanesa de res con papas doradas", description: "", price: 27 },
         { name: "Fettuccini al pesto bistec flambeado", description: "", price: 27 },
         { name: "Fettuccini al pesto con apanado", description: "", price: 29 },
-        { name: "Bistec a lo pobre", description: "", price: 27 },
+        { name: "Bistec a lo pobre", description: "", price: 28 },
         { name: "Lomo saltado", description: "", price: 27 },
         { name: "Lomo saltado a lo pobre", description: "", price: 30 },
         { name: "Tacu Tacu con lomito al jugo*", description: "", price: 27 },
