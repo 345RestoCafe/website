@@ -13,7 +13,7 @@ export default {
       menu: [
         { name: "Lentejas con saltado de pollo", description: "Sopa de Kion", price: 20},
         { name: "Pollada", description: "Acompañado de papa y ensalada de col", price: 20},
-        { name: "Bistec flambeado con papa al perejil", description: "Crema de esparragos", price: 20},
+        { name: "Bistec flambeado con papa al perejil", description: "Crema de espárragos", price: 20},
         { name: "Panceta a la caja china o pollo al cilindro", description: "Acompañado de arroz, ensalada y papa dorada", price: 20},
         { name: "Ravioles en salsa bolognesa", description: "Ensalada hawaiana", price: 20},
       ],
@@ -176,11 +176,11 @@ export default {
         { name: "Adicional de leche", description: "", price: 2 },
       ],
       menu_date: [
-        { day: "Lunes", date: "8/9"},
-        { day: "Martes", date: "9/9"},
-        { day: "Miércoles", date: "10/9"},
-        { day: "Jueves", date: "11/9"},
-        { day: "Viernes", date: "12/9"},
+        { day: "Lunes", date: "22/9"},
+        { day: "Martes", date: "23/9"},
+        { day: "Miércoles", date: "24/9"},
+        { day: "Jueves", date: "25/9"},
+        { day: "Viernes", date: "26/9"},
       ]
     };
   },
