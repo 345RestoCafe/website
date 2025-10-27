@@ -1,6 +1,9 @@
 <script>
+import GalleryComponent from "@/345RestoCafe/EventsView/components/galleryComponent.vue";
+
 export default {
-  name: "eventHeaderComponent"
+  name: "eventHeaderComponent",
+  components: {GalleryComponent}
 }
 </script>
 
@@ -14,7 +17,7 @@ export default {
         <p>Contamos con una variedad de platos, bocaditos, bebidas y postres a su entera disposición que podrán encontrar de lunes a viernes desde las 8:00am hasta las 6:00pm.</p>
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-        <img class="img-fluid rounded shadow" src="@/assets/images/events/eventos_header.jpg" alt="345RestoCafe Events" style="max-width: 100%; height: auto;"/>
+        <GalleryComponent/>
       </div>
     </div>
   </div>

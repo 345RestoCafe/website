@@ -3,10 +3,11 @@ import BannerComponent from "@/345RestoCafe/EventsView/components/bannerComponen
 import EventHeaderComponent from "@/345RestoCafe/EventsView/components/eventHeaderComponent.vue";
 import EventServicesComponent from "@/345RestoCafe/EventsView/components/eventServicesComponent.vue";
 import ProposalComponent from "@/345RestoCafe/EventsView/components/proposalComponent.vue";
+import GalleryComponent from "@/345RestoCafe/EventsView/components/galleryComponent.vue";
 
 export default {
   name: "EventsView",
-  components: {ProposalComponent, EventServicesComponent, EventHeaderComponent, BannerComponent}
+  components: {GalleryComponent, ProposalComponent, EventServicesComponent, EventHeaderComponent, BannerComponent},
 }
 </script>
 
