@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container text-white  justify-content-center">
-      <div class="row w-100 align-items-center">
+    <div class="container text-white">
+      <div class="row w-100 justify-content-between">
         <!-- Información de contacto -->
         <div class="col-lg-6 d-flex align-items-center justify-content-center flex-wrap">
           <p class="info mb-0 me-2">Resto Café, Bar y Delivery</p>
@@ -14,15 +14,11 @@
         <!-- Correos electrónicos -->
         <div class="col-lg-2 d-flex align-items-center justify-content-center">
           <i class="pi pi-envelope me-2" style="font-size: 1rem"></i>
-          <p class="mail mb-0">contacto@345restocafe.com</p>
-        </div>
-        <div class="col-lg-2 d-flex align-items-center justify-content-center">
-          <i class="pi pi-envelope me-2" style="font-size: 1rem"></i>
           <p class="mail mb-0">eventos@345retocafe.com</p>
         </div>
 
         <!-- Redes sociales -->
-        <div class="col-lg-2 d-flex align-items-center justify-content-center">
+        <div class="col-lg-2 d-flex align-items-center justify-content-center align-items-center">
           <a class="pi pi-facebook text-white me-3" style="font-size: 1rem; text-decoration: none;" href="https://www.facebook.com/profile.php?id=100092175221621"></a>
           <a class="pi pi-instagram text-white me-3" style="font-size: 1rem; text-decoration: none;" href="https://www.instagram.com/345restocafe/"></a>
           <a class="pi pi-tiktok text-white me-3" style="font-size: 1rem; text-decoration: none;" href="https://www.tiktok.com/@345restocafe"></a>

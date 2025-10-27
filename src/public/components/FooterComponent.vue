@@ -9,10 +9,9 @@
         <div class="col-md-4 text-md-start text-center text-white">
           <h5 class="text-primary">Resto Café, Bar y Delivery</h5>
           <p><i class="pi pi-phone"></i> +51 993 709 111</p>
-          <p><i class="pi pi-envelope"></i> contacto@345restocafe.com</p>
           <p><i class="pi pi-map-marker"></i> Tomas Ramsey 930 - Piso 13,<br> Magdalena, Lima, Perú</p>
-          <h5 class="text-primary">Eventos</h5>
-          <p><i class="pi pi-phone"></i> +51 987 955 926</p>
+          <h5 class="text-primary mt-4">Eventos</h5>
+          <p><i class="pi pi-phone my-0"></i> +51 987 955 926</p>
           <p><i class="pi pi-envelope"></i> eventos@345restocafe.com</p>
         </div>
         <div class="col-md-4 text-center align-self-center">

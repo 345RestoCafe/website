@@ -18,10 +18,11 @@ export default {
         <h4 class="text-primary">Dirección</h4>
         <h6 class="text-secondary mb-5">Tomas Ramsey 930 - Piso 13 <br> Magdalena del Mar. Lima, Perú</h6>
         <h4 class="text-primary">Cafetería, barra, restaurante y delivery:</h4>
-        <h6 class="text-secondary mb-3"><i class="pi pi-phone"/>&nbsp; +51 993 709 111</h6>
-        <h6 class="text-secondary mb-5"><i class="pi pi-envelope"/>&nbsp; contacto@345restocafe.com</h6>
-        <h6 class="text-secondary mb-3"><i class="pi pi-phone"/>&nbsp; +987 955 926</h6>
-        <h6 class="text-secondary mb-5"><i class="pi pi-envelope"/>&nbsp; eventos@345restocafe.com</h6>
+        <h6 class="text-secondary mb-4"><i class="pi pi-phone"/>&nbsp; +51 993 709 111</h6>
+        <h6 class="text-secondary mb-5"><i class="pi pi-phone"/>&nbsp; +987 955 926</h6>
+        <h6 class="text-secondary mb-4"><i class="pi pi-envelope"/>&nbsp; eventos@345restocafe.com</h6>
+        <h6 class="text-secondary mb-4"><i class="pi pi-envelope"/>&nbsp; mvallejo@345restocafe.com</h6>
+        <h6 class="text-secondary mb-4"><i class="pi pi-envelope"/>&nbsp; rzagal@345restocafe.com</h6>
       </div>
 
       <!-- Mosaico -->
