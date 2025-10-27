@@ -1,71 +1,71 @@
-<script>
-export default {
-  props: {
-    images: {
-      type: Array,
-      required: true
-    }
+<script setup>
+import { ref, watchEffect, onMounted, onBeforeUnmount } from "vue";
+
+const props = defineProps({
+  images: {
+    type: Array,
+    required: true
+  },
+  interval: {
+    type: Number,
+    default: 5000
   }
+});
+
+const currentIndex = ref(0);
+let timer = null;
+
+const startRotation = () => {
+  stopRotation();
+  timer = setInterval(() => {
+    currentIndex.value = (currentIndex.value + 1) % props.images.length;
+  }, props.interval);
 };
+
+const stopRotation = () => {
+  if (timer) clearInterval(timer);
+};
+
+onMounted(startRotation);
+onBeforeUnmount(stopRotation);
+
+watchEffect(() => {
+  stopRotation();
+  startRotation();
+});
 </script>
 
 <template>
-  <div class="d-flex justify-content-center">
-    <Galleria
-        :value="images"
-        :showThumbnails="false"
-        :circular="true"
-        :autoPlay="true"
-        :transitionInterval="2500"
-        :unstyled="true"
-        containerStyle="width: 100%; border-radius: 0.8rem; overflow: hidden;"
-        :showIndicators="false"
-    >
-      <template #item="slotProps">
-        <transition name="fade" mode="out-in">
-          <img
-              :key="slotProps.item.itemImageSrc"
-              :src="slotProps.item.itemImageSrc"
-              :alt="slotProps.item.alt"
-              class="img-fluid fade-img"
-          />
-        </transition>
-      </template>
-    </Galleria>
+  <div class="fade-carousel position-relative overflow-hidden rounded">
+    <transition-group name="fade" tag="div">
+      <img
+          v-if="images.length"
+          :key="images[currentIndex]?.itemImageSrc"
+          :src="images[currentIndex]?.itemImageSrc"
+          :alt="images[currentIndex]?.alt || ''"
+          class="carousel-img position-absolute w-100 h-100"
+      />
+    </transition-group>
   </div>
 </template>
 
 <style scoped>
-Galleria {
+.fade-carousel {
   width: 100%;
-  max-height: 20rem;
-  border: none;
-}
-
-img {
-  width: 100%;
-  max-width: 30rem;
+  max-width: 640px;
   height: 25rem;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  border: none;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.1s ease-in-out;
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1.5s ease-in-out;
 }
-.fade-enter-from,
-.fade-leave-to {
+.fade-enter-from, .fade-leave-to {
   opacity: 0;
 }
 
-.fade-img {
-  width: 100%;
-  height: 25rem;
+.carousel-img {
   object-fit: cover;
-  border: none;
-  display: block;
+  top: 0;
+  left: 0;
 }
 </style>
