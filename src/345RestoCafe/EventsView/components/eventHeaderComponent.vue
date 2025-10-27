@@ -9,12 +9,20 @@ export default {
     return {
       images: [
         {
-          itemImageSrc: images_path['/src/assets/images/events/eventos1.jpg'],
-          alt: 'Description for Image 1',
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel1.jpg'],
+          alt: 'Eventos Image 1',
         },
         {
-          itemImageSrc: images_path['/src/assets/images/events/eventos2.jpg'],
-          alt: 'Description for Image 2',
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel2.jpg'],
+          alt: 'Eventos Image 2',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel3.jpg'],
+          alt: 'Eventos Image 3',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel5.jpg'],
+          alt: 'Eventos Image 5',
         },
       ]
     }
