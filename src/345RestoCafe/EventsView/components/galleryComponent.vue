@@ -1,30 +1,10 @@
 <script>
 export default {
-  created() {
-    const images_path = import.meta.glob('@/assets/images/events/*', { eager: true, import: 'default' });
-    this.images = [
-      {
-        itemImageSrc: images_path['/src/assets/images/events/eventos1.jpg'],
-        alt: 'Description for Image 1',
-        title: 'Title 1'
-      },
-      {
-        itemImageSrc: images_path['/src/assets/images/events/eventos2.jpg'],
-        alt: 'Description for Image 1',
-        title: 'Title 1'
-      },
-      {
-        itemImageSrc: images_path['/src/assets/images/events/eventos3.jpg'],
-        alt: 'Description for Image 1',
-        title: 'Title 1'
-      },
-      {
-        itemImageSrc: images_path['/src/assets/images/events/eventos4.jpg'],
-        alt: 'Description for Image 1',
-        title: 'Title 1'
-      }
-    ]
-    console.log(this.images);
+  props: {
+    images: {
+      type: Array,
+      required: true
+    }
   }
 };
 </script>

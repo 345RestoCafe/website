@@ -3,7 +3,22 @@ import GalleryComponent from "@/345RestoCafe/EventsView/components/galleryCompon
 
 export default {
   name: "proposalComponent",
-  components: {GalleryComponent}
+  components: {GalleryComponent},
+  data() {
+    const images_path = import.meta.glob('@/assets/images/events/*', { eager: true, import: 'default' });
+    return {
+      images: [
+        {
+          itemImageSrc: images_path['/src/assets/images/events/eventos3.jpg'],
+          alt: 'Description for Image 1',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/eventos4.jpg'],
+          alt: 'Description for Image 1',
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -12,7 +27,7 @@ export default {
     <div class="container">
       <div class="row g-4 align-items-center">
         <div class="col-12 col-md-6 text-center">
-          <GalleryComponent/>
+          <GalleryComponent :images="images"/>
         </div>
         <div class="col-12 col-md-6">
           <h2>Proponemos:</h2>

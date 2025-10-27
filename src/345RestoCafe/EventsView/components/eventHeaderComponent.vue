@@ -3,7 +3,22 @@ import GalleryComponent from "@/345RestoCafe/EventsView/components/galleryCompon
 
 export default {
   name: "eventHeaderComponent",
-  components: {GalleryComponent}
+  components: {GalleryComponent},
+  data() {
+    const images_path = import.meta.glob('@/assets/images/events/*', { eager: true, import: 'default' });
+    return {
+      images: [
+        {
+          itemImageSrc: images_path['/src/assets/images/events/eventos1.jpg'],
+          alt: 'Description for Image 1',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/eventos2.jpg'],
+          alt: 'Description for Image 2',
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -17,7 +32,7 @@ export default {
         <p>Contamos con una variedad de platos, bocaditos, bebidas y postres a su entera disposición que podrán encontrar de lunes a viernes desde las 8:00am hasta las 6:00pm.</p>
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-        <GalleryComponent/>
+        <GalleryComponent :images="images" />
       </div>
     </div>
   </div>
