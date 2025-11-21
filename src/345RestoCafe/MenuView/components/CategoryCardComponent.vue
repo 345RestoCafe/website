@@ -7,6 +7,9 @@ export default {
           'SANDWICHES',
           'PLATOS A LA CARTA'
       ],
+      combo: [
+          'DESAYUNOS'
+      ]
     };
   },
   name: "CategoryCardComponent",
@@ -62,6 +65,11 @@ export default {
           class="text-center mt-4"
           style="font-size: 0.9rem"
       >*Sujeto a disponibilidad</p>
+      <p
+          v-if="combo.some(item => title.includes(item))"
+          class="text-center mt-4"
+          style="font-size: 0.9rem"
+      >*Valido hasta agotar stock (25 unidades), máximo 2 unidades por persona.</p>
     </div>
   </div>
 </template>

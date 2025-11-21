@@ -58,8 +58,8 @@ export default {
         { name: "Porción de huevo frito", description: "", price: 3 },
       ],
       desayunos: [
-        { name: "Desayuno 345 (Hasta las 10:30)", description: "Sandwich mixto o de pollo + café americano", price: 14 },
-        { name: "Desayuno 345 con jugo (Hasta las 10:30)", description: "Sandwich mixto o de pollo + jugo a elección", price: 16 },
+        { name: "Desayuno 345 (Hasta las 10:30)*", description: "Sandwich mixto o de pollo + café americano", price: 14 },
+        { name: "Desayuno 345 con jugo (Hasta las 10:30)*", description: "Sandwich mixto o de pollo + jugo a elección", price: 16 },
         { name: "Omelette simple", description: "", price: 10 },
         { name: "Omelette con adicionales", description: "", price: 14 },
         { name: "Dos Huevos fritos unidades", description: "Acompañado de 2 unidades de tostadas o 1 pan", price: 9 },
