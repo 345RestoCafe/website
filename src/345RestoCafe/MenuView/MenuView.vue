@@ -192,6 +192,21 @@ export default {
 
     this.categories = [
       { title: 'MENU DE LA SEMANA', products: this.menu, image: images['/src/assets/images/menu/Menu.jpg'] },
+        /*
+      { title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: images['/src/assets/images/menu/Ensaladas.jpg'] },
+      { title: 'SANDWICHES', products: this.sandwiches, image: images['/src/assets/images/menu/Sandwiches.jpg'] },
+      { title: 'PLATOS A LA CARTA', products: this.platos, image: images['/src/assets/images/menu/Platos.jpg'] },
+      { title: 'DESAYUNOS', products: this.desayunos, image: images['/src/assets/images/menu/Desayunos.jpg'] },
+      { title: 'PIQUEOS (segun disponibilidad)', products: this.piqueos, image: images['/src/assets/images/menu/Piqueos.jpg'] },
+      { title: 'POSTRES', products: this.postres, image: images['/src/assets/images/menu/Postres.jpg'] },
+      { title: 'INFUSIONES', products: this.infusiones, image: images['/src/assets/images/menu/Infusiones.jpg'] },
+      { title: 'CAFÉS', products: this.cafe, image: images['/src/assets/images/menu/Cafes.jpg'] },
+      { title: 'FRAPPÉS', products: this.frappes, image: images['/src/assets/images/menu/Frappes.jpg'] },
+      { title: 'BEBIDAS FRÍAS', products: this.bebidas, image: images['/src/assets/images/menu/Bebidas.jpg'] },
+      { title: 'LICORES', products: this.licores, image: images['/src/assets/images/menu/Licores.jpg'] },
+      { title: 'CERVEZAS', products: this.cervezas, image: images['/src/assets/images/menu/Cervezas.jpg'] },
+      { title: 'JUGOS', products: this.jugos, image: images['/src/assets/images/menu/Jugos.jpg'] }
+      */
     ];
   }
 
