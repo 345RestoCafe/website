@@ -235,6 +235,16 @@ export default {
           </div>
         </div>
       </div>
+      <!-- Carta en PDF -->
+      <!--
+      <div class="container">
+        <div class="justify-content-center">
+          <div class="col-md-12 my-5 text-center">
+            <iframe src="/src/assets/pdfs/test1.pdf" class="text-center" width="1000" height="800"></iframe>
+          </div>
+        </div>
+      </div>
+      -->
     </div>
   </div>
 </template>
