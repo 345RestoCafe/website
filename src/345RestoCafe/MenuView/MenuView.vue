@@ -170,7 +170,7 @@ export default {
         { name: "Jugo de piña", description: "", price: 12 },
         { name: "Jugo de fresa", description: "", price: 12 },
         { name: "Jugo de melón", description: "", price: 12 },
-        { name: "Jugo de naranja", description: "", price: 12 },
+        { name: "Jugo de naranja", description: "", price: 14 },
         { name: "Jugo surtido", description: "", price: 12 },
         { name: "Cremolada", description: "", price: 14 },
         { name: "Adicional de leche", description: "", price: 2 },
