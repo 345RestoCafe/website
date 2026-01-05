@@ -11,11 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Enrollado de bondiola", description: "Ensalada Waldorf", price: 20},
-        { name: "Fettuccine al pesto con bistec flambeado", description: "Ensalada Fresca", price: 20},
-        { name: "NO HAY ATENCIÓN", description: "", price: 20},
-        { name: "FERIADO", description: "", price: 20},
-        { name: "Solo Platos a la Carta", description: "", price: 20},
+        { name: "Ají de pollo", description: "Solterito", price: 22},
+        { name: "Pollo con piña", description: "Wantán frito", price: 22},
+        { name: "Estofado de pollo", description: "Enrollado de jamón con verduras", price: 22},
+        { name: "Parrila: Pollo al cilindro con ensalada fresca", description: "Churrasco o panceta crocante a S/27", price: 22},
+        { name: "Picante de carne", description: "Ensalada delicia", price: 22},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -173,11 +173,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],
       menu_date: [
-        { day: "Lunes", date: "22/12"},
-        { day: "Martes", date: "23/12"},
-        { day: "Miércoles", date: "24/12"},
-        { day: "Jueves", date: "25/12"},
-        { day: "Viernes", date: "26/12"},
+        { day: "Lunes", date: "5/1"},
+        { day: "Martes", date: "6/1"},
+        { day: "Miércoles", date: "7/1"},
+        { day: "Jueves", date: "8/1"},
+        { day: "Viernes", date: "9/1"},
       ]
     };
   },
