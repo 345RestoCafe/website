@@ -88,7 +88,7 @@ export default {
       ],
       postres: [
         { name: "Trufa de chocolate", description: "", price: 3 },
-        { name: "Galleta chocochips", description: "", price: 6 },
+        { name: "Galleta chocochips", description: "", price: 5.50 },
         { name: "Brownie", description: "", price: 4 },
         { name: "Alfajor", description: "", price: 4 },
         { name: "Crema volteada", description: "", price: 10 },
