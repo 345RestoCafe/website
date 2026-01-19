@@ -11,11 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Ají de pollo", description: "Solterito", price: 22},
-        { name: "Pollo con piña", description: "Wantán frito", price: 22},
-        { name: "Estofado de pollo", description: "Enrollado de jamón con verduras", price: 22},
-        { name: "Parrila: Pollo al cilindro con ensalada fresca", description: "Churrasco o panceta crocante a S/27", price: 22},
-        { name: "Picante de carne", description: "Ensalada delicia", price: 22},
+        { name: "Arroz tapado", description: "Choclo con queso", price: 22},
+        { name: "Chickenkatsu", description: "Sopa Fu Chi Fu", price: 22},
+        { name: "Pollo al sillao", description: "Tequeños de queso", price: 22},
+        { name: "Fettuccine al Alfredo", description: "A la carta: Lasagna", price: 22},
+        { name: "Locro con bistec flambeado", description: "Bolitas de causa", price: 22},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -173,11 +173,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],
       menu_date: [
-        { day: "Lunes", date: "5/1"},
-        { day: "Martes", date: "6/1"},
-        { day: "Miércoles", date: "7/1"},
-        { day: "Jueves", date: "8/1"},
-        { day: "Viernes", date: "9/1"},
+        { day: "Lunes", date: "19/1"},
+        { day: "Martes", date: "20/1"},
+        { day: "Miércoles", date: "21/1"},
+        { day: "Jueves", date: "22/1"},
+        { day: "Viernes", date: "23/1"},
       ]
     };
   },
