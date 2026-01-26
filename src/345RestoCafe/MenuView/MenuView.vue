@@ -11,11 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Arroz tapado", description: "Choclo con queso", price: 22},
-        { name: "Chickenkatsu", description: "Sopa Fu Chi Fu", price: 22},
-        { name: "Pollo al sillao", description: "Tequeños de queso", price: 22},
-        { name: "Fettuccine al Alfredo", description: "A la carta: Lasagna", price: 22},
-        { name: "Locro con bistec flambeado", description: "Bolitas de causa", price: 22},
+        { name: "Lentejas con saltado de pollo", description: "Solterito", price: 22},
+        { name: "Arroz con chancho (Panceta)", description: "Patacones con chalaquita", price: 22},
+        { name: "Ravioles de espinaca y ricotta en salsa bolognesa - Milanesa a la Napolitana (A la carta)", description: "Enrollado de jamón con verduras", price: 22},
+        { name: "Pollo al horno", description: "Ensalada waldorf", price: 22},
+        { name: "Olluquito de carne o ají de pollo - Conchitas a la parmesana (A la carta)", description: "Mazamorra morada y arroz con leche", price: 22},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -173,11 +173,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],
       menu_date: [
-        { day: "Lunes", date: "19/1"},
-        { day: "Martes", date: "20/1"},
-        { day: "Miércoles", date: "21/1"},
-        { day: "Jueves", date: "22/1"},
-        { day: "Viernes", date: "23/1"},
+        { day: "Lunes", date: "26/1"},
+        { day: "Martes", date: "27/1"},
+        { day: "Miércoles", date: "28/1"},
+        { day: "Jueves", date: "29/1"},
+        { day: "Viernes", date: "30/1"},
       ]
     };
   },
