@@ -14,7 +14,7 @@ export default {
         { name: "Picante de pollo", description: "Salpicón de pollo", price: 22},
         { name: "Estofado de pollo", description: "Crema de verduras", price: 22},
         { name: "Brazuelo de cerdo al horno", description: "Ensalada waldorf", price: 22},
-        { name: "Pesto con milanesa de carne - Lasagna (A la carta, previa reserva)", description: "Ensalada primavera", price: 22},
+        { name: "Pesto con milanesa de pollo - Lasagna (A la carta, previa reserva)", description: "Ensalada primavera", price: 22},
         { name: "Bistec con papa dorada", description: "Ensalada fresca", price: 22},
       ],
       ensaladas: [
