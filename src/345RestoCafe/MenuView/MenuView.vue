@@ -11,11 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Picante de pollo", description: "Salpicón de pollo", price: 22},
-        { name: "Estofado de pollo", description: "Crema de verduras", price: 22},
-        { name: "Brazuelo de cerdo al horno", description: "Ensalada waldorf", price: 22},
-        { name: "Pesto con milanesa de pollo - Lasagna (A la carta, previa reserva)", description: "Ensalada primavera", price: 22},
-        { name: "Bistec con papa dorada", description: "Ensalada fresca", price: 22},
+        { name: "Arroz Tapado", description: "Solterito", price: 22},
+        { name: "Chicken Fingers", description: "Ensalada colslaw", price: 22},
+        { name: "Arroz con Pollo", description: "Papa a la huancaina", price: 22},
+        { name: "Pollo al cilindro", description: "A la carta: Chuleta de Bondiola o Churrasco", price: 22},
+        { name: "Pollo en salsa de espinaca y champiñones", description: "Tequeños de queso", price: 22},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
