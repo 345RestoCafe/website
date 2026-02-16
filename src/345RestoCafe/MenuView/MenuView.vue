@@ -11,11 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Arroz Tapado", description: "Solterito", price: 22},
-        { name: "Chicken Fingers", description: "Ensalada colslaw", price: 22},
-        { name: "Arroz con Pollo", description: "Papa a la huancaina", price: 22},
-        { name: "Pollo al cilindro", description: "A la carta: Chuleta de Bondiola o Churrasco", price: 22},
-        { name: "Pollo en salsa de espinaca y champiñones", description: "Tequeños de queso", price: 22},
+        { name: "Ají de gallina o Caigua rellena", description: "Chupe de verduras ", price: 22},
+        { name: "Adobo de chancho con camote", description: "Ensalada fresca", price: 22},
+        { name: "Frejoles con seco de pollo", description: "Bolitas de causa", price: 22},
+        { name: "Pollo al cilindro con ensalada waldorf", description: "A la carta: Panceta crocante", price: 22},
+        { name: "Saltado de pollo", description: "Mini wraps con verduras", price: 22},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -174,11 +174,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],
       menu_date: [
-        { day: "Lunes", date: "9/2"},
-        { day: "Martes", date: "10/2"},
-        { day: "Miércoles", date: "11/2"},
-        { day: "Jueves", date: "12/2"},
-        { day: "Viernes", date: "13/2"},
+        { day: "Lunes", date: "16/2"},
+        { day: "Martes", date: "17/2"},
+        { day: "Miércoles", date: "18/2"},
+        { day: "Jueves", date: "19/2"},
+        { day: "Viernes", date: "20/2"},
       ]
     };
   },
