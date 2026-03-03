@@ -25,11 +25,11 @@ export default {
           alt: 'Eventos Image 4',
         },
         {
-          itemImageSrc: images_path['/src/assets/images/events/Carrusel10.jpg'],
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel10.jpeg'],
           alt: 'Eventos Image 10',
         },
         {
-          itemImageSrc: images_path['/src/assets/images/events/Carrusel11.jpg'],
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel11.jpeg'],
           alt: 'Eventos Image 11',
         },
       ]
