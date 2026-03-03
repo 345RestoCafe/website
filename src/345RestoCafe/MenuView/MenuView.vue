@@ -22,8 +22,8 @@ export default {
         { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
         { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
         { name: "Ensalada Shiliu", description: "Filete de pollo o atún, tomate, queso fresco, pimienta, zanahoria y vinagreta", price: 23},
-        { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alberja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
-        { name: "Ensalada 345", description: "Filete de pollo al panko, tomate cherry, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
+        { name: "Ensalada Hawaiana", description: "Filete de pollo o atún, piña, alverja, pimiento, zanahoria, papa, pasas y aliño agridulce", price: 23},
+        { name: "Ensalada 345", description: "Filete de pollo al panko, tomate, pepino, queso, pasas o pecanas, fruta del día y aliño agridulce", price: 25},
         { name: "Ensalada de frutas*", description: "", price: 16}
       ],
       sandwiches: [
