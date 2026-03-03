@@ -44,7 +44,7 @@ export default {
       <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center">
         <h4>En Resto Café 345 ofrecemos eventos y más</h4>
         <hr>
-        <p>Brindamos servicios para diversos tipos de eventos, sean corporativos o sociales, con una atención exclusiva que cuida los mínimos detalles.</p>
+        <p>Brindamos servicios para diversos tipos de eventos, sean corporativos o sociales, con una atención exclusiva que cuida los mínimos detalles en horarios personalizados.</p>
         <p>Contamos con una variedad de platos, bocaditos, bebidas y postres a su entera disposición que podrán encontrar de lunes a viernes desde las 8:00am hasta las 6:00pm.</p>
       </div>
       <div class="col-12 col-md-6 text-center p-4">
