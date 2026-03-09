@@ -11,11 +11,11 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Olluquito o Papa Rellena", description: "Ensalada Fresca", price: 22},
-        { name: "Pollo al Sillao", description: "Ensalada Primavera", price: 22},
-        { name: "Arroz a la Jardinera con Chancho al Horno", description: "Papa a la Crema de Pimiento", price: 22},
-        { name: "Pollo al Cilindro", description: "A la carta: Panceta a la Caja China", price: 22},
-        { name: "Bisteck con Papas Doradas", description: "Huevo a la Rusa", price: 22},
+        { name: "Arroz con pollo", description: "Papa a la huancaína", price: 22},
+        { name: "Ají de pollo o Cau Cau", description: "Consomé", price: 22},
+        { name: "Arroz tapado", description: "Solterito", price: 22},
+        { name: "Lomo Saltado", description: "Ensalada Fresca", price: 22},
+        { name: "Pollo al horno", description: "Ensalada Waldorf", price: 22},
       ],
       ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -89,9 +89,9 @@ export default {
       ],
       postres: [
         { name: "Trufa de chocolate", description: "", price: 3 },
-        { name: "Galleta chocochips", description: "", price: 5.50 },
-        { name: "Brownie", description: "", price: 4 },
-        { name: "Alfajor", description: "", price: 4 },
+        { name: "Galleta chocochips", description: "", price: 6 },
+        { name: "Brownie", description: "", price: 5 },
+        { name: "Alfajor", description: "", price: 5 },
         { name: "Crema volteada", description: "", price: 10 },
         { name: "Keke de plátano, zanahoria, vainilla o limón con arándanos", description: "", price: 7 },
         { name: "Keke con ganage de chocolate, buttercream o frosting", description: "", price: 8 },
