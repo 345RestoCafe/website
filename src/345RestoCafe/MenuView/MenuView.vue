@@ -184,6 +184,7 @@ export default {
   },
   created() {
     const images = import.meta.glob('@/assets/images/menu/*', { eager: true, import: 'default' });
+    const pdfUrl = '@/assets/pdfs/carta.pdf';
 
     this.categories = [
       { title: 'MENU DE LA SEMANA', products: this.menu, image: images['/src/assets/images/menu/Menu.jpg'] },
@@ -236,7 +237,7 @@ export default {
 
           <div class="pdf-container shadow rounded">
             <iframe
-                :src="require('@/assets/pdf/carta.pdf')"
+                :src="pdfUrl"
                 title="Carta del restaurante"
                 frameborder="0"
             ></iframe>
