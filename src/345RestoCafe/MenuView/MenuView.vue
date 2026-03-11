@@ -236,7 +236,7 @@ export default {
 
           <div class="pdf-container shadow rounded">
             <iframe
-                :src="require('@/assets/pdf/Carta_RestoCafe345.pdf')"
+                :src="require('@/assets/pdf/carta.pdf')"
                 title="Carta del restaurante"
                 frameborder="0"
             ></iframe>
