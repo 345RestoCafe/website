@@ -1,7 +1,7 @@
 <script>
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 import BannerComponent from "@/345RestoCafe/MenuView/components/bannerComponent.vue";
-import cartaPdf from "@/assets/pdfs/carta.pdf"
+import cartaPdf from "/src/assets/pdfs/carta.pdf"
 
 const pdfUrl = cartaPdf
 
