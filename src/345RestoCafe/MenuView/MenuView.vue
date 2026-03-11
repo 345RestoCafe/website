@@ -17,7 +17,7 @@ export default {
         { name: "Lomo Saltado", description: "Ensalada Fresca", price: 22},
         { name: "Pollo al horno", description: "Ensalada Waldorf", price: 22},
       ],
-      ensaladas: [
+      /*ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
         { name: "Ensalada asiática", description: "Filete de atún, lechuga orgánica, tomate, vainita, alverjita, semilla de chía y aliño salado.", price: 23},
         { name: "Ensalada César", description: "Trozos de pollo, pan tostado,  queso rallado, queso fresco en cubos y aliño de yogurt griego", price: 23},
@@ -172,7 +172,7 @@ export default {
         { name: "Jugo surtido", description: "", price: 12 },
         { name: "Cremolada", description: "", price: 14 },
         { name: "Jugos con leche", description: "", price: 14 },
-      ],
+      ],*/
       menu_date: [
         { day: "Lunes", date: "2/3"},
         { day: "Martes", date: "3/3"},
@@ -187,7 +187,7 @@ export default {
 
     this.categories = [
       { title: 'MENU DE LA SEMANA', products: this.menu, image: images['/src/assets/images/menu/Menu.jpg'] },
-      { title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: images['/src/assets/images/menu/Ensaladas.jpg'] },
+      /*{ title: 'ENSALADAS A LA CARTA', products: this.ensaladas, image: images['/src/assets/images/menu/Ensaladas.jpg'] },
       { title: 'SANDWICHES', products: this.sandwiches, image: images['/src/assets/images/menu/Sandwiches.jpg'] },
       { title: 'PLATOS A LA CARTA', products: this.platos, image: images['/src/assets/images/menu/Platos.jpg'] },
       { title: 'DESAYUNOS', products: this.desayunos, image: images['/src/assets/images/menu/Desayunos.jpg'] },
@@ -199,7 +199,7 @@ export default {
       { title: 'BEBIDAS FRÍAS', products: this.bebidas, image: images['/src/assets/images/menu/Bebidas.jpg'] },
       { title: 'LICORES', products: this.licores, image: images['/src/assets/images/menu/Licores.jpg'] },
       { title: 'CERVEZAS', products: this.cervezas, image: images['/src/assets/images/menu/Cervezas.jpg'] },
-      { title: 'JUGOS', products: this.jugos, image: images['/src/assets/images/menu/Jugos.jpg'] }
+      { title: 'JUGOS', products: this.jugos, image: images['/src/assets/images/menu/Jugos.jpg'] }*/
     ];
   }
 
@@ -230,6 +230,7 @@ export default {
             />
           </div>
         </div>
+        <embed src="@/assets/pdfs/carta.pdf" type="application/pdf"/>
       </div>
     </div>
   </div>
