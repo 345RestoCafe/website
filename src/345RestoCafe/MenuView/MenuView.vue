@@ -1,6 +1,7 @@
 <script>
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 import BannerComponent from "@/345RestoCafe/MenuView/components/bannerComponent.vue";
+import cartaPDF from "@/assets/pdfs/carta.pdf";
 
 export default {
   name: "MenuView",
@@ -10,6 +11,7 @@ export default {
   },
   data() {
     return {
+      cartaPDF: cartaPDF,
       menu: [
         { name: "Arroz con pollo", description: "Papa a la huancaína", price: 22},
         { name: "Ají de pollo o Cau Cau", description: "Consomé", price: 22},
@@ -184,7 +186,6 @@ export default {
   },
   created() {
     const images = import.meta.glob('@/assets/images/menu/*', { eager: true, import: 'default' });
-    const pdfUrl = '@/assets/pdfs/carta.pdf';
 
     this.categories = [
       { title: 'MENU DE LA SEMANA', products: this.menu, image: images['/src/assets/images/menu/Menu.jpg'] },
@@ -237,7 +238,7 @@ export default {
 
           <div class="pdf-container shadow rounded">
             <iframe
-                :src="pdfUrl"
+                :src="cartaPDF"
                 title="Carta del restaurante"
                 frameborder="0"
             ></iframe>
