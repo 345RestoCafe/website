@@ -1,7 +1,10 @@
 <script>
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 import BannerComponent from "@/345RestoCafe/MenuView/components/bannerComponent.vue";
-import cartaPDF from "@/assets/pdfs/carta.pdf";
+import carta1 from "@/assets/images/menu/carta/Carta1.png";
+import carta2 from "@/assets/images/menu/carta/Carta2.png";
+import carta3 from "@/assets/images/menu/carta/Carta3.png";
+import carta4 from "@/assets/images/menu/carta/Carta4.png";
 
 export default {
   name: "MenuView",
@@ -11,7 +14,10 @@ export default {
   },
   data() {
     return {
-      cartaPDF: cartaPDF,
+      carta1: carta1,
+      carta2: carta2,
+      carta3: carta3,
+      carta4: carta4,
       menu: [
         { name: "Arroz con pollo", description: "Papa a la huancaína", price: 22},
         { name: "Ají de pollo o Cau Cau", description: "Consomé", price: 22},
@@ -176,11 +182,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],*/
       menu_date: [
-        { day: "Lunes", date: "2/3"},
-        { day: "Martes", date: "3/3"},
-        { day: "Miércoles", date: "4/3"},
-        { day: "Jueves", date: "5/3"},
-        { day: "Viernes", date: "6/3"},
+        { day: "Lunes", date: "9/3"},
+        { day: "Martes", date: "10/3"},
+        { day: "Miércoles", date: "11/3"},
+        { day: "Jueves", date: "12/3"},
+        { day: "Viernes", date: "13/3"},
       ]
     };
   },
@@ -233,16 +239,13 @@ export default {
           </div>
         </div>
       </div>
-      <div class="row justify-content-center my-5" style="height: 800px">
+      <div class="row justify-content-center my-5">
         <div class="col-12 col-lg-10">
           <div class="pdf-container shadow rounded h-100">
-            <iframe
-                :src="cartaPDF"
-                title="Carta del restaurante"
-                frameborder="0"
-                class="w-100 h-100"
-                style="height: 300px"
-            ></iframe>
+            <img :src="carta1" alt="Carta del restaurante" class="img-fluid w-100 object-fit-cover">
+            <img :src="carta2" alt="Carta del restaurante" class="img-fluid w-100 object-fit-cover">
+            <img :src="carta3" alt="Carta del restaurante" class="img-fluid w-100 object-fit-cover">
+            <img :src="carta4" alt="Carta del restaurante" class="img-fluid w-100 object-fit-cover">
           </div>
         </div>
       </div>
