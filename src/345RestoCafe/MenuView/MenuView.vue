@@ -1,6 +1,9 @@
 <script>
 import CategoryCardComponent from "@/345RestoCafe/MenuView/components/CategoryCardComponent.vue";
 import BannerComponent from "@/345RestoCafe/MenuView/components/bannerComponent.vue";
+import cartaPdf from "@/assets/pdfs/carta.pdf"
+
+const pdfUrl = cartaPdf
 
 export default {
   name: "MenuView",
@@ -230,7 +233,19 @@ export default {
             />
           </div>
         </div>
-        <embed src="@/assets/pdfs/carta.pdf" type="application/pdf"/>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-12 col-lg-10">
+
+          <div class="pdf-container shadow rounded">
+            <iframe
+                :src="pdfUrl"
+                title="Carta del restaurante"
+                frameborder="0"
+            ></iframe>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
