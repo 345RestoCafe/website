@@ -233,17 +233,17 @@ export default {
           </div>
         </div>
       </div>
-      <div class="row justify-content-center my-5">
+      <div class="row justify-content-center my-5" style="height: 800px">
         <div class="col-12 col-lg-10">
-
-          <div class="pdf-container shadow rounded">
+          <div class="pdf-container shadow rounded h-100">
             <iframe
                 :src="cartaPDF"
                 title="Carta del restaurante"
                 frameborder="0"
+                class="w-100 h-100"
+                style="height: 300px"
             ></iframe>
           </div>
-
         </div>
       </div>
     </div>
