@@ -19,11 +19,11 @@ export default {
       carta3: carta3,
       carta4: carta4,
       menu: [
-        { name: "Arroz con pollo", description: "Papa a la huancaína", price: 22},
-        { name: "Ají de pollo o Cau Cau", description: "Consomé", price: 22},
-        { name: "Arroz tapado", description: "Solterito", price: 22},
-        { name: "Lomo Saltado", description: "Ensalada Fresca", price: 22},
-        { name: "Pollo al horno", description: "Ensalada Waldorf", price: 22},
+        { name: "Picante de Carne", description: "Ensalada de Palta", price: 22},
+        { name: "Chijaukay", description: "Sopa de Kión", price: 22},
+        { name: "Frejol con seco de pollo a la norteña", description: "Enrollado de verduras", price: 22},
+        { name: "Pesto con Milanesa de pollo", description: "Ensalada Primavera", price: 22},
+        { name: "Locro con bistec", description: "Salpicón de pollo", price: 22},
       ],
       /*ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -182,11 +182,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],*/
       menu_date: [
-        { day: "Lunes", date: "9/3"},
-        { day: "Martes", date: "10/3"},
-        { day: "Miércoles", date: "11/3"},
-        { day: "Jueves", date: "12/3"},
-        { day: "Viernes", date: "13/3"},
+        { day: "Lunes", date: "16/3"},
+        { day: "Martes", date: "17/3"},
+        { day: "Miércoles", date: "18/3"},
+        { day: "Jueves", date: "19/3"},
+        { day: "Viernes", date: "20/3"},
       ]
     };
   },
