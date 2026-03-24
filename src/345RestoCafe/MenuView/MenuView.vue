@@ -19,11 +19,11 @@ export default {
       carta3: carta3,
       carta4: carta4,
       menu: [
-        { name: "Picante de Carne", description: "Ensalada de Palta", price: 22},
-        { name: "Chijaukay", description: "Sopa de Kión", price: 22},
-        { name: "Frejol con seco de pollo a la norteña", description: "Enrollado de verduras", price: 22},
-        { name: "Pesto con Milanesa de pollo", description: "Ensalada Primavera", price: 22},
-        { name: "Locro con bistec", description: "Salpicón de pollo", price: 22},
+        { name: "Lentejas con saltado de pollo", description: "Solterio con quinua", price: 22},
+        { name: "Pollada con papa dorada", description: "Ensalada de col", price: 22},
+        { name: "Fettucinni en salsa bolognesa", description: "Mini wraps", price: 22},
+        { name: "Pollo al cilindro o carne a la parilla", description: "Acompañado de papa sancochada y crema huacatay", price: 22},
+        { name: "Bisteck con puré", description: "Ensalada cocida", price: 22},
       ],
       /*ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
