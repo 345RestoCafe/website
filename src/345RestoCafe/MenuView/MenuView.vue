@@ -182,11 +182,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],*/
       menu_date: [
-        { day: "Lunes", date: "16/3"},
-        { day: "Martes", date: "17/3"},
-        { day: "Miércoles", date: "18/3"},
-        { day: "Jueves", date: "19/3"},
-        { day: "Viernes", date: "20/3"},
+        { day: "Lunes", date: "23/3"},
+        { day: "Martes", date: "24/3"},
+        { day: "Miércoles", date: "25/3"},
+        { day: "Jueves", date: "26/3"},
+        { day: "Viernes", date: "27/3"},
       ]
     };
   },
