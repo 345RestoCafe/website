@@ -19,11 +19,11 @@ export default {
       carta3: carta3,
       carta4: carta4,
       menu: [
-        { name: "Olluquito con carne o Ají de gallina", description: "Consomé", price: 22},
-        { name: "Estofado de pollo", description: "Crema de verduras", price: 22},
-        { name: "Enrollado de Bondiola al horno", description: "Ensalada con palta", price: 22},
-        { name: "Pollo al cilindro o Churrasco a la parrilla", description: "Acompañado ensalada waldorf y arroz", price: 22},
-        { name: "Fettuccini a la bolognesa", description: "Ensalada de verduras cocidas", price: 22},
+        { name: "Picante de carne o aji de gallina", description: "Palta rellena", price: 22},
+        { name: "Ravioles a la bolognesa", description: "Crema de espárragos", price: 22},
+        { name: "Arroz con chancho", description: "Papa con crema de pimiento", price: 22},
+        { name: "Pollo al cilindro", description: "Acompañado ensalada rusa y arroz", price: 22},
+        { name: "Bistec encebollado con papa dorada y arroz", description: "Consomé", price: 22},
       ],
       /*ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
