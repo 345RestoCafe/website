@@ -19,11 +19,11 @@ export default {
       carta3: carta3,
       carta4: carta4,
       menu: [
-        { name: "Lentejas con bistec", description: "Ensalada fresca", price: 22},
-        { name: "Adobo de Chancho con camote", description: "Choclo con queso", price: 22},
-        { name: "Arroz con pollo", description: "Papa a la huancaína", price: 22},
-        { name: "Pollo al cilindro", description: "Acompañado de papa y ensalada", price: 22},
-        { name: "Milanesa con papas doradas", description: "Ensalada delicia", price: 22},
+        { name: "Arroz tapado", description: "Salpicón de pollo", price: 22},
+        { name: "Pollo Chijaukay", description: "Sopa wantán", price: 22},
+        { name: "Fetuccini al Alfredo con asado", description: "Consomé de verduras", price: 22},
+        { name: "Pollada", description: "Acompañada de papa, arroz y ensalada de col", price: 22},
+        { name: "Locro con bistec", description: "Wraps Rellenos", price: 22},
       ],
       /*ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -182,11 +182,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],*/
       menu_date: [
-        { day: "Lunes", date: "1/6"},
-        { day: "Martes", date: "2/6"},
-        { day: "Miércoles", date: "3/6"},
-        { day: "Jueves", date: "4/6"},
-        { day: "Viernes", date: "5/6"},
+        { day: "Lunes", date: "8/6"},
+        { day: "Martes", date: "9/6"},
+        { day: "Miércoles", date: "10/6"},
+        { day: "Jueves", date: "11/6"},
+        { day: "Viernes", date: "12/6"},
       ]
     };
   },
