@@ -19,11 +19,11 @@ export default {
       carta3: carta3,
       carta4: carta4,
       menu: [
-        { name: "Lentejas con bistec", description: "Ensalada delicia", price: 22},
-        { name: "Fetuccine al pesto con milanesa de pollo", description: "Wraps con verduras", price: 22},
-        { name: "Seco de carne  al norteña", description: "Consomé", price: 22},
-        { name: "Pollo al cilindro", description: "Acompañada de papa dorada, arroz y ensalada", price: 22},
-        { name: "Bondiola al horno", description: "Palta rellena", price: 22},
+        { name: "Locro con bistec", description: "Consomé", price: 22},
+        { name: "Pollo tipakay o chijaokay", description: "Sopa wantán", price: 22},
+        { name: "Panceta a la caja china", description: "Acompañada de papa dorada, arroz y ensalada", price: 22},
+        { name: "Arroz con pollo", description: "Papa a la huancaína.", price: 22},
+        { name: "Milanesa Napolitana con arroz.", description: "Crema de verduras", price: 22},
       ],
       /*ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
