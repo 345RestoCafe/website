@@ -21,7 +21,7 @@ export default {
       menu: [
         { name: "Locro con bistec", description: "Consomé", price: 22},
         { name: "Pollo tipakay o chijaokay", description: "Sopa wantán", price: 22},
-        { name: "Panceta a la caja china", description: "Acompañada de papa dorada, arroz y ensalada", price: 22},
+        { name: "Panceta a la caja china (Reserva)", description: "Acompañada de papa dorada, arroz y ensalada", price: 22},
         { name: "Arroz con pollo", description: "Papa a la huancaína.", price: 22},
         { name: "Milanesa Napolitana con arroz.", description: "Crema de verduras", price: 22},
       ],
