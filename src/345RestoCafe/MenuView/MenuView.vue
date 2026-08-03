@@ -19,11 +19,11 @@ export default {
       carta3: carta3,
       carta4: carta4,
       menu: [
-        { name: "Papa rellena u Olluco con carne", description: "Sopa Criolla", price: 22},
+        { name: "Lentejas con bistec", description: "Consomé", price: 22},
+        { name: "Bondiola al horno papas al perejil", description: "Ensalada cocida", price: 22},
+        { name: "Pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 22},
         { name: "FERIADO", description: "", price: 22},
-        { name: "FERIADO", description: "", price: 22},
-        { name: "Fettuccine al pesto con bisteck flambeado", description: "Ensalada fresca", price: 22},
-        { name: "Panceta a la caja china", description: "Ocopa", price: 22},
+        { name: "Saltado de pollo", description: "Ensalada fresca con palta", price: 22},
       ],
       /*ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -182,11 +182,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],*/
       menu_date: [
-        { day: "Lunes", date: "27/7"},
-        { day: "Martes", date: "28/7"},
-        { day: "Miércoles", date: "29/7"},
-        { day: "Jueves", date: "30/7"},
-        { day: "Viernes", date: "31/7"},
+        { day: "Lunes", date: "3/8"},
+        { day: "Martes", date: "4/8"},
+        { day: "Miércoles", date: "5/8"},
+        { day: "Jueves", date: "6/8"},
+        { day: "Viernes", date: "7/8"},
       ]
     };
   },
