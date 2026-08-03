@@ -32,6 +32,14 @@ export default {
           itemImageSrc: images_path['/src/assets/images/events/Carrusel11.jpeg'],
           alt: 'Eventos Image 11',
         },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel12.png'],
+          alt: 'Eventos Image 12',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel13.png'],
+          alt: 'Eventos Image 13',
+        },
       ]
     }
   }
