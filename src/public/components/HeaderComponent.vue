@@ -14,7 +14,7 @@
         <!-- Correos electrónicos -->
         <div class="col-lg-2 d-flex align-items-center justify-content-center">
           <i class="pi pi-envelope me-2" style="font-size: 1rem"></i>
-          <p class="mail mb-0">eventos@345retocafe.com</p>
+          <p class="mail mb-0">eventos@345restocafe.com</p>
         </div>
 
         <!-- Redes sociales -->
@@ -59,7 +59,7 @@ p {
 }
 
 .phone {
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -1px;
 }
 .mail {
