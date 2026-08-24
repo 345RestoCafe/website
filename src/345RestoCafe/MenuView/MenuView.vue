@@ -19,11 +19,11 @@ export default {
       carta3: carta3,
       carta4: carta4,
       menu: [
-        { name: "Arroz Tapado", description: "Crema de Verduras", price: 22},
-        { name: "Pollo Agridulce", description: "Sopa de Kión", price: 22},
-        { name: "Arroz con Chancho", description: "Papa con crema de Pimiento", price: 22},
-        { name: "Pollo al cilindro", description: "Acompañado de papa dorada, arroz y ensalada", price: 22},
-        { name: "Picante de Carne", description: "Ensalada Fresca con Palta", price: 22},
+        { name: "Ají de gallina u Olluquito de carne", description: "Consomé", price: 22},
+        { name: "Adobo de chancho con camote", description: "Choclo con queso", price: 22},
+        { name: "Pollo al sillao", description: "Wantán frito", price: 22},
+        { name: "Panceta a la caja china", description: "Acompañado de papa dorada, arroz y ensalada", price: 22},
+        { name: "Fettuccine al pesto con bisteck", description: "Ensalada delicia", price: 22},
       ],
       /*ensaladas: [
         { name: "Ensalada tropical", description: "Filete de pollo, lechuga orgánica, zanahoria rallada, tomate, pepino, garbanzo, fruta del día, pasas y pecanas, acompañado de aliño agridulce.", price: 23},
@@ -182,11 +182,11 @@ export default {
         { name: "Jugos con leche", description: "", price: 14 },
       ],*/
       menu_date: [
-        { day: "Lunes", date: "17/8"},
-        { day: "Martes", date: "18/8"},
-        { day: "Miércoles", date: "19/8"},
-        { day: "Jueves", date: "20/8"},
-        { day: "Viernes", date: "21/8"},
+        { day: "Lunes", date: "24/8"},
+        { day: "Martes", date: "25/8"},
+        { day: "Miércoles", date: "26/8"},
+        { day: "Jueves", date: "27/8"},
+        { day: "Viernes", date: "28/8"},
       ]
     };
   },
