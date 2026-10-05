@@ -27,18 +27,18 @@ export default {
       carta7: carta7,
       carta8: carta8,
       menu: [
-        { name: "Arroz tapado", description: "Ensalada fresca", price: 22},
-        { name: "Picante de carne", description: "Palta rellena", price: 22},
-        { name: "Bistec con frijoles", description: "Ensalada hawaiana", price: 22},
-        { name: "Pollo al cilindro", description: "Acompañado de papa dorada y ensalada fresca", price: 22},
-        { name: "Tallarin saltado oriental", description: "Sopa de Kion", price: 22},
+        { name: "Asado con puré y arroz", description: "Ensalada con palta", price: 22},
+        { name: "Bondiola en salsa de champiñones y arroz", description: "Ensalada de verduras cocidas", price: 22},
+        { name: "Pollada", description: "Acompañado de ensalada de col, papa dorada y arroz", price: 22},
+        { name: "FERIADO", description: "", price: 22},
+        { name: "Churrasco a la Plancha", description: "Acompañado de papa dorada y ensalada fresca", price: 22},
       ],
       menu_date: [
-        { day: "Lunes", date: "28/9"},
-        { day: "Martes", date: "29/9"},
-        { day: "Miércoles", date: "30/9"},
-        { day: "Jueves", date: "1/10"},
-        { day: "Viernes", date: "2/10"},
+        { day: "Lunes", date: "5/10"},
+        { day: "Martes", date: "6/10"},
+        { day: "Miércoles", date: "7/10"},
+        { day: "Jueves", date: "8/10"},
+        { day: "Viernes", date: "9/10"},
       ]
     };
   },
