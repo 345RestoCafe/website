@@ -27,18 +27,18 @@ export default {
       carta7: carta7,
       carta8: carta8,
       menu: [
-        { name: "Ají de gallina", description: "Palta primavera", price: 22},
-        { name: "Seco de res de frejoles", description: "Ensalada fresca", price: 22},
-        { name: "Bondiola al horno con verduras", description: "Ensalada waldorf", price: 22},
-        { name: "Pollo al cilindro", description: "Papa dorada, ensalada y arroz", price: 22},
-        { name: "Cordon Bleu en salsa bechamel y espinaca", description: "Consomé", price: 22},
+        { name: "Olluquito con carne o Cau cau", description: "Causa limeña", price: 22},
+        { name: "Carapulcra con chancho", description: "Ensalada cocida", price: 22},
+        { name: "Arroz con pollo", description: "Papa a la huancaina", price: 22},
+        { name: "Pollada", description: "Acompañada de papa, ensalada fresca especial y arroz", price: 22},
+        { name: "Panceta a la caja china", description: "Acompañada de ensalada waldorf y arroz", price: 22},
       ],
       menu_date: [
-        { day: "Lunes", date: "19/10"},
-        { day: "Martes", date: "20/10"},
-        { day: "Miércoles", date: "21/10"},
-        { day: "Jueves", date: "22/10"},
-        { day: "Viernes", date: "23/10"},
+        { day: "Lunes", date: "26/10"},
+        { day: "Martes", date: "27/10"},
+        { day: "Miércoles", date: "28/10"},
+        { day: "Jueves", date: "29/10"},
+        { day: "Viernes", date: "30/10"},
       ]
     };
   },
