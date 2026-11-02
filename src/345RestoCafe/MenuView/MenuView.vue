@@ -27,18 +27,18 @@ export default {
       carta7: carta7,
       carta8: carta8,
       menu: [
-        { name: "Olluquito con carne o Cau cau", description: "Causa limeña", price: 22},
-        { name: "Carapulcra con chancho", description: "Ensalada cocida", price: 22},
-        { name: "Arroz con pollo", description: "Papa a la huancaina", price: 22},
-        { name: "Pollada", description: "Acompañada de papa, ensalada fresca especial y arroz", price: 22},
-        { name: "Panceta a la caja china", description: "Acompañada de ensalada waldorf y arroz", price: 22},
+        { name: "Papa rellena", description: "Ensalada fresca", price: 22},
+        { name: "Escabeche de ppollo", description: "Wraps", price: 22},
+        { name: "Tallarines en salsa bolognesa", description: "Ensalada tropical", price: 22},
+        { name: "Pollo al cilindro", description: "Acompañada de papas al perejil y ensalada fresca", price: 22},
+        { name: "Locro con bisteck", description: "Sopa de Sémola", price: 22},
       ],
       menu_date: [
-        { day: "Lunes", date: "26/10"},
-        { day: "Martes", date: "27/10"},
-        { day: "Miércoles", date: "28/10"},
-        { day: "Jueves", date: "29/10"},
-        { day: "Viernes", date: "30/10"},
+        { day: "Lunes", date: "2/11"},
+        { day: "Martes", date: "3/11"},
+        { day: "Miércoles", date: "4/11"},
+        { day: "Jueves", date: "5/11"},
+        { day: "Viernes", date: "6/11"},
       ]
     };
   },
