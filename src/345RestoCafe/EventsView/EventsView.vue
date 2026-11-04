@@ -15,7 +15,7 @@ export default {
   <banner-component/>
   <event-header-component class="mt-5"/>
   <event-services-component/>
-  <proposal-component/>
+  <!-- <proposal-component/> -->
 </template>
 
 <style scoped>

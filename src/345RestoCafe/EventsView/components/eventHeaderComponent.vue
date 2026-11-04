@@ -40,6 +40,34 @@ export default {
           itemImageSrc: images_path['/src/assets/images/events/Carrusel13.png'],
           alt: 'Eventos Image 13',
         },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel5.jpg'],
+          alt: 'Eventos Image 5',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel6.jpg'],
+          alt: 'Eventos Image 6',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel7.jpg'],
+          alt: 'Eventos Image 7',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel8.jpg'],
+          alt: 'Eventos Image 8',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel9.jpeg'],
+          alt: 'Eventos Image 9',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel14.png'],
+          alt: 'Eventos Image 14',
+        },
+        {
+          itemImageSrc: images_path['/src/assets/images/events/Carrusel15.png'],
+          alt: 'Eventos Image 15',
+        },
       ]
     }
   }
