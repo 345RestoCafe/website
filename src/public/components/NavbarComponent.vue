@@ -3,7 +3,8 @@
     <div class="container-fluid m-5 mt-0 mb-0">
       <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img class="logo-img" src="https://i.imgur.com/LRb0Ub2.png" alt="Logo" />
+        <img class="logo-img mr-0" src="/src/assets/images/branding/Hito.jpg" alt="Logo" />
+        <img class="logo-img ml-0" src="https://i.imgur.com/LRb0Ub2.png" alt="Logo" />
       </a>
       <!-- Botón de menú para móviles -->
       <button class="navbar-toggler" type="button" @click="toggleMenu" aria-label="Menu button">
