@@ -78,10 +78,10 @@ export default {
   <div class="container my-5">
     <div class="row justify-content-center align-items-center">
       <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center">
-        <h4>En Resto Café 345 ofrecemos eventos y más</h4>
+        <h4>En Resto Café 345 hacemos de cada ocasión un momento especial</h4>
         <hr>
-        <p>Brindamos servicios para diversos tipos de eventos, sean corporativos o sociales, con una atención exclusiva que cuida los mínimos detalles en horarios personalizados.</p>
-        <p>Contamos con una variedad de platos, bocaditos, bebidas y postres a su entera disposición que podrán encontrar de lunes a viernes desde las 8:00am hasta las 6:00pm.</p>
+        <p class="mb-0">Brindamos espacios y servicios para la realización de eventos corporativos y sociales, ofreciendo una atención personalizada y cuidando cada detalle para crear experiencias a la medida de cada celebración.</p>
+        <p>Contamos con propuestas personalizadas para cumpleaños, reuniones corporativas, aniversarios, celebraciones especiales y mucho más. Nos encargamos de cada detalle, desde la ambientación y decoración hasta la propuesta gastronómica, para que cada evento sea único y memorable.</p>
       </div>
       <div class="col-12 col-md-6 text-center p-4">
         <GalleryComponent :images="images" :interval="2500"/>
