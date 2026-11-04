@@ -47,7 +47,7 @@ export default {
     <div class="container">
       <div class="row g-4 align-items-center">
         <div class="col-12 col-md-6 text-center">
-          <GalleryComponent :images="images"/>
+          <GalleryComponent :images="images" :interval="2500"/>
         </div>
         <div class="col-12 col-md-6">
           <h2>Proponemos:</h2>

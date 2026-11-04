@@ -56,7 +56,7 @@ export default {
         <p>Contamos con una variedad de platos, bocaditos, bebidas y postres a su entera disposición que podrán encontrar de lunes a viernes desde las 8:00am hasta las 6:00pm.</p>
       </div>
       <div class="col-12 col-md-6 text-center p-4">
-        <GalleryComponent :images="images"/>
+        <GalleryComponent :images="images" :interval="2500"/>
       </div>
     </div>
   </div>
