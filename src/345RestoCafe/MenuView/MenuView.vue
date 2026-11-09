@@ -27,18 +27,18 @@ export default {
       carta7: carta7,
       carta8: carta8,
       menu: [
-        { name: "Papa rellena", description: "Ensalada fresca", price: 22},
-        { name: "Escabeche de ppollo", description: "Wraps", price: 22},
-        { name: "Tallarines en salsa bolognesa", description: "Ensalada tropical", price: 22},
-        { name: "Pollo al cilindro", description: "Acompañada de papas al perejil y ensalada fresca", price: 22},
-        { name: "Locro con bisteck", description: "Sopa de Sémola", price: 22},
+        { name: "Ají de pollo", description: "Crema de esparragos", price: 22},
+        { name: "Puré con guiso de carne al vino", description: "Ensalada de palta", price: 22},
+        { name: "Arroz con pollo (Reserva)", description: "Papa a la huancaina", price: 22},
+        { name: "Saltado de pollo", description: "Ensalada Caprese", price: 22},
+        { name: "Panceta a la caja china", description: "Acompañada de ensalada alemana y arroz", price: 22},
       ],
       menu_date: [
-        { day: "Lunes", date: "2/11"},
-        { day: "Martes", date: "3/11"},
-        { day: "Miércoles", date: "4/11"},
-        { day: "Jueves", date: "5/11"},
-        { day: "Viernes", date: "6/11"},
+        { day: "Lunes", date: "9/11"},
+        { day: "Martes", date: "10/11"},
+        { day: "Miércoles", date: "11/11"},
+        { day: "Jueves", date: "12/11"},
+        { day: "Viernes", date: "13/11"},
       ]
     };
   },
