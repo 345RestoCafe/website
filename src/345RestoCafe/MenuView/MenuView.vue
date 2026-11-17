@@ -27,18 +27,18 @@ export default {
       carta7: carta7,
       carta8: carta8,
       menu: [
-        { name: "Ají de pollo", description: "Crema de esparragos", price: 22},
-        { name: "Puré con guiso de carne al vino", description: "Ensalada de palta", price: 22},
-        { name: "Arroz con pollo (Reserva)", description: "Papa a la huancaina", price: 22},
-        { name: "Saltado de pollo", description: "Ensalada Caprese", price: 22},
-        { name: "Panceta a la caja china", description: "Acompañada de ensalada alemana y arroz", price: 22},
+        { name: "Feriado", description: "Crema de esparragos", price: 22},
+        { name: "Ravioles queso y ricota en salsa de carne", description: "Salpicón de pollo", price: 22},
+        { name: "Frejoles con seco de pollo", description: "Ensalada cocida", price: 22},
+        { name: "Parrilla (Solo Reserva: Churrasco, chuleta o pollo al cilindro)", description: "Papa dorada, ensalada fresca y arroz (adicional chorizo)", price: 22},
+        { name: "Pollo a la olla", description: "Ensalada de fideos", price: 22},
       ],
       menu_date: [
-        { day: "Lunes", date: "9/11"},
-        { day: "Martes", date: "10/11"},
-        { day: "Miércoles", date: "11/11"},
-        { day: "Jueves", date: "12/11"},
-        { day: "Viernes", date: "13/11"},
+        { day: "Lunes", date: "16/11"},
+        { day: "Martes", date: "17/11"},
+        { day: "Miércoles", date: "18/11"},
+        { day: "Jueves", date: "19/11"},
+        { day: "Viernes", date: "20/11"},
       ]
     };
   },
